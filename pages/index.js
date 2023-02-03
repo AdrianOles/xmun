@@ -69,12 +69,18 @@ export default function Home() {
           ST.FX WELCOMES
           </motion.div>
       </div>
-
-      <div className="h-fit w-full px-10 md:px-16 lg:px-28 xl:px-52 text-xl pb-10">
-          <p>&nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus. Quis ipsum suspendisse ultrices gravida dictum fusce. Dictum fusce ut placerat orci. Scelerisque viverra mauris in aliquam. Vitae nunc sed velit dignissim sodales ut. At tempor commodo ullamcorper a lacus. Tortor posuere ac ut consequat semper viverra nam libero. Vulputate ut pharetra sit amet aliquam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer.</p>
-          <br />
-          <p>&nbsp; &nbsp; &nbsp; &nbsp; Massa sed elementum tempus egestas sed sed. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Donec pretium vulputate sapien nec. Tortor at risus viverra adipiscing at. Risus at ultrices mi tempus imperdiet nulla. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Dignissim enim sit amet venenatis urna. Consectetur purus ut faucibus pulvinar. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Eget arcu dictum varius duis at consectetur lorem donec massa.</p>
-      </div>
+      
+      <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{type: "easein", duration: .30, delay: .15}}>
+          <div className="h-fit w-full px-10 md:px-16 lg:px-28 xl:px-52 text-xl pb-10">
+              <p>&nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus. Quis ipsum suspendisse ultrices gravida dictum fusce. Dictum fusce ut placerat orci. Scelerisque viverra mauris in aliquam. Vitae nunc sed velit dignissim sodales ut. At tempor commodo ullamcorper a lacus. Tortor posuere ac ut consequat semper viverra nam libero. Vulputate ut pharetra sit amet aliquam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer.</p>
+              <br />
+              <p>&nbsp; &nbsp; &nbsp; &nbsp; Massa sed elementum tempus egestas sed sed. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Donec pretium vulputate sapien nec. Tortor at risus viverra adipiscing at. Risus at ultrices mi tempus imperdiet nulla. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Dignissim enim sit amet venenatis urna. Consectetur purus ut faucibus pulvinar. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Eget arcu dictum varius duis at consectetur lorem donec massa.</p>
+          </div>
+      </motion.div>
 
       <div className='w-full h-fit pb-20 flex justify-evenly gap-4 flex-wrap sm:px-4 lg:px-20'>
         {
