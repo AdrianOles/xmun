@@ -62,7 +62,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{type: "easein", duration: .60, delay: .15}}
+          transition={{type: "easein", duration: .30, delay: .15}}
         >
         <div className="border-t-2 border-b-2 border-purple-600 my-10 py-6 text-center mx-auto w-[350px] md:w-[500px] text-4xl
         tracking-wide text-purple-900">
