@@ -66,7 +66,7 @@ export default function Home() {
         >
         <div className="border-t-2 border-b-2 border-purple-600 my-10 py-6 text-center mx-auto w-[350px] md:w-[500px] text-4xl
         tracking-wide text-purple-900">
-            ST.FX WELCOMES
+            <span className="text-colors">ST.FX WELCOMES</span>
         </div>
       </motion.div>
 
