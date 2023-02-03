@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-blur {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(10px);
+}
+
+.register {
+        a {
+            display: block;
+            width: 200px;
+            height: 55px;
+            line-height: 50px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            border: 3px solid purple;
+            letter-spacing: 5px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+            background: opacity($color: #000000c9)
+        }
+    
+        a span {
+            position: relative;
+            z-index: 2;
+        }
+    
+        a:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: purple;
+            transition: all .35s;
+        }
+    
+        a:hover {
+            color: #fff;
+        }
+    
+        a:hover:after {
+            width: 100%;
+        }
+}
+
+.homePicture {
+    background-image: url("../public/bgMUN.jpg");
+    filter: brightness(0.70);
+    position: center;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(purple, purple)
+}
+
+.link-underline-black-1 {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(150, 23, 175), rgb(150, 23, 175))
+}
+
+.link-active {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%
+}
