@@ -3,7 +3,8 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: [
-      "1000logos.net"
+      "1000logos.net",
+      "cdn-icons-png.flaticon.com",
     ]
   }
 }
