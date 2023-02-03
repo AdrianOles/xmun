@@ -64,17 +64,17 @@ export default function Home() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{type: "easein", duration: .30, delay: .15}}
+            transition={{type: "easein", duration: .60, delay: .15}}
           >
           ST.FX WELCOMES
           </motion.div>
       </div>
-      
+
       <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{type: "easein", duration: .30, delay: .15}}>
+            transition={{type: "easein", duration: .60, delay: .15}}>
           <div className="h-fit w-full px-10 md:px-16 lg:px-28 xl:px-52 text-xl pb-10">
               <p>&nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus. Quis ipsum suspendisse ultrices gravida dictum fusce. Dictum fusce ut placerat orci. Scelerisque viverra mauris in aliquam. Vitae nunc sed velit dignissim sodales ut. At tempor commodo ullamcorper a lacus. Tortor posuere ac ut consequat semper viverra nam libero. Vulputate ut pharetra sit amet aliquam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer.</p>
               <br />

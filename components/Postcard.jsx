@@ -12,7 +12,7 @@ function Postcard({ name, pictureUrl, description, link }) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{type: "easein", duration: .30, delay: .45}}
+            transition={{type: "easein", duration: .60, delay: .15}}
           >
 		  <div className='h-fit w-80 shadow-lg rounded-lg overflow-hidden mt-5 text-center'>
 				<img
