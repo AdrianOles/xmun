@@ -33,7 +33,7 @@ export default function Navbar() {
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-full flex items-center justify-between z-50 header-blur sticky top-0 py-4 px-8 md:px-14 lg:px-24 shadow-xl">
                 <div>
-                    <a className='flex items-center cursor-pointer' onClick={() => { router.push('/'); setOpen(!open)}}>
+                    <a className='flex items-center cursor-pointer' onClick={() => { router.push('/'); if(open) setOpen(!open)}}>
                         <Image
                             src="https://1000logos.net/wp-content/uploads/2018/01/united-nations-logo.png"
                             width={120}
