@@ -62,7 +62,7 @@ export default function Home() {
         <motion.div 
           initial={{opacity:0}}
           whileInView={{ opacity: 1}}
-          transition={{duration: .10, delay: .10}}
+          transition={{duration: .20, delay: .1}}
         >
         <div className="lg:m-24 m-6 bg-[#111d36] h-fit relative z-[1]">
           {/* <div className="hidden lg:block triangle absolute top-[57%] right-[45%] z-[2]"></div> */}
@@ -71,7 +71,7 @@ export default function Home() {
               <motion.div
                 initial={{opacity:0, y:200}}
                 whileInView={{ opacity: 1, y:0}}
-                transition={{duration: .40, delay: .10}}
+                transition={{duration: .50, delay: .1}}
               >
                 <p className='text-white lg:text-xl text-lg mb-4'>&#x2022; Third In-house conference &#x2022;</p>
                 <p className='text-white lg:text-3xl text-2xl mb-6 leading-10'><span className='text-purple-500 font-bold'>Model UN</span> is one of the many clubs within St. Francis Xavier Catholic Secondary School through which students can learn and grow as a community.</p>
@@ -96,7 +96,7 @@ export default function Home() {
               <motion.img
                 initial={{opacity:0, x:-600}}
                 whileInView={{opacity:1, x:0}}
-                transition={{duration: .80, delay: .10}}
+                transition={{duration: .100, delay: .1}}
                 src='https://pbs.twimg.com/media/D-jvlrRWwAA_V7b.jpg'
                 className='max-h-[350px] ml-auto min-w-[100%] object-cover'
               />
