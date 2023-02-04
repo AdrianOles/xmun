@@ -68,7 +68,7 @@ function itinerary() {
   }
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full overflow-hidden'>
       <div className='bg-gradient-to-tl to-purple-800 from-sky-700 h-[40vh] w-full relative top-0 shadow-xl'>
         <img src="https://isp.hcdsb.org/wp-content/uploads/2018/07/JV5-700x400.jpg"
           className='w-full h-full object-cover absolute mix-blend-overlay brightness-80' />
