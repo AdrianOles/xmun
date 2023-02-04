@@ -73,7 +73,7 @@ function itinerary() {
         <img src="https://isp.hcdsb.org/wp-content/uploads/2018/07/JV5-700x400.jpg"
           className='w-full h-full object-cover absolute mix-blend-overlay brightness-80' />
         <div className='mx-auto w-full h-full px-10 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56'>
-          <div className='text-white my-auto mx-auto flex flex-col text-center'>
+          <div className='text-white my-auto mx-auto px-auto flex flex-col text-center'>
             <div className='text-6xl font-bold mb-2'>Conference <span className="text-cyan-400">Itinerary</span></div>
             <div>
               Check it out to plan ahead and not miss a minute.
