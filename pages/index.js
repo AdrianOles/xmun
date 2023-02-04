@@ -75,7 +75,16 @@ export default function Home() {
               >
                 <p className='text-white lg:text-xl text-lg mb-4'>&#x2022; Third In-house conference &#x2022;</p>
                 <p className='text-white lg:text-3xl text-2xl mb-6 leading-10'><span className='text-purple-500 font-bold'>Model UN</span> is one of the many clubs within St. Francis Xavier Catholic Secondary School through which students can learn and grow as a community.</p>
-                <div className='text-white lg:text-2xl text-lg lg:mb-20 mb-10'>To <span className='text-blue-500 font-bold lg:text-3xl text-xl'>Accept.</span>&nbsp;&nbsp;&nbsp;To<span className='text-purple-500 font-bold lg:text-3xl text-xl'> Include.</span>&nbsp;&nbsp;&nbsp;To serve with <span className='text-sky-500 font-bold text-xl lg:text-3xl'>Love.</span></div>
+                <div className='text-white lg:text-2xl text-lg lg:mb-20 mb-10 flex flex-wrap gap-4'>
+                  <div>
+                    To <span className='text-blue-500 font-bold lg:text-3xl text-xl'>Accept.</span>
+                  </div>
+                  <div>
+                    To<span className='text-purple-500 font-bold lg:text-3xl text-xl'> Include.</span>
+                  </div>
+                  <div>
+                    To serve with <span className='text-sky-500 font-bold text-xl lg:text-3xl'>Love.</span></div>
+                  </div>
                 <a href="https://secondary.hcdsb.org/xavier/">
                   <div className="bg-purple-500 text-white font-semibold px-6 py-4 w-fit cursor-pointer hover:ring hover:ring-sky-600">
                     CONTACT US
