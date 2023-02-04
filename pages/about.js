@@ -3,7 +3,7 @@ import { motion, AnimatePresence} from "framer-motion"
 
 function about() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className='bg-gradient-to-tl to-purple-800 from-sky-700 h-[40vh] w-full relative top-0 shadow-xl'>
         <img src="https://i.ytimg.com/vi/QVUF17sWbJ0/maxresdefault.jpg"
         className='w-full h-full object-cover absolute mix-blend-overlay brightness-90'/>
