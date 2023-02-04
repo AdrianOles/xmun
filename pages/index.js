@@ -62,14 +62,14 @@ export default function Home() {
         <motion.div 
           initial={{opacity:0}}
           whileInView={{ opacity: 1}}
-          transition={{duration: .20, delay: .1}}
+          transition={{duration: .10}}
         >
         <div className="lg:m-24 m-6 bg-[#111d36] h-fit relative z-[1]">
           {/* <div className="hidden lg:block triangle absolute top-[57%] right-[45%] z-[2]"></div> */}
           <div className="flex justify-between p-16 items-center">
             <div className='lg:w-[60%] h-fit z-10'>
               <motion.div
-                initial={{opacity:0, y:200}}
+                initial={{opacity:0, y:-200}}
                 whileInView={{ opacity: 1, y:0}}
                 transition={{duration: .50, delay: .1}}
               >
@@ -96,7 +96,7 @@ export default function Home() {
               <motion.img
                 initial={{opacity:0, x:-600}}
                 whileInView={{opacity:1, x:0}}
-                transition={{duration: .100, delay: .1}}
+                transition={{duration: .60, delay: .1}}
                 src='https://pbs.twimg.com/media/D-jvlrRWwAA_V7b.jpg'
                 className='max-h-[350px] ml-auto min-w-[100%] object-cover'
               />
