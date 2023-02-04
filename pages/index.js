@@ -37,12 +37,12 @@ export default function Home() {
       </Head>
 
       {/* main image*/}
-      <div className='bg-gradient-to-tl to-blue-900 from-sky-900 h-screen w-full relative top-0 shadow-xl'>
+      <div className='bg-gradient-to-tl to-blue-900 from-purple-900 h-screen w-full relative top-0 shadow-xl'>
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/UN_General_Assembly_hall.jpg"
         className='w-full h-full object-cover absolute mix-blend-overlay brightness-90'/>
         <div className='mx-auto w-full py-[12em] px-10 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56'>
           <div className='text-white text-6xl font-bold'>
-            Welcome to <span className="text-purple-400">XMUN</span>
+            Welcome to <span className="text-sky-400">XMUN</span>
           </div>
           <div className="text-sky-100 text-2xl font-light">
             May 1st, 2023
