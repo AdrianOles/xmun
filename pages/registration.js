@@ -7,8 +7,8 @@ function registration() {
       <div className='bg-gradient-to-tl to-sky-600 from-purple-900 h-screen w-full relative top-0 shadow-xl'>
         <img src="https://isp.hcdsb.org/wp-content/uploads/2018/07/JV4-700x400.jpg"
           className='w-full h-full object-cover absolute mix-blend-overlay brightness-90' />
-        <div className='mx-auto w-full py-[12em] px-10 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56 text-center'>
-          <div className='text-white text-6xl font-bold'>
+        <div className='mx-auto w-full py-[12em] px-6 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56 text-center'>
+          <div className='text-white text-5xl sm:text-6xl font-bold'>
             <Link href="https://www.instagram.com/rhea.g.l/">REGISTRATION</Link>
           </div>
           <div className="text-sky-100 text-2xl font-normal">
