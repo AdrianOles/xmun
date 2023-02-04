@@ -4,7 +4,21 @@
 
 html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+    transform: rotate(15deg);
+	border-top: 5em solid transparent;
+	border-right: 8em solid purple;
+	border-bottom: 5em solid transparent;
+    filter: brightness(0.6);
 }
 
 .text-colors {

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import registration from './registration';
 import { Postcard } from '../components';
-import { motion} from "framer-motion"
+import { motion, AnimatePresence} from "framer-motion"
 
 export default function Home() {
   const router = useRouter();
@@ -51,42 +51,51 @@ export default function Home() {
             St. Francis Xavier Secondary School, Milton ON
           </div>
           <div className="register mt-5">
-            <div class="wrapper cursor-pointer">
+            <div className="wrapper cursor-pointer">
               <a onClick={() => router.push('/registration')}><span>REGISTER</span></a>
             </div>
           </div>
         </div>
       </div>
-
-      <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{type: "easein", duration: .30, delay: .15}}
+      
+      <AnimatePresence>
+        <motion.div 
+          initial={{opacity:0}}
+          whileInView={{ opacity: 1}}
+          transition={{duration: .10, delay: .10}}
         >
-        <div className="border-t-2 border-b-2 border-purple-600 my-10 py-6 text-center mx-auto w-[350px] md:w-[500px] text-4xl
-        tracking-wide text-purple-900">
-            <span className="text-colors">ST.FX WELCOMES</span>
-        </div>
-      </motion.div>
-
-      <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{type: "easein", duration: .60, delay: .15}}>
-          <div className="h-fit w-full px-10 md:px-16 lg:px-28 xl:px-52 text-xl pb-10">
-              <p>&nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus. Quis ipsum suspendisse ultrices gravida dictum fusce. Dictum fusce ut placerat orci. Scelerisque viverra mauris in aliquam. Vitae nunc sed velit dignissim sodales ut. At tempor commodo ullamcorper a lacus. Tortor posuere ac ut consequat semper viverra nam libero. Vulputate ut pharetra sit amet aliquam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer.</p>
-              <br />
-              <p>&nbsp; &nbsp; &nbsp; &nbsp; Massa sed elementum tempus egestas sed sed. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Donec pretium vulputate sapien nec. Tortor at risus viverra adipiscing at. Risus at ultrices mi tempus imperdiet nulla. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Dignissim enim sit amet venenatis urna. Consectetur purus ut faucibus pulvinar. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Eget arcu dictum varius duis at consectetur lorem donec massa.</p>
+        <div className="lg:m-24 m-6 bg-[#111d36] h-fit relative z-[1]">
+          {/* <div className="hidden lg:block triangle absolute top-[57%] right-[45%] z-[2]"></div> */}
+          <div className="flex justify-between p-16 items-center">
+            <div className='lg:w-[60%] h-fit z-10'>
+              <motion.div
+                initial={{opacity:0, y:200}}
+                whileInView={{ opacity: 1, y:0}}
+                transition={{duration: .30, delay: .30}}
+              >
+                <p className='text-white lg:text-xl text-lg mb-4'>&#x2022; Third In-house conference &#x2022;</p>
+                <p className='text-white lg:text-3xl text-2xl mb-6 leading-10'><span className='text-purple-500 font-bold'>Model UN</span> is one of the many clubs within St. Francis Xavier Catholic Secondary School through which students can learn and grow as a community.</p>
+                <div className='text-white lg:text-2xl text-lg lg:mb-20 mb-10'>To <span className='text-blue-500 font-bold lg:text-3xl text-xl'>Accept.</span>&nbsp;&nbsp;&nbsp;To<span className='text-purple-500 font-bold lg:text-3xl text-xl'> Include.</span>&nbsp;&nbsp;&nbsp;To serve with <span className='text-sky-500 font-bold text-xl lg:text-3xl'>Love.</span></div>
+                <a href="https://secondary.hcdsb.org/xavier/">
+                  <div className="bg-purple-500 text-white font-semibold px-6 py-4 w-fit cursor-pointer hover:ring hover:ring-sky-600">
+                    CONTACT US
+                  </div>
+                </a>
+              </motion.div>
+            </div>
+            <div className='hidden lg:block w-[30%] max-h-fit'>
+              <motion.img
+                initial={{opacity:0, x:-600}}
+                whileInView={{opacity:1, x:0}}
+                transition={{duration: .60, delay: .10}}
+                src='https://pbs.twimg.com/media/D-jvlrRWwAA_V7b.jpg'
+                className='max-h-[350px] ml-auto min-w-[100%] object-cover'
+              />
+            </div>
           </div>
-      </motion.div>
-
-      <div className='w-full h-fit pb-20 flex justify-evenly gap-4 flex-wrap sm:px-4 lg:px-20'>
-        {
-          cards.map((card, index) => <Postcard key={index} name={card.name} pictureUrl={card.pictureUrl} description={card.description} link={card.link} />)
-        }
-      </div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
         
     </div>
   )
