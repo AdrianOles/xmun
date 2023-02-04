@@ -104,7 +104,7 @@ function itinerary() {
                 events.map((event, index) => (
                   <div className={`border-b-2 border-gray-200 class-${index} mb-6`}>
                     <motion.div variants={items}>
-                    <div className={`items-center gap-4 p-4 pl-4 h-fit w-full bg-purple-500 schedule-bg-${index} ring-2 ring-purple-600 rounded-lg mb-6 flex`}>
+                    <div className={`items-center gap-4 p-4 pl-4 h-fit w-full bg-purple-500 schedule-bg-${index} ring-2 ring-purple-600 mb-6 flex`}>
                       <div>
                         <Image
                           src={event.icon}
