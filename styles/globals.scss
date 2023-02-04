@@ -114,6 +114,53 @@ body {
         }
 }
 
+.register1 {
+    a {
+        display: block;
+        width: 200px;
+        height: 55px;
+        line-height: 50px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        border: 3px solid #2098bd;
+        letter-spacing: 5px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        background: opacity($color: #000000c9)
+    }
+
+    a span {
+        position: relative;
+        z-index: 2;
+    }
+
+    a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #2098bd;
+        transition: all .35s;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:hover:after {
+        width: 100%;
+    }
+}
+
 .homePicture {
     background-image: url("../public/bgMUN.jpg");
     filter: brightness(0.70);
