@@ -21,19 +21,20 @@ body {
     filter: brightness(0.6);
 }
 
-.schedule-bg-0, .schedule-bg-3, .schedule-bg-5 {
+
+.schedule-bg-1, .schedule-bg-3, .schedule-bg-5 {
     background-color: #e1b7fd;
-    color:rgb(150, 23, 175);
+    color:#9617af;
     font-weight: 700;
 }
 
-.schedule-bg-1,.schedule-bg-4 {
+.schedule-bg-4, .schedule-bg-2 {
     background-color: #abd1ff;
     color: #4256c2;
     font-weight: 700;
 }
 
-.schedule-bg-2 {
+.schedule-bg-0 {
     background-color:#abfff4;
     color:#2098bd;
     font-weight: 700;

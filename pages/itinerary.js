@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import announcementIcon from '../public/announcementIcon.png';
-import blueConference from '../public/blueConference.png';
 import purpleConference from '../public/purpleConference.png';
 import lunch from '../public/lunch.png';
 import breakIcon from '../public/breakIcon.png';
@@ -19,7 +18,7 @@ function itinerary() {
     {
       name: 'Session 1',
       time: '9:30 - 11:30',
-      icon: blueConference,
+      icon: purpleConference,
     },
     {
       name: 'Lunch',
