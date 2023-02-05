@@ -87,9 +87,9 @@ function itinerary() {
           <div>8:30 a.m.</div>
           <div>9:30 a.m.</div>
           <div>11:30 a.m.</div>
-          <div>12:00 a.m.</div>
-          <div>2:00 a.m.</div>
-          <div>2:30 a.m.</div>
+          <div>12:00 p.m.</div>
+          <div>2:00 p.m.</div>
+          <div>2:30 p.m.</div>
         </div>
 
         {/* cards/events */}

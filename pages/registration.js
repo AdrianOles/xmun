@@ -12,7 +12,7 @@ function registration() {
             <Link href="https://www.instagram.com/rhea.g.l/">REGISTRATION</Link>
           </div>
           <div className="text-sky-100 text-xl sm:text-2xl font-normal">
-            May 1st, 2023
+            Deadline: May 1st, 2023
           </div>
           <div className="text-sky-100 text-xl sm:text-2xl font-normal">
             St. Francis Xavier Secondary School, Milton ON
