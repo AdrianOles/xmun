@@ -30,7 +30,7 @@ function committee() {
           {/* image */}
           <motion.div
             initial={{ opacity: 0, x: -200 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: .60, delay: .1 }}
             className="md:w-[30%] rounded-3xl overflow-hidden w-full">
             <img
