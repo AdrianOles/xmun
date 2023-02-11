@@ -61,7 +61,7 @@ export default function Home() {
       <AnimatePresence>
         <motion.div 
           initial={{opacity:0}}
-          whileInView={{ opacity: 1}}
+          animate={{ opacity: 1}}
           transition={{duration: .10}}
         >
         <div className="lg:m-24 m-6 bg-[#111d36] h-fit relative z-[1]">
@@ -70,7 +70,7 @@ export default function Home() {
             <div className='lg:w-[60%] h-fit z-10'>
               <motion.div
                 initial={{opacity:0, y:-200}}
-                whileInView={{ opacity: 1, y:0}}
+                animate={{ opacity: 1, y:0}}
                 transition={{duration: .50, delay: .1}}
               >
                 <p className='text-white lg:text-xl text-lg mb-4'>&#x2022; Third In-house conference &#x2022;</p>
@@ -95,7 +95,7 @@ export default function Home() {
             <div className='hidden lg:block w-[30%] max-h-fit'>
               <motion.img
                 initial={{opacity:0, x:-600}}
-                whileInView={{opacity:1, x:0}}
+                animate={{opacity:1, x:0}}
                 transition={{duration: .60, delay: .1}}
                 src='https://pbs.twimg.com/media/D-jvlrRWwAA_V7b.jpg'
                 className='max-h-[350px] ml-auto min-w-[100%] object-cover'

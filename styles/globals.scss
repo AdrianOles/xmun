@@ -114,6 +114,56 @@ body {
         }
 }
 
+.register2 {
+    a {
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            padding: 1px 20px 1px 20px;
+            line-height: 50px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: purple;
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            border: 3px solid purple;
+            border-radius: 30px;
+            overflow: hidden;
+            letter-spacing: 5px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+            background: opacity($color: #000000c9)
+        }
+    
+        a span {
+            position: relative;
+            z-index: 2;
+        }
+    
+        a:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: purple;
+            transition: all .35s;
+        }
+    
+        a:hover {
+            color: #fff;
+        }
+    
+        a:hover:after {
+            width: 100%;
+        }
+}
+
 .register1 {
     a {
         display: block;
