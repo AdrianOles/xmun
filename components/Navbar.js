@@ -38,6 +38,7 @@ export default function Navbar() {
                             src="https://1000logos.net/wp-content/uploads/2018/01/united-nations-logo.png"
                             width={120}
                             height={120}
+                            alt="Model UN Logo"
                         />
                         <div className='text-4xl font-bold text-sky-600'>
                             XMUN

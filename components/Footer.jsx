@@ -21,6 +21,7 @@ function Footer() {
 						src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
 						width={40}
 						height={40}
+						alt="Instagram logo"
 					/>
 				</div>
 				<div className='brightness-0 invert hover:brightness-100 hover:invert-0 transition-all cursor-pointer'>
@@ -28,6 +29,7 @@ function Footer() {
 						src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png"
 						width={70}
 						height={50}
+						alt="Email logo"
 					/>
 				</div>
 			</div>
