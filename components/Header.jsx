@@ -11,7 +11,7 @@ function Header() {
 	function MobileNav({ open, setOpen }) {
 
 		return (
-			<div className={`absolute top-0 left-0 inset-x-0 origin-top-right mx-auto w-full h-full bg-white transform ${open ? "-translate-y-0 z-50 block": "-translate-y-full"} transition-all duration-500 ease-in-out filter`}>
+			<div className={`absolute top-0 left-0 inset-x-0 origin-top-right mx-auto w-full h-full bg-black transform ${open ? "-translate-y-0 z-50 block": "-translate-y-full"} transition-all duration-500 ease-in-out filter`}>
 				<div className='flex flex-col justify-center items-center mt-28'>
 					<a className='text-3xl font-bold text-sky-600 my-4 mt-20 link link-underline link-underline-black' href='#'>About</a>
 					<a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black' href='#'>Registration</a>

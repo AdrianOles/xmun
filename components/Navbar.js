@@ -29,7 +29,7 @@ export default function Navbar() {
     }, [open])
 
     return (
-        <nav className='sticky top-0 z-50'>
+        <nav className='sticky top-0 z-50 bg-black'>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-full flex items-center justify-between z-50 header-blur sticky top-0 py-4 px-8 md:px-14 lg:px-24 shadow-xl">
                 <div>
