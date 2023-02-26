@@ -5,6 +5,7 @@ module.exports = {
     domains: [
       "1000logos.net",
       "cdn-icons-png.flaticon.com",
+      "i.pinimg.com",
     ]
   },
    webpack: (config) => {

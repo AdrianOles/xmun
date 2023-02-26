@@ -1,35 +1,19 @@
 import React from 'react'
-// import Image from 'next/image'
-// import image1 from './../public/images/image1.jpg'
-// import image2 from './../public/images/image2.jpg'
-// import image3 from './../public/images/image3.jpg'
-// import image4 from './../public/images/image4.jpg'
-// import image5 from './../public/images/image5.jpg'
-// import image6 from './../public/images/image6.jpg'
-// import image7 from './../public/images/image7.jpg'
-// import image8 from './../public/images/image8.jpg'
-// import image9 from './../public/images/image9.jpg'
-// import image10 from './../public/images/image10.jpg'
-// import image11 from './../public/images/image11.jpg'
-// import image12 from './../public/images/image12.jpg'
-// import image13 from './../public/images/image13.jpg'
-// import image15 from './../public/images/image15.jpg'
-// import image16 from './../public/images/image16.jpg'
-// import image17 from './../public/images/image17.jpg'
+import Image from 'next/image'
 
 function photos() {
 
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 
   return (
     <div className="flex flex-wrap w-full gap-4 p-4 items-center justify-center">
-      {/* {
+      {
         numbers.map((index) => (
           <div key={index} className="w-[70%] sm:w-[40%] md:w-[40%] h-[200px] md:h-[250px] lg:w-[20%] lg:h-[200px] relative">
               {
                 index === 1 && (
                   <Image
-                    src={image1}
+                  src={"https://i.pinimg.com/564x/32/a5/5c/32a55c107eaffe151b94877ae8f411c7.jpg"}
                     fill
                     alt="image"
                     className="object-cover"
@@ -39,7 +23,7 @@ function photos() {
             {
               index === 2 && (
                 <Image
-                  src={image2}
+                  src={"https://i.pinimg.com/564x/97/48/f7/9748f702e94e2049fa5312ee1f86cd6b.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -49,7 +33,7 @@ function photos() {
             {
               index === 3 && (
                 <Image
-                  src={image3}
+                  src={"https://i.pinimg.com/564x/4a/57/a5/4a57a5cb564b46cff22a80dfc272ecde.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -59,7 +43,7 @@ function photos() {
             {
               index === 4 && (
                 <Image
-                  src={image4}
+                  src={"https://i.pinimg.com/564x/cd/70/76/cd707680cf620d2af05c55918717d76b.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -69,7 +53,7 @@ function photos() {
             {
               index === 5 && (
                 <Image
-                  src={image5}
+                  src={"https://i.pinimg.com/564x/3a/70/e8/3a70e87102bd716ea5b3a192d2aad25c.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -79,7 +63,7 @@ function photos() {
             {
               index === 6 && (
                 <Image
-                  src={image6}
+                  src={"https://i.pinimg.com/564x/36/99/7c/36997cebbb811cdd07a118f2964f554f.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -89,7 +73,7 @@ function photos() {
             {
               index === 7 && (
                 <Image
-                  src={image7}
+                  src={"https://i.pinimg.com/564x/d3/0d/4e/d30d4e6a47e54ecf4dbb4cc85fbfe5b2.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -99,7 +83,7 @@ function photos() {
             {
               index === 8 && (
                 <Image
-                  src={image8}
+                  src={"https://i.pinimg.com/564x/fe/29/bd/fe29bd23d66282dc79a0730d1050535a.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -109,7 +93,7 @@ function photos() {
             {
               index === 9 && (
                 <Image
-                  src={image9}
+                  src={"https://i.pinimg.com/564x/ff/9e/ad/ff9ead1f94d622de165a69bc6d3dcdcb.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -119,7 +103,7 @@ function photos() {
             {
               index === 10 && (
                 <Image
-                  src={image10}
+                  src={"https://i.pinimg.com/564x/94/dc/32/94dc32e07c29e6a879dc4aa9ae3c018c.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -129,7 +113,7 @@ function photos() {
             {
               index === 11 && (
                 <Image
-                  src={image11}
+                  src={"https://i.pinimg.com/564x/69/2f/e7/692fe76ebd03e537542fae3e30f365bc.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -139,7 +123,7 @@ function photos() {
             {
               index === 12 && (
                 <Image
-                  src={image12}
+                  src={"https://i.pinimg.com/564x/f7/44/f2/f744f2c7363184d3a909d718a7f6ea37.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -149,7 +133,7 @@ function photos() {
             {
               index === 13 && (
                 <Image
-                  src={image13}
+                  src={"https://i.pinimg.com/564x/8b/7c/05/8b7c05db63c5944720b43469f4f1078d.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -159,7 +143,7 @@ function photos() {
             {
               index === 14 && (
                 <Image
-                  src={image15}
+                  src={"https://i.pinimg.com/564x/3c/1a/c8/3c1ac8b86b3156c35ed89ec7e55407d6.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -169,7 +153,7 @@ function photos() {
             {
               index === 15 && (
                 <Image
-                  src={image16}
+                  src={"https://i.pinimg.com/564x/53/4b/44/534b44ca7f03ecaa5e2c247212181f97.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -179,7 +163,17 @@ function photos() {
             {
               index === 16 && (
                 <Image
-                  src={image17}
+                  src={"https://i.pinimg.com/564x/d9/4b/b4/d94bb4edb972f7d4db21918f7bf286b6.jpg"}
+                  fill
+                  alt="image"
+                  className="object-cover"
+                />
+              )
+            }
+            {
+              index === 17 && (
+                <Image
+                  src={"https://i.pinimg.com/564x/00/32/78/00327848487c829f5731bff8b424e1c1.jpg"}
                   fill
                   alt="image"
                   className="object-cover"
@@ -188,7 +182,7 @@ function photos() {
             }
           </div>
         ))
-      } */}
+      }
     </div>
   )
 }
