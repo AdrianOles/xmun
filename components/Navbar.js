@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
-import registration from './../pages/registration';
 
 function MobileNav({ open, setOpen }) {
     const router = useRouter();
@@ -9,12 +8,12 @@ function MobileNav({ open, setOpen }) {
         <div className={`z-50 xl:hidden absolute top-0 left-0 h-screen w-full bg-white transform ${open ? "-translate-y-0 overflow-x-hidden" : "-translate-y-full"} transition-transform duration-300 ease-in-out filter  `}>
 
             <div className="flex flex-col justify-center items-center mt-48">
-                <a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer' onClick={() => { router.push('/about'); setOpen(!open) }}>About</a>
-                <a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer' onClick={() => { router.push('/registration'); setOpen(!open) }}>Registration</a>
-                <a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer' onClick={() => { router.push('/itinerary'); setOpen(!open) }}>Itinerary</a>
-                <a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer' onClick={() => { router.push('/committee'); setOpen(!open) }}>Committee</a>
-                <a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer' onClick={() => { router.push('/photos'); setOpen(!open) }}>Photos</a>
-                <a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer' onClick={() => { router.push('/resources'); setOpen(!open) }}>Resources</a>
+                <a className={`${router.asPath === '/about' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/about'); setOpen(!open) }}>About</a>
+                <a className={`${router.asPath === '/registration' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/registration'); setOpen(!open) }}>Registration</a>
+                <a className={`${router.asPath === '/itinerary' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/itinerary'); setOpen(!open) }}>Itinerary</a>
+                <a className={`${router.asPath === '/committee' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/committee'); setOpen(!open) }}>Committee</a>
+                <a className={`${router.asPath === '/photos' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/photos'); setOpen(!open) }}>Photos</a>
+                <a className={`${router.asPath === '/resources' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/resources'); setOpen(!open) }}>Resources</a>
             </div>
         </div>
     )
@@ -29,15 +28,15 @@ export default function Navbar() {
     }, [open])
 
     return (
-        <nav className='sticky top-0 z-50 bg-black'>
+        <nav className='sticky top-0 z-50 bg-transparent'>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-full flex items-center justify-between z-50 header-blur sticky top-0 py-4 px-8 md:px-14 lg:px-24 shadow-xl">
                 <div>
                     <a className='flex items-center cursor-pointer' onClick={() => { router.push('/'); if(open) setOpen(!open)}}>
                         <Image
                             src="https://1000logos.net/wp-content/uploads/2018/01/united-nations-logo.png"
-                            width={120}
-                            height={120}
+                            width={100}
+                            height={100}
                             alt="Model UN Logo"
                         />
                         <div className='text-4xl font-bold text-sky-600'>
@@ -46,12 +45,12 @@ export default function Navbar() {
                     </a>
                 </div>
                 <div className='xl:flex gap-10 text-xl hidden text-sky-600 font-semibold'>
-                    <div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/about')}>About</div>
-                    <div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/registration')}>Registration</div>
-                    <div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/itinerary')}>Itinerary</div>
-                    <div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/committee')}>Committee</div>
-                    <div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/photos')}>Photos</div>
-                    <div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/resources')}>Resources</div>
+                    <div className={`${router.asPath === '/about' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/about')}>About</div>
+                    <div className={`${router.asPath === '/registration' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/registration')}>Registration</div>
+                    <div className={`${router.asPath === '/itinerary' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/itinerary')}>Itinerary</div>
+                    <div className={`${router.asPath === '/committee' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/committee')}>Committee</div>
+                    <div className={`${router.asPath === '/photos' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/photos')}>Photos</div>
+                    <div className={`${router.asPath === '/resources' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/resources')}>Resources</div>
                 </div>
                 <div className="xl:hidden group z-50 relative w-6 h-6 cursor-pointer flex-col justify-between items-center flex" onClick={() => {
                     setOpen(!open)}}>

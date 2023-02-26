@@ -13,7 +13,7 @@ function Header() {
 		return (
 			<div className={`absolute top-0 left-0 inset-x-0 origin-top-right mx-auto w-full h-full bg-black transform ${open ? "-translate-y-0 z-50 block": "-translate-y-full"} transition-all duration-500 ease-in-out filter`}>
 				<div className='flex flex-col justify-center items-center mt-28'>
-					<a className='text-3xl font-bold text-sky-600 my-4 mt-20 link link-underline link-underline-black' href='#'>About</a>
+					<a className={`${router.asPath === '/' && 'linkActive'} text-3xl font-bold text-sky-600 my-4 mt-20 link link-underline link-underline-black`} href='#'>About</a>
 					<a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black' href='#'>Registration</a>
 					<a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black' href='#'>Itinerary</a>
 					<a className='text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black' href='#'>Committee</a>
@@ -41,7 +41,7 @@ function Header() {
 					</a>
 				</div>
 				<div className='xl:flex gap-10 text-xl hidden text-sky-600 font-semibold'>
-					<div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/about')}>About</div>
+					<div className={`${router.asPath === '/about' ? 'text-white' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/about')}>About</div>
 					<div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/registration')}>Registration</div>
 					<div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/itinerary')}>Itinerary</div>
 					<div className='link link-underline link-underline-black-1 cursor-pointer' onClick={() => router.push('/committee')}>Committee</div>
