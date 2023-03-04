@@ -6,6 +6,10 @@ module.exports = {
       "1000logos.net",
       "cdn-icons-png.flaticon.com",
       "i.pinimg.com",
+      "upload.wikimedia.org",
+      "i.ytimg.com",
+      "isp.hcdsb.org",
+      "www.ourcommons.ca"
     ]
   },
    webpack: (config) => {

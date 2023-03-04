@@ -7,8 +7,14 @@ function committee() {
   return (
     <div className='overflow-x-hidden'>
       <div className='bg-gradient-to-tl to-purple-800 from-sky-700 h-[40vh] w-full relative top-0 shadow-xl'>
-        <img src="https://www.ourcommons.ca/Committees/Content/images/Committees-Profile-Mobile.jpg"
-          className='w-full h-full object-cover absolute mix-blend-overlay brightness-90' />
+        <div className='w-full h-full absolute'>
+          <Image 
+            src={"https://www.ourcommons.ca/Committees/Content/images/Committees-Profile-Mobile.jpg"}
+            fill
+            priority
+            className="mix-blend-overlay brightness-90 object-cover"
+          />
+        </div>
         <div className='mx-auto w-full h-full px-4 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56'>
           <div className='text-white my-auto mx-auto flex flex-col text-center'>
             <div className='text-6xl font-bold mb-2'><span className="text-sky-400">Committee</span> List</div>

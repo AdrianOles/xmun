@@ -38,8 +38,13 @@ export default function Home() {
 
       {/* main image*/}
       <div className='bg-gradient-to-tl to-blue-900 from-purple-900 h-screen w-full relative top-0 shadow-xl'>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/UN_General_Assembly_hall.jpg"
-        className='w-full h-full object-cover absolute mix-blend-overlay brightness-90'/>
+        <div className="w-full h-full absolute">
+          <Image src="https://upload.wikimedia.org/wikipedia/commons/0/05/UN_General_Assembly_hall.jpg"
+            className='object-cover mix-blend-overlay brightness-90'
+            priority={true}
+            fill
+          />
+        </div>
         <div className='mx-auto w-full py-[12em] px-10 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56'>
           <div className='text-white text-6xl font-bold'>
             Welcome to <span className="text-sky-400">XMUN</span>
