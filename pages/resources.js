@@ -45,11 +45,7 @@ function resources() {
       format: "PDF",
       redirect: "position-paper"
     },
-    {
-      source: introMunPreview,
-      format: "PDF",
-      redirect: "intro-to-mun"
-    },
+    
   ]
 
   const rPapers = [
@@ -66,6 +62,11 @@ function resources() {
   ]
 
   const debate = [
+    {
+      source: introMunPreview,
+      format: "PDF",
+      redirect: "intro-to-mun"
+    },
     {
       source: pointsMotionPreview,
       format: 'PDF',
