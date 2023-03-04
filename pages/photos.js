@@ -1,15 +1,39 @@
 import React from 'react'
 import Image from 'next/image'
+import { motion } from "framer-motion"
 
 function photos() {
-
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 
+   const variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const items = {
+    hidden: {
+      opacity: 0,
+      x: 100,
+    },
+    show : {
+      opacity: 1,
+      x:0,
+      transition: {
+        duration: .50
+      },
+    },
+  }
+
   return (
-    <div className="flex flex-wrap w-full gap-4 p-4 items-center justify-center">
+    <motion.div initial="hidden" animate="show" variants={variants} className="flex flex-wrap w-full gap-4 p-4 items-center justify-center">
       {
         numbers.map((index) => (
-          <div key={index} className="w-[70%] sm:w-[40%] md:w-[40%] h-[200px] md:h-[250px] lg:w-[20%] lg:h-[200px] relative">
+          <motion.div variants={items} key={index} className="w-[70%] sm:w-[40%] md:w-[40%] h-[200px] md:h-[250px] lg:w-[20%] lg:h-[200px] relative">
               {
                 index === 1 && (
                   <Image
@@ -214,10 +238,10 @@ function photos() {
                 />
               )
             }
-          </div>
+          </motion.div>
         ))
       }
-    </div>
+    </motion.div>
   )
 }
 

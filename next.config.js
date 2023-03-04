@@ -9,19 +9,19 @@ module.exports = {
       "upload.wikimedia.org",
       "i.ytimg.com",
       "isp.hcdsb.org",
-      "www.ourcommons.ca"
+      "www.ourcommons.ca",
+      "www.nti.org"
     ]
   },
-   webpack: (config) => {
+  webpack: (config, options) => {
     config.module.rules.push({
       test: /\.pdf$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
-        },
-      },
-    });
-    return config;
-  }
+      use: [
+        {
+          loader: 'file-loader',
+        }
+      ]
+    })
+    return config
+  },
 }
