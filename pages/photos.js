@@ -30,7 +30,7 @@ function photos() {
   }
 
   return (
-    <motion.div initial="hidden" animate="show" variants={variants} className="flex flex-wrap w-full gap-4 p-4 items-center justify-center">
+    <motion.div initial="hidden" animate="show" variants={variants} className="flex flex-wrap w-full gap-4 p-4 items-center justify-center overflow-x-hidden">
       {
         numbers.map((index) => (
           <motion.div variants={items} key={index} className="w-[70%] sm:w-[40%] md:w-[40%] h-[200px] md:h-[250px] lg:w-[20%] lg:h-[200px] relative">
