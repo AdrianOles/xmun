@@ -136,7 +136,7 @@ function resources() {
                           hover:blur-none transition-all cursor-pointer rounded-lg overflow-hidden
                           h-[250px] w-[350px] md:h-[250px] md:w-[325px] lg:h-[250px] lg:w-[375px] overflow-x-hidden">
                 {
-                  index != 1 ? (
+                  index != 2 ? (
                       <Link href={`/resources/${preview.redirect}`}>
                         <Image
                           src={preview.source}
