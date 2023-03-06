@@ -9,6 +9,7 @@ import termsPreview from '../public/termsPreview.png'
 import tips from '../public/files/tips.jpg'
 import resolutionPreview from '../public/draftResolutionPreview.png'
 import handbook from '../public/handbookPreview.png'
+import ppexPreview from '../public/ppexPreview.png'
 import Link from 'next/link';
 import { motion } from "framer-motion"
 
@@ -45,7 +46,11 @@ function resources() {
       format: "PDF",
       redirect: "position-paper"
     },
-    
+    {
+      source: ppexPreview,
+      format: "PDF",
+      redirect: "position-paper-ex"
+    },
   ]
 
   const rPapers = [
@@ -126,7 +131,7 @@ function resources() {
           How to <span className='text-purple-500 font-bold'>Debate</span>
         </div>
         <motion.div initial="hidden" animate="show" variants={variants} className="overflow-x-hidden">
-          <div className="flex flex-wrap items-center gap-4 justify-evenly lg:mx-32 3xl:mx-96 overflow-x-hidden">
+          <div className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
           {
             debate.map((preview, index) => (
               <motion.div variants={items} className="overflow-x-hidden">
@@ -189,7 +194,7 @@ function resources() {
           <span className='text-purple-500 font-bold'>Position</span> Papers
         </div>
         <motion.div initial="hidden" animate="show" variants={variants} >
-          <div className="flex flex-wrap items-center gap-4 justify-evenly lg:mx-32 3xl:mx-96 overflow-x-hidden">
+          <div className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
             {
               pPapers.map((preview, index) => (
                 <motion.div variants={items} className="overflow-x-hidden">
@@ -229,7 +234,8 @@ function resources() {
         <div className='text-3xl font-semibold text-center lg:mx-40 border-b border-purple-500 pb-4 mb-6 overflow-x-hidden'>
           <span className='text-purple-500 font-bold'>Resolution</span> Papers
         </div>
-        <motion.div initial="hidden" animate="show" variants={variants} className="flex flex-wrap items-center gap-4 justify-evenly lg:mx-32 3xl:mx-96 overflow-x-hidden">
+        <motion.div initial="hidden" animate="show" variants={variants}
+          className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
           {
             rPapers.map((preview, index) => (
               <motion.div
@@ -268,7 +274,7 @@ function resources() {
           Important <span className='text-purple-500 font-bold'>Terms</span>
         </div>
         <motion.div initial="hidden" animate="show" variants={variants} className="overflow-x-hidden">
-          <div className="flex flex-wrap items-center gap-4 justify-evenly lg:mx-32 3xl:mx-96 overflow-x-hidden">
+          <div className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
             {
               terms.map((preview, index) => (
                 <motion.div variants={items} className="overflow-x-hidden">
