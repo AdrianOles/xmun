@@ -27,8 +27,11 @@ function committee() {
 
       <div className='mx-auto w-full py-14 px-10'>
         {/* Title */}
-        <div className='text-3xl font-semibold text-center lg:mx-40 border-b border-purple-500 pb-4 mb-14'>
+        <div className='text-3xl font-semibold text-center lg:mx-40 '>
           Marvel: The <span className='text-purple-500 font-bold'>Sokovia</span> Accords
+        </div>
+        <div className="pb-4 mb-14 border-b border-purple-500 text-center">
+          *For Elementary Students*
         </div>
 
         {/* Content */}

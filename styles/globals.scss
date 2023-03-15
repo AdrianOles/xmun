@@ -9,7 +9,6 @@ body {
         Geneva,
         Verdana,
         sans-serif;
-    overflow-x:hidden;
 }
 
 .noflow-x {
@@ -68,8 +67,12 @@ body {
 }
 
 .header-blur {
-    background-color: rgba(255, 255, 255, .50);
+    background-color: rgba(255, 255, 255, .70);
     backdrop-filter: blur(10px);
+}
+
+ol {
+    list-style-type: upper-roman;
 }
 
 iframe {
