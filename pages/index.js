@@ -30,7 +30,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="bg-slate-200">
+    <div className="bg-slate-200 overflow-x-hidden">
       <Head>
         <title>Model UN</title>
         <link rel="icon" href="/favicon.ico" />

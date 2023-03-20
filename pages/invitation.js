@@ -41,7 +41,7 @@ function invitation() {
             Students who attend the full committee session of the United Nations will be assigned to: 
           </div>
           <div className='ml-5'>
-            <ol>
+            <ol className='px-2'>
               <li>
                 Marvel Universe Specialized Committee
                 <ul>
@@ -85,7 +85,7 @@ function invitation() {
           <div className='mb-2'>
             Our website provides you information on the following things: 
           </div>
-          <ul>
+          <ul className='px-2'>
             <li className='list-disc ml-10'>Delegate/Model UN Procedure and tutorials on all things MUN (resources page)</li>
             <li className='list-disc ml-10'>Code of Conduct</li>
             <li className='list-disc ml-10'>Position paper writing guidelines (background guides)</li>
