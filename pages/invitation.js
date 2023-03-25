@@ -18,7 +18,7 @@ function invitation() {
           <div className='text-white my-auto mx-auto flex flex-col text-center'>
             <div className='text-6xl font-bold mb-2'><span className="text-sky-400">XMUN</span> Invitation</div>
             <div>
-               Not X-Men. But XMUN. That's St.FX, and our Model UN Conference.
+               Not X-Men. But XMUN. That's St.FX, and our Fun Model UN Conference.
             </div>
           </div>
         </div>

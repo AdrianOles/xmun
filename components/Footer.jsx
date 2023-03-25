@@ -6,7 +6,7 @@ function Footer() {
 	const date = new Date().getFullYear();
 
 	return (
-		<div className='w-full bg-sky-800 px-2 lg:px-10 py-4 text-white flex flex-col sm:flex-row items-center gap-4 justify-between'>
+		<div className='w-full bg-sky-500 px-2 lg:px-10 py-4 text-white flex flex-col sm:flex-row items-center gap-4 justify-between'>
 			<div className='flex flex-col sm:max-w-[60%] gap-4 text-center sm:text-left text-md font-semibold sm:pl-6'>
 				<div>
 					Made by: <Link href="https://github.com/AdrianOles">Adrian Olesniewicz</Link>

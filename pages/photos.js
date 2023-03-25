@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 
 function photos() {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
    const variants = {
     hidden: { opacity: 0 },
@@ -205,18 +205,6 @@ function photos() {
             {
               index === 15 && (
                 <Image
-                  src={"https://i.pinimg.com/564x/53/4b/44/534b44ca7f03ecaa5e2c247212181f97.jpg"}
-                  fill
-                  alt="image"
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="https://cdn-icons-png.flaticon.com/512/6356/6356659.png"
-                />
-              )
-            }
-            {
-              index === 16 && (
-                <Image
                   src={"https://i.pinimg.com/564x/d9/4b/b4/d94bb4edb972f7d4db21918f7bf286b6.jpg"}
                   fill
                   alt="image"
@@ -227,7 +215,7 @@ function photos() {
               )
             }
             {
-              index === 17 && (
+              index === 16 && (
                 <Image
                   src={"https://i.pinimg.com/564x/00/32/78/00327848487c829f5731bff8b424e1c1.jpg"}
                   fill

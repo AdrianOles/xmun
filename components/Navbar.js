@@ -3,6 +3,11 @@ import Image from 'next/image'
 import { useRouter } from 'next/router';
 import logo from '../public/finally.png'
 
+// TODO:
+// Remove registration details, move it to registration details
+//
+
+
 function MobileNav({ open, setOpen }) {
     const router = useRouter();
     const [unfold, setUnfold] = useState(false);
