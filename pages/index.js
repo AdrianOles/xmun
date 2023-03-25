@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
-import registration from './registration';
 import { Postcard, ImgSlider } from '../components';
 import { motion, AnimatePresence } from "framer-motion"
-import ReactPlayer from 'react-player';
-import imgg from '../public/files/jvimage.jpg'
 
 //TODO
 //Video replaces hero image
@@ -39,7 +35,7 @@ export default function Home() {
             width="100%"
             height="100%"
           /> */}
-          <video autoPlay muted loop className="w-full h-full object-cover brightness-75">         
+          <video autoPlay autoplay muted loop className="w-full h-full object-cover brightness-75">         
             <source src="files/xmunvideo.mp4" type="video/mp4"/>       
           </video>
           <div className='w-full h-full absolute top-0 bg-gradient-to-tl to-blue-900 from-purple-900 opacity-10'></div>
