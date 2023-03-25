@@ -24,17 +24,31 @@ function invitation() {
         </div>
       </div>
       <div className="my-20 mx-auto px-6 md:px-10 lg:px-56">
+        <div className='text-3xl text-center w-full font-semibold'>
+          Letter From Our <span className='text-purple-500 font-bold'>Sectretariat</span>
+        </div>
+        <div className="text-2xl mb-6 mt-10">Why Model United Nations?</div>
         <motion.div
-            initial={{opacity:0, x:200}}
-            animate={{ opacity: 1, x:0}}
-            transition={{ duration: .60, delay: .1 }}
-            className="mb-8">
-          <div className='text-lg'>
-            St. Francis Xavier’s Model UN secretariat is pleased to announce its inaugural <b>Model United Nations Conference on May 12th, 2023.</b> We invite all delegates to represent different nations/characters and participate in lively debate, inspired by the Marvel Universe, Pokemon, and Divergent themes to appeal to a wide range of student interests and abilities. The student-led conference will be hosted at St. Francis Xavier, in our state of the art theater, and library/conference center.
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: .60, delay: .1 }}
+          className="mb-8">
+          <div>
+            Model United Nations provides the unique opportunity for students to develop public speaking, leadership, diplomatic, and research skills in a fast-paced environment while gaining insight regarding international relations and pertinent global issues. Simulating the United Nations’ procedures, our conference gives delegates valuable insight into how one of the most influential intergovernmental organizations functions and the diplomatic process behind international cooperation.
+          </div>
+        </motion.div>
+        <div className="text-2xl mb-6 mt-10">Why XMUN?</div>
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: .60, delay: .1 }}
+          className="mb-8">
+          <div>
+            St. Francis Xavier’s Model UN team is dedicated to bringing Fun MUN’s to the forefront of our conferences. Fun MUN’s are committees that focus around a fictitious and unimaginable world. There are obvious limitations in our world with finite problems, however, doing Fun MUN’s gives light to inconceivable circumstances, makes delegates think outside of the box, and shows how the principles of Model UN can be applied to even the most eccentric and impossible situations. Our first in-house conference was the World War I committee in the midst of the COVID-19 pandemic, where it was fully online. Then we had our hybrid model last year for our Marvel Universe conference and this year we have not only graduated to a fully in-person conference, but we have expanded our capabilities to run multiple committees and create the most fantasy and imagination provoking experience we can give our delegates. We are happy that we can share the Model UN experience with young, up and coming delegates from the elementary schools as well as the experienced and mature delegates from our adjacent high schools. We are highly anticipating this amazing opportunity in the coming future.
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: .60, delay: .1 }}>
           <div className='mb-4'>
@@ -104,27 +118,6 @@ function invitation() {
             We hope and believe that HCDSB students will act respectfully in accordance with MUN procedures and etiquette. Breaking the code of conduct or failure to comply with MUN etiquette will result in removal from the conference.
           </div>
         </motion.div>
-        <div className="text-2xl mb-6 mt-10">Why Model United Nations?</div>
-        <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: .60, delay: .1 }}
-          className="mb-8">
-          <div>
-            Model United Nations provides the unique opportunity for students to develop public speaking, leadership, diplomatic, and research skills in a fast-paced environment while gaining insight regarding international relations and pertinent global issues. Simulating the United Nations’ procedures, our conference gives delegates valuable insight into how one of the most influential intergovernmental organizations functions and the diplomatic process behind international cooperation. 
-          </div>
-        </motion.div>
-        <div className="text-2xl mb-6 mt-10">Why XMUN?</div>
-        <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: .60, delay: .1 }}
-          className="mb-8">
-          <div>
-            St. Francis Xavier’s Model UN team is dedicated to bringing Fun MUN’s to the forefront of our conferences. Fun MUN’s are committees that focus around a fictitious and unimaginable world. There are obvious limitations in our world with finite problems, however, doing Fun MUN’s gives light to inconceivable circumstances, makes delegates think outside of the box, and shows how the principles of Model UN can be applied to even the most eccentric and impossible situations. Our first in-house conference was the World War I committee in the midst of the COVID-19 pandemic, where it was fully online. Then we had our hybrid model last year for our Marvel Universe conference and this year we have not only graduated to a fully in-person conference, but we have expanded our capabilities to run multiple committees and create the most fantasy and imagination provoking experience we can give our delegates. We are happy that we can share the Model UN experience with young, up and coming delegates from the elementary schools as well as the experienced and mature delegates from our adjacent high schools. We are highly anticipating this amazing opportunity in the coming future.
-          </div>
-        </motion.div>
-
         <div className="text-xl">
           <div className='mb-4'>Sincerely, </div>
           <div>

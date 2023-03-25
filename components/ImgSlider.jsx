@@ -32,7 +32,7 @@ const pictures = [
 
 function ImgSlider() {
     return (
-        <div className='bg-transparent'>
+        <div className='bg-transparent rounded-xl overflow-hidden'>
             <Swiper
                 slidesPerView={2}
                 spaceBetween={30}
@@ -50,7 +50,7 @@ function ImgSlider() {
             >
                 {
                     pictures.map((index) => (
-                        <SwiperSlide key={index} className="py-auto bg-transparent pb-10 px-0">
+                        <SwiperSlide key={index} className="py-auto bg-transparent pb-10 px-0 rounded-xl overflow-hidden">
                             <div className='relative h-[300px] rounded-xl overflow-hidden'>
                                 <Image
                                     placeholder="blur"

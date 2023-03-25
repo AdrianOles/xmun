@@ -5,6 +5,7 @@ import registration from './registration';
 import { Postcard, ImgSlider } from '../components';
 import { motion, AnimatePresence } from "framer-motion"
 import ReactPlayer from 'react-player';
+import imgg from '../public/files/jvimage.jpg'
 
 //TODO
 //Video replaces hero image
@@ -66,7 +67,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: .60, delay: .1 }}>
-          <div className="text-3xl mb-6">Welcome to <span className="text-3xl text-purple-600 font-bold">XMUN III</span></div>
+          <div className="text-4xl mb-6">Welcome to <span className="text-4xl text-purple-600 font-bold">XMUN III</span></div>
           <div className="mb-6 text-lg">
             St. Francis Xavier’s Model UN secretariat is pleased to announce its <b>third in-house</b> Model United Nations Conference on May 12th, 2023. We invite all delegates to represent different nations/characters and participate in lively debate, inspired by the Marvel Universe, Pokemon, and Divergent themes to appeal to a wide range of student interests and abilities. The student-led conference will be hosted at St. Francis Xavier, in our state of the art theater, and library/conference center.
           </div>
@@ -84,7 +85,7 @@ export default function Home() {
           transition={{ duration: .10 }}
         >
           <div className="bg-[#111d36] h-fit relative z-[1] mt-20">
-            <div className="flex justify-between p-16 items-center">
+            <div className="flex justify-between p-10 md:p-16 items-center">
               <div className='lg:w-[65%] h-fit z-10'>
                 <motion.div
                   initial={{ opacity: 0, y: -200 }}
@@ -93,21 +94,21 @@ export default function Home() {
                 >
 
                   {/* <p className='text-white lg:text-xl text-lg mb-4'>&#x2022; Third In-house conference &#x2022;</p> */}
-                  <div className='text-white lg:text-2xl text-lg flex flex-wrap gap-12 h-fit justify-center pr-16'>
+                  <div className='text-white lg:text-2xl text-lg flex flex-wrap gap-12 h-fit justify-center pr-10 md:pr-16'>
                     <div className="flex gap-4 items-center justify-center">
-                      <div className="text-[3rem]">To</div>
-                      <div className='text-blue-500 font-bold text-[5rem]'>Accept.</div>
+                      <div className="md:text-[3rem] text-[2rem]">To</div>
+                      <div className='text-blue-500 font-bold md:text-[4rem] text-[2rem]'>Accept.</div>
                     </div>
                     <div className="flex gap-4 items-center justify-center">
-                      <div className="text-[3rem]">To</div>
-                      <div className='text-purple-500 font-bold text-[5rem]'>Include.</div>
+                      <div className="md:text-[3rem] text-[2rem]">To</div>
+                      <div className='text-purple-500 font-bold md:text-[4rem] text-[2rem]'>Include.</div>
                     </div>
-                    <div className="flex gap-4 items-center justify-center mt-4">
-                      <div className="text-[3rem]">To serve with</div>
-                      <div className='text-sky-500 font-bold text-[5rem]'>Love.</div>
+                    <div className="flex gap-3 items-center justify-center lg:mt-10">
+                      <div className="md:text-[3rem] text-[2rem] leading-9">To serve with</div>
+                      <div className='text-sky-500 font-bold md:text-[4rem] text-[2rem]'>Love.</div>
                     </div>
                   </div>
-                  <div className="mt-20">
+                  <div className="mt-20 flex justify-center">
                     <a href="https://secondary.hcdsb.org/xavier/">
                       <div className="bg-purple-500 text-white font-semibold px-6 py-4 w-fit cursor-pointer hover:ring hover:ring-sky-600">
                         CONTACT US
@@ -122,7 +123,7 @@ export default function Home() {
                   initial={{ opacity: 0, x: -600 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: .60, delay: .1 }}
-                  src='http://snyderarchitects.ca/wp-content/uploads/2013/09/Jean-Vanier-CSS_1920-1080_06-1-768x432.jpg'
+                  src="files/jvimage.jpg"
                   className='h-fit ml-auto min-w-[100%] object-cover object-top'
                 />
               </div>

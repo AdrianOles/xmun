@@ -68,7 +68,7 @@ export default function Navbar() {
                             Invitation
                         </div>
                         {/* -translate-y-56 group-hover:translate-y-[2rem] */}
-                        <div className="absolute -left-[5rem] top-[5.75rem] flex-col items-center justify-center text-center 
+                        {/* <div className="absolute -left-[5rem] top-[5.75rem] flex-col items-center justify-center text-center 
                         hidden group-hover:flex bg-transparent header-blur px-3 gap-2 py-2 pb-3 w-[250px] rounded-b-lg shadow-xl">
                             <div className="hover:link link-underline link-underline-black-1">
                                 <a href='#registration-details'>Registration Details</a>
@@ -79,7 +79,7 @@ export default function Navbar() {
                             <div className="hover:link link-underline link-underline-black-1">
                                 <a href='#code-conduct'>Code of Conduct</a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={`${router.asPath === '/registration' ? 'linkActive' : ""} py-auto link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/registration')}>Registration</div>
                     <div className={`${router.asPath === '/itinerary' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/itinerary')}>Itinerary</div>
