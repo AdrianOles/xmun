@@ -94,7 +94,7 @@ export default function Home() {
                 >
 
                   {/* <p className='text-white lg:text-xl text-lg mb-4'>&#x2022; Third In-house conference &#x2022;</p> */}
-                  <div className='text-white lg:text-2xl text-lg flex flex-wrap gap-12 h-fit justify-center pr-10 md:pr-16'>
+                  <div className='text-white lg:text-2xl text-lg flex flex-wrap gap-12 h-fit justify-center sm:pr-16'>
                     <div className="flex gap-4 items-center justify-center">
                       <div className="md:text-[3rem] text-[2rem]">To</div>
                       <div className='text-blue-500 font-bold md:text-[4rem] text-[2rem]'>Accept.</div>
@@ -104,7 +104,7 @@ export default function Home() {
                       <div className='text-purple-500 font-bold md:text-[4rem] text-[2rem]'>Include.</div>
                     </div>
                     <div className="flex gap-3 items-center justify-center lg:mt-10">
-                      <div className="md:text-[3rem] text-[2rem] leading-9">To serve with</div>
+                      <div className="md:text-[3rem] text-[1.5rem] leading-9">To serve with</div>
                       <div className='text-sky-500 font-bold md:text-[4rem] text-[2rem]'>Love.</div>
                     </div>
                   </div>
