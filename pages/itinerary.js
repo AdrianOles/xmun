@@ -101,7 +101,7 @@ function itinerary() {
         {/* cards/events */}
         <div className=' w-[75%] border-l-2 border-gray-200 h-fit'>
           <div className='border-b-2 border-t-2 px-8 py-6 border-gray-200'>
-            <div className='text-[1.5em] font-semibold tracking-widest'>May 1st, 2023</div>
+            <div className='text-[1.5em] font-semibold tracking-widest'>May 12th, 2023</div>
           </div>
           
           <div className="flex flex-col h-full px-4 py-6">
