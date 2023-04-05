@@ -35,7 +35,7 @@ export default function Home() {
             width="100%"
             height="100%"
           /> */}
-          <video autoPlay muted={true} autoplay={true} loop playsinline className="w-full h-full object-cover brightness-75">         
+          <video autoPlay muted={true} autoplay={true} loop playsInline className="w-full h-full object-cover brightness-75">         
             <source src="files/xmunvideo.mp4" type="video/mp4"/>       
           </video>
           <div className='w-full h-full absolute top-0 bg-gradient-to-tl to-blue-900 from-purple-900 opacity-10'></div>
