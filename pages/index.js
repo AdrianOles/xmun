@@ -46,7 +46,7 @@ export default function Home() {
             Welcome to <span className="text-sky-400">XMUN</span>
           </div>
           <div className="text-sky-100 text-2xl font-light z-30">
-            May 12th, 2023
+            May 25th, 2023
           </div>
           <div className="text-sky-100 text-2xl font-light z-30">
             St. Francis Xavier Secondary School, Milton ON

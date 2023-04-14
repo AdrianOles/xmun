@@ -34,7 +34,7 @@ function registration() {
               <Link href="#">REGISTRATION</Link>
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
-              Deadline: May 11th, 2023
+              Deadline: May 25th, 2023
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON
