@@ -7,12 +7,15 @@ import breakIcon from '../public/breakIcon.png';
 import award from '../public/award.png';
 import { motion } from "framer-motion"
 
+
+//TODO: Download and compress images from web, unreliable if their site goes down.
+
 function itinerary() {
 
   const events = [
     {
       name: 'Opening Ceremony · Guest Speaker',
-      time: '8:30 - 9:30',
+      time: '8:00 - 8:30',
       icon: announcementIcon,
     },
     {
@@ -90,8 +93,8 @@ function itinerary() {
       <div className='flex h-full w-full lg:w-[60%] mx-auto'>
         {/* times/timeline */}
         <div className='w-[25%] text-gray-400 h-full flex flex-col gap-[6.6rem] mt-36 mx-auto text-center'>
+          <div>8:00 a.m.</div>
           <div>8:30 a.m.</div>
-          <div>9:30 a.m.</div>
           <div>11:30 a.m.</div>
           <div>12:00 p.m.</div>
           <div>2:00 p.m.</div>

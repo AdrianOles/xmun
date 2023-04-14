@@ -1,32 +1,48 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { BsArrowUp } from 'react-icons/bs'
 
 function registration() {
   return (
     <div>
-      <div className='bg-gradient-to-tl to-sky-600 from-purple-900 h-screen w-full relative top-0 shadow-xl'>
-        <div className='w-full h-full absolute'>
-          <Image 
-            src={"https://isp.hcdsb.org/wp-content/uploads/2018/07/JV4-700x400.jpg"}
-            fill
-            priority
-            className='mix-blend-overlay brightness-90 object-cover'
-          />
-        </div>
-        <div className='mx-auto w-full py-[12em] px-6 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56 text-center'>
-          <div className='text-white text-4xl sm:text-6xl font-bold'>
-            <Link href="#">REGISTRATION</Link>
+      <div className='bg-gradient-to-tl to-sky-600 from-purple-900 h-[89vh] w-full relative top-0 shadow-xl'>
+        <div className=''>
+          <div className='absolute bottom-0 right-1/2 left-1/2 mx-auto my-4'>
+            <div className='text-white flex flex-col items-center justify-center gap-4'>
+              <div className="w-fit text-center font-semibold">
+                Details Below
+              </div>
+              <div className='rotate-180'>
+                <BsArrowUp
+                  size={50}
+                />
+              </div>
+            </div>
           </div>
-          <div className="text-sky-100 text-xl sm:text-2xl font-normal">
-            Deadline: May 11th, 2023
+          <div className='w-full h-[89vh] absolute'>
+            <Image
+              src={"https://media.socastsrm.com/wordpress/wp-content/blogs.dir/432/files/2020/06/Jean-Vanier-Outside.jpg"}
+              fill
+              priority
+              className='mix-blend-overlay brightness-90 object-cover'
+            />
           </div>
-          <div className="text-sky-100 text-xl sm:text-2xl font-normal">
-            St. Francis Xavier Secondary School, Milton ON
-          </div>
-          <div className="register1 mt-5 mx-auto">
-            <div className="wrapper cursor-pointer">
-              <Link href="#"><span className="z-20">REGISTER</span></Link>
+          <div className='mx-auto w-full py-[12em] px-6 flex flex-col items-center justify-center 
+        gap-3 text-center relative'>
+            <div className='text-white text-4xl sm:text-6xl font-bold text-center'>
+              <Link href="#">REGISTRATION</Link>
+            </div>
+            <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
+              Deadline: May 11th, 2023
+            </div>
+            <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
+              St. Francis Xavier Secondary School, Milton ON
+            </div>
+            <div className="register1 mt-5 mx-auto">
+              <div className="wrapper cursor-pointer">
+                <Link href="#"><span className="z-20">REGISTER</span></Link>
+              </div>
             </div>
           </div>
         </div>

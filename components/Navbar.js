@@ -10,22 +10,12 @@ import logo from '../public/finally.png'
 
 function MobileNav({ open, setOpen }) {
     const router = useRouter();
-    const [unfold, setUnfold] = useState(false);
 
     return (
         <div className={`z-50 xl:hidden absolute top-0 left-0 h-screen w-full bg-white transform ${open ? "-translate-y-0 overflow-x-hidden" : "-translate-y-full"} transition-transform duration-300 ease-in-out filter  `}>
 
             <div className="flex flex-col justify-center items-center mt-48 xl:hidden">
-                <a className={`${router.asPath === '/invitation' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/invitation'); setUnfold(!unfold) }}>Invitation</a>
-                {
-                    unfold === true && (
-                        <>
-                            <a onClick={() => { router.push('/invitation#registration-details'); setOpen(!open); setUnfold(!unfold) }} className='text-xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer'>Registration Details</a>
-                            <a onClick={() => { router.push('/invitation#delegate-info'); setOpen(!open); setUnfold(!unfold) }} className='text-xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer'>Delegate Information</a>
-                            <a onClick={() => { router.push('/invitation#code-conduct'); setOpen(!open); setUnfold(!unfold) }} className='text-xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer'>Code of Conduct</a>
-                        </>
-                    )
-                }
+                <a className={`${router.asPath === '/invitation' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/invitation'); setOpen(!open) }}>Invitation</a>
                 <a className={`${router.asPath === '/registration' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/registration'); setOpen(!open) }}>Registration</a>
                 <a className={`${router.asPath === '/itinerary' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/itinerary'); setOpen(!open) }}>Itinerary</a>
                 <a className={`${router.asPath === '/committee' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/committee'); setOpen(!open) }}>Committee</a>

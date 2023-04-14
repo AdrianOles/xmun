@@ -10,7 +10,8 @@ module.exports = {
       "i.ytimg.com",
       "isp.hcdsb.org",
       "www.ourcommons.ca",
-      "www.nti.org"
+      "www.nti.org",
+      "media.socastsrm.com"
     ]
   },
   webpack: (config, options) => {
