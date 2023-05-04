@@ -39,7 +39,12 @@ function ImgSlider() {
     return (
         <div className='bg-transparent rounded-xl overflow-hidden'>
             <Swiper
-                slidesPerView={2}
+                breakpoints={{
+                    850: {
+                        slidesPerView: 2,
+                    }
+                }}
+                slidesPerView={1}
                 spaceBetween={30}
                 loop={true}
                 pagination={{
