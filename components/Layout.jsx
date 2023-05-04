@@ -6,8 +6,7 @@ import {Navbar} from './'
 const Layout = ({children}) => {
     return (
       <>
-        {children}
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
         
@@ -15,7 +14,7 @@ const Layout = ({children}) => {
           <Navbar />
           {children}
           <Footer /> 
-        </div> */}
+        </div>
     </>
   )
 }

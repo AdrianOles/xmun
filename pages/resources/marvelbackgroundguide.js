@@ -4,7 +4,7 @@ function marvel() {
   return (
     <div>
         <div className='min-h-100vh'>
-            <iframe src={"/files/marvelBG.pdf"} />
+        <iframe type="application/pdf" src={"/files/marvelBG.pdf"} />
         </div>
     </div>
   )
