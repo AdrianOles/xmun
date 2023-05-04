@@ -99,13 +99,13 @@ function itinerary() {
         {/* schedule */}
         <div className='flex h-full w-full lg:w-[60%] mx-auto'>
           {/* times/timeline */}
-          <div className='w-[25%] text-gray-400 h-full flex flex-col gap-[7.75rem] sm:gap-[6.75rem] mt-36 mx-auto text-center'>
+          <div className='w-[25%] text-gray-400 h-full flex flex-col gap-[8rem] sm:gap-[6.75rem] mt-36 mx-auto text-center'>
             <div>8:30 a.m.</div>
             <div>9:00 a.m.</div>
-            <div>10:00 a.m.</div>
+            <div className='mt-4 sm:mt-0'>10:00 a.m.</div>
             <div>11:35 a.m.</div>
             <div>12:25 p.m.</div>
-            <div>1:45 p.m.</div>
+            <div className='mt-4 sm:mt-0'>1:45 p.m.</div>
           </div>
 
           {/* cards/events */}
