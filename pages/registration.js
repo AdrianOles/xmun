@@ -43,7 +43,7 @@ function registration() {
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON
             </div>
-            <div className='flex flex-wrap justify-center'>
+            <div className='flex flex-wrap justify-center max-w-[500px]'>
               <div className="md:register1 registerSmall mt-5 mx-2">
                 <div className="wrapper cursor-pointer">
                   <Link href="#"><span className="z-20">ELEMENTARY</span></Link>
@@ -54,6 +54,16 @@ function registration() {
                   <Link href="#"><span className="z-20">SECONDARY</span></Link>
                 </div>
               </div>
+              <div className="md:register1 registerSmallOrange mt-5 mx-2">
+                <div className="wrapper cursor-pointer">
+                  <Link href="https://drive.google.com/file/d/12vycVroGBXY_AEM3Bfngys8gWPHD4LDD/view?usp=sharing"><span className="z-20">HCDSB FORM</span></Link>
+                </div>
+              </div>
+              {/* <div className="md:register1 registerSmallOrange mt-5 mx-2">
+                <div className="wrapper cursor-pointer">
+                  <Link href="#"><span className="z-20">HDSB FORM</span></Link>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

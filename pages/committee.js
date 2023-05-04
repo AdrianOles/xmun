@@ -65,7 +65,7 @@ function committee() {
                   </div>
                   <div className="register2 mt-4 mx-auto">
                     <div className="cursor-pointer mx-auto">
-                      <Link href="/resources/marvelbackgroundguide">
+                      <Link href="https://drive.google.com/file/d/1flCJtxWvjW75WpTOn_YxLo9x0kW35jUw/view?usp=sharing">
                         <span className="z-20">Background</span>
                       </Link>
                     </div>
@@ -108,11 +108,13 @@ function committee() {
                 className='md:w-[30%] mx-auto'>
                 <div className="flex flex-col gap-2">
                   <div className="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    The genetic modification of animals first began at the beginning of human
+                    civilization through the selective breeding of animals in order to create animals with
+                    desirable traits...
                   </div>
                   <div className="register2 mt-4 mx-auto">
                     <div className="cursor-pointer mx-auto">
-                      <Link href="/resources/pokemon">
+                      <Link href="https://drive.google.com/file/d/1tQQAEVFTwsDs-K-mqvfsaOQjyO_fu9m6/view?usp=sharing">
                         <span className="z-20">Background</span>
                       </Link>
                     </div>
@@ -157,11 +159,13 @@ function committee() {
                 className='md:w-[30%] mx-auto'>
                 <div className="flex flex-col gap-2">
                   <div className="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    To those living now, the world has always been like this; it was always divided up into
+                    five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave
+                    Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                   </div>
                   <div className="register2 mt-4 mx-auto">
                     <div className="cursor-pointer mx-auto">
-                      <Link href="/resources/divergent">
+                      <Link href="https://drive.google.com/file/d/1DOtgZ8LY9WLOVHLtgv4U8wyfx9KvEkqO/view?usp=sharing">
                         <span className="z-20">Background</span>
                       </Link>
                     </div>

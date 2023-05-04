@@ -4,7 +4,7 @@ function introtomun() {
   return (
     <div>
       <div className='min-h-100vh'>
-        <iframe src={"/files/clauses.pdf"} />
+        <iframe type="application/pdf" src={"/files/clauses.pdf"} />
       </div>
     </div>
   )

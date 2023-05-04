@@ -1,12 +1,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
-import logo from '../public/xmunlogo.svg'
-
-// TODO:
-// Remove registration details, move it to registration details
-//
-
+import logo from '../public/xmunlogo.svg';
 
 function MobileNav({ open, setOpen }) {
     const router = useRouter();
