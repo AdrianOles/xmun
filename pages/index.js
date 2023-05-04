@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="bg-slate-200 overflow-x-hidden">
       <Head>
-        <title>Model UN</title>
+        <title>XMUN</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -66,7 +66,7 @@ export default function Home() {
           transition={{ duration: .60, delay: .1 }}>
           <div className="text-4xl mb-6">Welcome to <span className="text-4xl text-purple-600 font-bold">XMUN III</span></div>
           <div className="mb-6 text-lg">
-            St. Francis Xavier’s Model UN secretariat is pleased to announce its <b>third in-house</b> Model United Nations Conference on May 12th, 2023. We invite all delegates to represent different nations/characters and participate in lively debate, inspired by the Marvel Universe, Pokemon, and Divergent themes to appeal to a wide range of student interests and abilities. The student-led conference will be hosted at St. Francis Xavier, in our state of the art theater, and library/conference center.
+            St. Francis Xavier’s Model UN secretariat is pleased to announce its third, in-house Model United Nations Conference on May 25th, 2023. We invite all delegates to represent different nations/characters and participate in a lively debate on the issues of regulating international power, the climate crisis, and inclusivity and identity inspired by the Marvel Universe, Pokemon, and Divergent themes. The student-led conference will be hosted at St. Francis Xavier, in our state of the art theater, and library/conference center. 
           </div>
         </motion.div>
       </div>
@@ -104,13 +104,6 @@ export default function Home() {
                       <div className="md:text-[3rem] text-[1.5rem] leading-9">To serve with</div>
                       <div className='text-sky-500 font-bold md:text-[4rem] text-[2rem]'>Love.</div>
                     </div>
-                  </div>
-                  <div className="mt-20 flex justify-center">
-                    <a href="https://secondary.hcdsb.org/xavier/">
-                      <div className="bg-purple-500 text-white font-semibold px-6 py-4 w-fit cursor-pointer hover:ring hover:ring-sky-600">
-                        CONTACT US
-                      </div>
-                    </a>
                   </div>
                 </motion.div>
               </div>

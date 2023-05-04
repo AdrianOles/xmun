@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import image from '../public/online.png'
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -28,6 +29,10 @@ const pictures = [
         link: 'https://i.pinimg.com/564x/8b/7c/05/8b7c05db63c5944720b43469f4f1078d.jpg',
         alt: 'Photo 5'
     },
+    {
+        link: image,
+        alt: 'Photo 6'
+    }
 ]
 
 function ImgSlider() {

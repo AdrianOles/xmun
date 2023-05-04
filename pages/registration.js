@@ -2,10 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowUp } from 'react-icons/bs'
+import Head from 'next/head'
 
 function registration() {
   return (
     <div>
+      <Head>
+        <title>Registration</title>
+      </Head>
       <div className='bg-gradient-to-tl to-sky-600 from-purple-900 h-[89vh] w-full relative top-0 shadow-xl'>
         <div className=''>
           <div className='absolute bottom-0 right-1/2 left-1/2 mx-auto my-4'>
@@ -39,9 +43,16 @@ function registration() {
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON
             </div>
-            <div className="register1 mt-5 mx-auto">
-              <div className="wrapper cursor-pointer">
-                <Link href="#"><span className="z-20">REGISTER</span></Link>
+            <div className='flex flex-wrap justify-center'>
+              <div className="md:register1 registerSmall mt-5 mx-2">
+                <div className="wrapper cursor-pointer">
+                  <Link href="#"><span className="z-20">ELEMENTARY</span></Link>
+                </div>
+              </div>
+              <div className="md:register1 registerSmallPurple mt-5 mx-2">
+                <div className="wrapper cursor-pointer">
+                  <Link href="#"><span className="z-20">SECONDARY</span></Link>
+                </div>
               </div>
             </div>
           </div>
@@ -53,7 +64,7 @@ function registration() {
             <span className="text-purple-500 font-semibold">Registration</span>, Fees, and Requirements
           </div>
           <div className="text-lg">
-            XMUN registration information to be filled out by the MUN school advisors via Google Form, found on the registration page of our website. There is a delegate fee of $10 for participation to be paid on SchoolCashOnline. All proceeds will be pledged to the Halton Catholic Children’s Foundation (HCCF). Exceptional delegates will be recognized with “Best Delegate,” and “Honourable Mention” awards. In order to qualify for such awards, position papers will be required from each delegate outlining their country’s stance on respective issues. These papers will be evaluated by the Dais alongside performance within the committee to determine award winners.
+            XMUN registration information to be filled out by the MUN school advisors via Google Form. There is a delegate fee of $10 for participation to be paid on SchoolCashOnline. Exceptional delegates will be recognized with “Best Delegate,” and “Honourable Mention” awards. In order to qualify for such awards, position papers will be required from each delegate outlining their country’s stance on respective issues. These papers will be evaluated by the Dais alongside performance within the committee to determine award winners.
           </div>
         </div>
       </div>

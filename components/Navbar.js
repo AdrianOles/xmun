@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
-import logo from '../public/finally.png'
+import logo from '../public/xmunlogo.svg'
 
 // TODO:
 // Remove registration details, move it to registration details
@@ -35,19 +35,21 @@ export default function Navbar() {
     }, [open])
 
     return (
-        <nav className='sticky top-0 bg-transparent z-40'>
+        <nav className=' bg-white z-40'>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-full flex items-center justify-between z-50 header-blur sticky top-0  px-8 md:px-14 lg:px-24 shadow-xl">
                 <div className="py-4">
-                    <a className='flex items-center cursor-pointer gap-4' onClick={() => { router.push('/'); if(open) setOpen(!open)}}>
-                        <Image
-                            src={logo}
-                            width={75}
-                            height={75}
-                            alt="Model UN Logo"
-                        /> 
+                    <a className='flex items-center cursor-pointer gap-4 overflow-hidden md:h-[75px] h-[65px]' onClick={() => { router.push('/'); if (open) setOpen(!open) }}>
+                        <div className='relative h-[75px] w-[65px] md:h-[95px] md:w-[80px]'>
+                            <Image
+                                src={logo}
+                                fill
+                                alt="Model UN Logo"
+                                className=''
+                            /> 
+                        </div>
                         <div className='text-4xl font-bold text-sky-600'>
-                            XMUN
+                            XMUN III
                         </div>
                     </a>
                 </div>
@@ -58,23 +60,17 @@ export default function Navbar() {
                             Invitation
                         </div>
                         {/* -translate-y-56 group-hover:translate-y-[2rem] */}
-                        {/* <div className="absolute -left-[5rem] top-[5.75rem] flex-col items-center justify-center text-center 
-                        hidden group-hover:flex bg-transparent header-blur px-3 gap-2 py-2 pb-3 w-[250px] rounded-b-lg shadow-xl">
-                            <div className="hover:link link-underline link-underline-black-1">
-                                <a href='#registration-details'>Registration Details</a>
+                        <div className="absolute -left-[2.75rem] top-[5.75rem] flex-col items-center justify-center text-center 
+                        hidden group-hover:flex bg-white px-3 gap-2 py-2 pb-3 w-[175px] rounded-b-lg shadow-xl">
+                            <div className="hover:link link-underline link-underline-black-1 pt-1" onClick={() => router.push("/what-is-xmun")}>
+                                <div>What is XMUN?</div>
                             </div>
-                            <div className="hover:link link-underline link-underline-black-1">
-                                <a href='#delegate-info'>Delegate Information</a>
-                            </div>
-                            <div className="hover:link link-underline link-underline-black-1">
-                                <a href='#code-conduct'>Code of Conduct</a>
-                            </div>
-                        </div> */}
+                        </div>
                     </div>
                     <div className={`${router.asPath === '/registration' ? 'linkActive' : ""} py-auto link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/registration')}>Registration</div>
                     <div className={`${router.asPath === '/itinerary' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/itinerary')}>Itinerary</div>
                     <div className={`${router.asPath === '/committee' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/committee')}>Committee</div>
-                    <div className={`${router.asPath === '/photos' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/photos')}>Photos</div>
+                    {/* <div className={`${router.asPath === '/photos' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/photos')}>Photos</div> */}
                     <div className={`${router.asPath === '/resources' ? 'linkActive' : ""} link link-underline link-underline-black-1 cursor-pointer`} onClick={() => router.push('/resources')}>Resources</div>
                 </div>
                 <div className="xl:hidden group z-50 relative w-6 h-6 cursor-pointer flex-col justify-between items-center flex" onClick={() => {
