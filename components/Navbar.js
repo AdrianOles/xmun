@@ -44,7 +44,7 @@ export default function Navbar() {
                                 className=''
                             /> 
                         </div>
-                        <div className='text-4xl font-bold text-sky-600 text-change'>
+                        <div className='sm:text-3xl text-2xl font-bold text-sky-600 text-change'>
                             XMUN III
                         </div>
                     </a>
