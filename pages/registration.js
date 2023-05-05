@@ -32,13 +32,13 @@ function registration() {
               className='mix-blend-overlay brightness-90 object-cover'
             />
           </div>
-          <div className='mx-auto w-full py-[12em] px-6 flex flex-col items-center justify-center 
+          <div className='mx-auto w-full py-[12em] pt-[4rem] md:pt-[6rem] px-6 flex flex-col items-center justify-center 
         gap-3 text-center relative'>
             <div className='text-white text-4xl sm:text-6xl font-bold text-center'>
               <Link href="#">REGISTRATION</Link>
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
-              Deadline: May 25th, 2023
+              Deadline: May 17th, 2023
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON

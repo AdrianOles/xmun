@@ -66,7 +66,7 @@ export default function Home() {
           transition={{ duration: .60, delay: .1 }}>
           <div className="text-4xl mb-6">Welcome to <span className="text-4xl text-purple-600 font-bold">XMUN III</span></div>
           <div className="mb-6 text-lg">
-            St. Francis Xavier’s Model UN secretariat is pleased to announce its third, in-house Model United Nations Conference on May 25th, 2023. We invite all delegates to represent different nations/characters and participate in a lively debate on the issues of regulating international power, the climate crisis, and inclusivity and identity inspired by the Marvel Universe, Pokemon, and Divergent themes. The student-led conference will be hosted at St. Francis Xavier, in our state of the art theater, and library/conference center. 
+            St. Francis Xavier’s Model UN secretariat is pleased to announce its third, in-house Model United Nations Conference on May 25th, 2023. We invite all delegates to represent different nations/characters and participate in a lively debate on the issues of regulating international power, genetic modification, and inclusivity and identity inspired by the Marvel Universe, Pokemon, and Divergent themes. The student-led conference will be hosted at St. Francis Xavier, in our state of the art theater, and library/conference center. 
           </div>
         </motion.div>
       </div>
