@@ -46,12 +46,12 @@ function registration() {
             <div className='flex flex-wrap justify-center max-w-[500px]'>
               <div className="md:register1 registerSmall mt-5 mx-2">
                 <div className="wrapper cursor-pointer">
-                  <Link href="#"><span className="z-20">ELEMENTARY</span></Link>
+                  <Link href="https://docs.google.com/forms/d/1puHgM3xeD2LtCAq5zroubgiW5UmmRwhO5dkBZ3xL7pg/viewform?edit_requested=true"><span className="z-20">ELEMENTARY</span></Link>
                 </div>
               </div>
               <div className="md:register1 registerSmallPurple mt-5 mx-2">
                 <div className="wrapper cursor-pointer">
-                  <Link href="#"><span className="z-20">SECONDARY</span></Link>
+                  <Link href="https://docs.google.com/forms/d/1g9Oia_nyVOpikTOufg3Ut6lILyeZDBhg07xQG0uF-t4/viewform?ts=64552d34&edit_requested=true"><span className="z-20">SECONDARY</span></Link>
                 </div>
               </div>
               <div className="md:register1 registerSmallOrange mt-5 mx-2">
