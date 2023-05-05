@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import Head from 'next/head'
+import image from '../public/logan.jpg'
 
 function invitation() {
   return (
@@ -28,7 +29,7 @@ function invitation() {
             </div>
           </div>
         </div>
-        <div className="my-16 mx-auto px-6 md:px-10 lg:px-[20rem]">
+        <div className="my-16 mx-auto px-6 md:px-10 lg:px-[15rem] xl:px-[20rem]">
           <div className='text-3xl text-center w-full font-semibold'>
             Letter From Our <span className='text-purple-500 font-bold'>Secretary-General</span>
           </div>
@@ -99,6 +100,16 @@ function invitation() {
             <div>
               <span className="text-purple-500 font-bold">Secretary-General XMUN.</span> 
             </div>
+          </div>
+
+          <div className='w-full p-20 relative h-full min-h-[350px] md:min-h-[450px] max-w-[450px]
+          md:max-w-[450px] mt-20 mx-auto rounded-2xl overflow-hidden'>
+            <Image
+              alt='Logan'
+              src={image}
+              fill
+              className='object-cover object-top h-full'
+            />
           </div>
         </div>
       </div>

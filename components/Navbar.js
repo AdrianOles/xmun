@@ -11,7 +11,7 @@ function MobileNav({ open, setOpen }) {
 
             <div className="flex flex-col justify-center items-center mt-48 xl:hidden">
                 <a className={`${router.asPath === '/invitation' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/invitation'); setOpen(!open) }}>Invitation</a>
-                <a className={`${router.asPath === '/invitation' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/what-is-xmun'); setOpen(!open) }}>What is XMUN?</a>
+                <a className={`${router.asPath === '/what-is-xmun' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/what-is-xmun'); setOpen(!open) }}>What is XMUN?</a>
                 <a className={`${router.asPath === '/registration' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/registration'); setOpen(!open) }}>Registration</a>
                 <a className={`${router.asPath === '/itinerary' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/itinerary'); setOpen(!open) }}>Itinerary</a>
                 <a className={`${router.asPath === '/committee' ? 'linkActive' : ""} text-3xl font-bold text-sky-600 my-4 link link-underline link-underline-black cursor-pointer`} onClick={() => { router.push('/committee'); setOpen(!open) }}>Committee</a>
