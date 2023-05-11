@@ -51,8 +51,8 @@ export default function Navbar() {
                 </div>
                 <div className='xl:flex gap-10 text-xl hidden text-sky-600 font-semibold items-center'>
                     <div className={`${router.asPath === '/invitation' ? 'linkActive' : ""}  cursor-pointer
-                    group relative py-8`} onClick={() => router.push('/invitation')}>
-                        <div className='link link-underline link-underline-black-1'>
+                    group relative py-8`}>
+                        <div className='link link-underline link-underline-black-1' onClick={() => router.push('/invitation')}>
                             Invitation
                         </div>
                         {/* -translate-y-56 group-hover:translate-y-[2rem] */}
