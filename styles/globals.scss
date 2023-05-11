@@ -229,6 +229,55 @@ iframe {
     }
 }
 
+.registerSmallGreen {
+    a {
+        display: block;
+        width: fit-content;
+        padding: 0px 10px;
+        height: 45px;
+        line-height: 40px;
+        font-size: 12px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: white;
+        font-weight: 550;
+        font-size: 1.25em;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        border: 3px solid #019747;
+        letter-spacing: 5px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        background: opacity($color: #000000c9);
+        background-color: rgba(24, 255, 101, 0.377);
+    }
+
+    a span {
+        position: relative;
+        z-index: 2;
+    }
+
+    a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #00c25b;
+        transition: all .35s;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:hover:after {
+        width: 100%;
+    }
+}
+
 .registerSmallOrange {
     a {
         display: block;

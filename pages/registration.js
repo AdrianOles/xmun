@@ -59,11 +59,11 @@ function registration() {
                   <Link href="https://drive.google.com/file/d/12vycVroGBXY_AEM3Bfngys8gWPHD4LDD/view?usp=sharing"><span className="z-20">HCDSB FORM</span></Link>
                 </div>
               </div>
-              {/* <div className="md:register1 registerSmallOrange mt-5 mx-2">
+              <div className="md:register1 registerSmallGreen mt-5 mx-2">
                 <div className="wrapper cursor-pointer">
-                  <Link href="#"><span className="z-20">HDSB FORM</span></Link>
+                  <Link href="https://hcdsb.schoolcashonline.com/Fee/Details/64098/6/False/True"><span className="z-20">School Cash Online</span></Link>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
