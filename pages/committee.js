@@ -139,7 +139,7 @@ function committee() {
                       </div>
                       <hr />
                       <div className='flex flex-wrap items-center justify-center'>
-                        <div className='shrink-0 mr-2'>Meher Aamir</div>
+                        <div className='shrink-0 mr-2'>Meher Aamir: </div>
                         <div href="">meher.aamir.437@stfxavier.ca</div>
                       </div>
                     </div>
