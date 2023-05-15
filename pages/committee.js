@@ -63,7 +63,25 @@ function committee() {
                   <div className="text-center">
                     Designed for novice students interested in Model UN.
                   </div>
-                  <div className="register2 mt-4 mx-auto">
+                  <div className='flex flex-col gap-2 flex-wrap items-center text-base mt-4'>
+                    <div className='text-purple-500 font-semibold'>Chairs:</div>
+                    <div>
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Aisha Mir</div>
+                      </div>
+                      <hr/>
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Rhea Goel: </div>
+                        <div href="">rhea.goel.768@stfxavier.ca</div>
+                      </div>
+                      <hr/>
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Logan Roettger: </div>
+                        <div href="">logan.roettger.946@stfxavier.ca</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="register2 mt-4 mx-auto scale-75">
                     <div className="cursor-pointer mx-auto">
                       <Link href="https://drive.google.com/file/d/1flCJtxWvjW75WpTOn_YxLo9x0kW35jUw/view?usp=sharing">
                         <span className="z-20">Background</span>
@@ -107,13 +125,27 @@ function committee() {
                 transition={{ duration: .60, delay: .1 }}
                 className='md:w-[30%] mx-auto'>
                 <div className="flex flex-col gap-2">
-                  <div className="text-center">
+                  <div className="text-center text-base">
                     The genetic modification of animals first began at the beginning of human
                     civilization through the selective breeding of animals in order to create animals with
                     desirable traits...
                   </div>
+                  <div className='flex flex-col gap-2 flex-wrap items-center text-base mt-4'>
+                    <div className='text-purple-500 font-semibold'>Chairs:</div>
+                    <div>
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Salman Yousufi: </div>
+                        <div href="">salman.yousufi.525@stfxavier.ca</div>
+                      </div>
+                      <hr />
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Meher Aamir</div>
+                        <div href="">meher.aamir.437@stfxavier.ca</div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="register2 mt-4 mx-auto">
-                    <div className="cursor-pointer mx-auto">
+                    <div className="cursor-pointer mx-auto scale-75">
                       <Link href="https://drive.google.com/file/d/1tQQAEVFTwsDs-K-mqvfsaOQjyO_fu9m6/view?usp=sharing">
                         <span className="z-20">Background</span>
                       </Link>
@@ -158,12 +190,26 @@ function committee() {
                 transition={{ duration: .60, delay: .1 }}
                 className='md:w-[30%] mx-auto'>
                 <div className="flex flex-col gap-2">
-                  <div className="text-center">
+                  <div className="text-center text-base">
                     To those living now, the world has always been like this; it was always divided up into
                     five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave
                     Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                   </div>
-                  <div className="register2 mt-4 mx-auto">
+                  <div className='flex flex-col gap-2 flex-wrap items-center text-base mt-4'>
+                    <div className='text-purple-500 font-semibold'>Chairs:</div>
+                    <div>
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Sarah Brinkworth: </div>
+                        <div href="">sarah.brinkworth.639@stfxavier.ca</div>
+                      </div>
+                      <hr />
+                      <div className='flex flex-wrap items-center justify-center'>
+                        <div className='shrink-0 mr-2'>Abeer Abrar: </div>
+                        <div href="">abeer.abrar.054@stfxavier.ca</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="register2 mt-4 mx-auto scale-75">
                     <div className="cursor-pointer mx-auto">
                       <Link href="https://drive.google.com/file/d/1DOtgZ8LY9WLOVHLtgv4U8wyfx9KvEkqO/view?usp=sharing">
                         <span className="z-20">Background</span>
