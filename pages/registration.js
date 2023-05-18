@@ -38,7 +38,7 @@ function registration() {
               <Link href="#">REGISTRATION</Link>
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
-              Deadline: May 17th, 2023
+            Deadline EXTENDED: May 19th, 2023
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON
@@ -74,7 +74,7 @@ function registration() {
             <span className="text-purple-500 font-semibold">Registration</span>, Fees, and Requirements
           </div>
           <div className="text-lg">
-            XMUN registration information to be filled out by the MUN school advisors via Google Form. There is a delegate fee of $10 for participation to be paid on SchoolCashOnline. Exceptional delegates will be recognized with “Best Delegate,” and “Honourable Mention” awards. In order to qualify for such awards, position papers will be required from each delegate outlining their country’s stance on respective issues. These papers will be evaluated by the Dais alongside performance within the committee to determine award winners.
+            XMUN registration information to be filled out by the MUN school advisors via Google Form. There is a delegate fee of $20 for participation to be paid on SchoolCashOnline. Exceptional delegates will be recognized with “Best Delegate,” and “Honourable Mention” awards. In order to qualify for such awards, position papers will be required from each delegate outlining their country’s stance on respective issues. These papers will be evaluated by the Dais alongside performance within the committee to determine award winners.
           </div>
         </div>
       </div>
