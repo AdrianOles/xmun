@@ -22,22 +22,9 @@ export default function Home() {
       {/* main image*/}
       <div className='bg-gradient-to-tl to-blue-900 from-purple-900 h-screen w-full relative top-0 shadow-xl'>
         <div className="w-full h-full absolute">
-          {/* <Image src="https://upload.wikimedia.org/wikipedia/commons/0/05/UN_General_Assembly_hall.jpg"
-            className='object-cover mix-blend-overlay brightness-90'
-            priority={true}
-            fill
-          /> */}
-          {/* <ReactPlayer
-            url="files/xmunvideo.mp4"
-            playing
-            loop
-            muted
-            width="100%"
-            height="100%"
-          /> */}
           <video autoPlay={true} muted={true} loop playsInline
             className="w-full h-full object-cover brightness-75">         
-            <source src="files/xmunvideo.mp4" type="video/mp4"/>       
+            <source src="https://v1.pinimg.com/videos/mc/720p/72/f1/6c/72f16c62ba8b2d5773ac6253742901f9.mp4" type="video/mp4"/>       
           </video>
           <div className='w-full h-full absolute top-0 bg-gradient-to-tl to-blue-900 from-purple-900 opacity-10'></div>
         </div>

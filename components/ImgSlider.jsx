@@ -59,17 +59,18 @@ function ImgSlider() {
                 className="mySwiper"
             >
                 {
-                    pictures.map((index) => (
-                        <SwiperSlide key={index} className="py-auto bg-transparent pb-10 px-0 rounded-xl overflow-hidden">
+                    pictures.map((picture, index) => (
+                        <SwiperSlide key={picture.link} className="py-auto bg-transparent pb-10 px-0 rounded-xl overflow-hidden">
                             <div className='relative h-[300px] rounded-xl overflow-hidden'>
                                 <Image
                                     placeholder="blur"
                                     blurDataURL="https://cdn-icons-png.flaticon.com/512/6356/6356659.png"
-                                    src={index.link}
+                                    src={picture.link}
                                     sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw,
                                 33vw"
                                     fill
+                                    alt="Image of past XMUN Conferences"
                                 />
                             </div>
                         </SwiperSlide>
