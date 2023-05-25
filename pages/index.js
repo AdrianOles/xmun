@@ -38,11 +38,11 @@ export default function Home() {
           <div className="text-sky-100 text-2xl font-light z-30">
             St. Francis Xavier Secondary School, Milton ON
           </div>
-          <div className="register mt-5">
+          {/* <div className="register mt-5">
             <div className="wrapper cursor-pointer">
               <a onClick={() => router.push('/registration')}><span>REGISTER</span></a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

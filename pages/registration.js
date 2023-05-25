@@ -38,12 +38,15 @@ function registration() {
               <Link href="#">REGISTRATION</Link>
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
-            Deadline EXTENDED: May 19th, 2023
+            CLOSED
             </div>
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON
             </div>
-            <div className='flex flex-wrap justify-center max-w-[500px]'>
+            <div className='text-[#ffffff] py-2 font-semibold mt-10 text-2xl md:w-[40%] border-[3px] bg-[#fec48189] border-[#ff9a28]'>
+              Thank you for all who registered, we look forward to seeing you at XMUN on Thursday! (Make sure to wear business casual attire.)
+            </div>
+            {/* <div className='flex flex-wrap justify-center max-w-[500px]'>
               <div className="md:register1 registerSmall mt-5 mx-2">
                 <div className="wrapper cursor-pointer">
                   <Link href="https://docs.google.com/forms/d/1puHgM3xeD2LtCAq5zroubgiW5UmmRwhO5dkBZ3xL7pg/viewform?edit_requested=true"><span className="z-20">ELEMENTARY</span></Link>
@@ -64,7 +67,7 @@ function registration() {
                   <Link href="https://hcdsb.schoolcashonline.com/Fee/Details/64098/6/False/True"><span className="z-20">School Cash Online</span></Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

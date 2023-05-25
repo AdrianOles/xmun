@@ -45,12 +45,12 @@ function resources() {
     {
       source: positionPPreview,
       format: "PDF",
-      redirect: "position-paper"
+      redirect: "https://drive.google.com/file/d/1JJIRTSu3XTS9zsC0jdm0rca9iCLwyOgC/view?usp=sharing"
     },
     {
       source: ppexPreview,
       format: "PDF",
-      redirect: "position-paper-ex"
+      redirect: "https://drive.google.com/file/d/1C4_g28Ktl-UTF7mE7HgfnFreiY7P2E9P/view?usp=sharing"
     },
   ]
 
@@ -58,12 +58,12 @@ function resources() {
     {
       source: resolutionPreview,
       format: "PDF",
-      redirect: "drafting-resolution"
+      redirect: "https://drive.google.com/file/d/1srt2Wnt1UDG7NgKQ8ryzmOCdm1DgnmSD/view?usp=sharing"
     }, 
     {
       source: clausePreview,
       format: "PDF",
-      redirect: "clause"
+      redirect: "https://drive.google.com/file/d/1loRoHmpA0EeD72JbE19jpLEG_bbiAcWR/view?usp=sharing"
     }
   ]
 
@@ -71,12 +71,12 @@ function resources() {
     {
       source: introMunPreview,
       format: "PDF",
-      redirect: "intro-to-mun"
+      redirect: "https://drive.google.com/file/d/1SFLA1lUgDijIs9Extk7PTZdVh3RgeDet/view?usp=sharing"
     },
     {
       source: pointsMotionPreview,
       format: 'PDF',
-      redirect: 'points-and-motions'
+      redirect: 'https://drive.google.com/file/d/1kF47eIi3XQxNAVLDt1xdLHIJNXcXYIVZ/view?usp=sharing'
     },
     {
       source: tips,
@@ -86,7 +86,7 @@ function resources() {
     {
       source: ettiquetePreview,
       format: 'PDF',
-      redirect: 'conference-etiquette'
+      redirect: 'https://drive.google.com/file/d/1lvOXbf_lAZXOsuIM_NkhlJET-Q0noK-z/view?usp=sharing'
     }
   ]
 
@@ -94,12 +94,12 @@ function resources() {
     {
       source: handbook,
       format: "PDF",
-      redirect: "handbook"
+      redirect: "https://drive.google.com/file/d/1oYtMlWBbmeDZyGAB7jpfnWkTto2b2sWa/view?usp=sharing"
     },
     {
       source: termsPreview,
       format: 'PDF',
-      redirect: 'terms'
+      redirect: 'https://drive.google.com/file/d/1VjhMzhxWRhzns3087bUcWK41gEb9RFPc/view?usp=sharing'
     },
   ]
 
@@ -114,10 +114,11 @@ function resources() {
         <div className='bg-gradient-to-tl to-purple-800 from-sky-500 h-[40vh] w-full relative top-0 shadow-xl overflow-x-hidden'>
           <div className='w-full h-full absolute overflow-x-hidden'>
             <Image
-                src={"https://www.nti.org/wp-content/uploads/2017/11/HEADER_IMAGE-Placards-Credit_to_National_Model_United_Nations-1000x356.jpg"}
+              src={"https://www.nti.org/wp-content/uploads/2017/11/HEADER_IMAGE-Placards-Credit_to_National_Model_United_Nations-1000x356.jpg"}
               fill
               priority
               className="mix-blend-overlay brightness-90 object-cover"
+              alt="Preview"
             />
           </div>
           <div className='mx-auto w-full h-full px-4 flex flex-col gap-3 sm:px-20 md:px-36 lg:px-56 overflow-x-hidden'>
@@ -140,15 +141,14 @@ function resources() {
             <div className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
             {
               debate.map((preview, index) => (
-                <motion.div variants={items} className="overflow-x-hidden">
+                <motion.div key={index} variants={items} className="overflow-x-hidden">
                 <div
-                  key={index}
                   className="relative brightness-75 group hover:brightness-100 blur-[0.5px] 
                             hover:blur-none transition-all cursor-pointer rounded-lg overflow-hidden
                             h-[250px] w-[350px] md:h-[250px] md:w-[325px] lg:h-[250px] lg:w-[375px] overflow-x-hidden">
                   {
                     index != 2 ? (
-                        <Link href={`/resources/${preview.redirect}`}>
+                        <a href={`${preview.redirect}`}>
                           <Image
                             src={preview.source}
                             fill
@@ -164,7 +164,7 @@ function resources() {
                           <div className='absolute -bottom-10 group-hover:bottom-0 left-0 px-2 text-white font-semibold py-1'>
                             Click to view
                           </div>
-                        </Link>
+                        </a>
                     ) : (
                       <Link href="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftips.5f83f95a.jpg&w=640&q=75">
                           <Image
@@ -203,13 +203,12 @@ function resources() {
             <div className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
               {
                 pPapers.map((preview, index) => (
-                  <motion.div variants={items} className="overflow-x-hidden">
+                  <motion.div key={preview.redirect} variants={items} className="overflow-x-hidden">
                     <div
-                    key={index}
                     className="relative brightness-75 group hover:brightness-100 blur-[0.5px] 
                                 hover:blur-none transition-all cursor-pointer rounded-lg overflow-hidden
                                 h-[250px] w-[350px] md:h-[250px] md:w-[325px] lg:h-[250px] lg:w-[375px] overflow-x-hidden">
-                      <Link href={`/resources/${preview.redirect}`}>
+                      <a href={`${preview.redirect}`}>
                         <Image
                           src={preview.source}
                           fill
@@ -225,7 +224,7 @@ function resources() {
                         <div className='absolute -bottom-10 group-hover:bottom-0 left-0 px-2 text-white font-semibold py-1'>
                           Click to view
                         </div>
-                      </Link>
+                      </a>
                     </div>
                   </motion.div>
                 ))
@@ -246,11 +245,11 @@ function resources() {
               rPapers.map((preview, index) => (
                 <motion.div
                   variants={items}
-                  key={index}
+                  key={preview.source}
                   className="relative brightness-75 group hover:brightness-100 blur-[0.5px] 
                             hover:blur-none transition-all cursor-pointer rounded-lg overflow-hidden
                             h-[250px] w-[350px] md:h-[250px] md:w-[325px] lg:h-[250px] lg:w-[375px] overflow-x-hidden">
-                  <Link href={`/resources/${preview.redirect}`}>
+                  <a href={`${preview.redirect}`}>
                     <Image
                       src={preview.source}
                       fill
@@ -266,7 +265,7 @@ function resources() {
                     <div className='absolute -bottom-10 group-hover:bottom-0 left-0 px-2 text-white font-semibold py-1'>
                       Click to view
                     </div>
-                  </Link>
+                  </a>
                 </motion.div>
               ))
             }
@@ -283,13 +282,12 @@ function resources() {
             <div className="flex flex-wrap items-center gap-4 justify-center lg:mx-32 xl:mx-48 3xl:mx-96 overflow-x-hidden">
               {
                 terms.map((preview, index) => (
-                  <motion.div variants={items} className="overflow-x-hidden">
+                  <motion.div key={preview.format} variants={items} className="overflow-x-hidden">
                     <div
-                      key={index}
                       className="relative brightness-75 group hover:brightness-100 blur-[0.5px] 
                             hover:blur-none transition-all cursor-pointer rounded-lg overflow-hidden
                             h-[250px] w-[350px] md:h-[250px] md:w-[325px] lg:h-[250px] lg:w-[375px] overflow-x-hidden">
-                          <Link href={`/resources/${preview.redirect}`}>
+                          <Link href={`${preview.redirect}`}>
                             <Image
                               src={preview.source}
                               fill
