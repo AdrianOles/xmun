@@ -43,9 +43,9 @@ function registration() {
             <div className="text-sky-100 text-xl sm:text-2xl font-normal text-center">
               St. Francis Xavier Secondary School, Milton ON
             </div>
-            <div className='text-[#ffffff] py-2 font-semibold mt-10 text-2xl md:w-[40%] border-[3px] bg-[#fec48189] border-[#ff9a28]'>
+            {/* <div className='text-[#ffffff] py-2 font-semibold mt-10 text-2xl md:w-[40%] border-[3px] bg-[#fec48189] border-[#ff9a28]'>
               Thank you for all who registered, we look forward to seeing you at XMUN on Thursday! (Make sure to wear business casual attire.)
-            </div>
+            </div> */}
             {/* <div className='flex flex-wrap justify-center max-w-[500px]'>
               <div className="md:register1 registerSmall mt-5 mx-2">
                 <div className="wrapper cursor-pointer">
