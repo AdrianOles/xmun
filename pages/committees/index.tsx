@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
     const targetDate = new Date('2024-03-7').getTime();
     const [userState, setUserState] = useState<number | null>(null);
+    const [ani, setAni] = useState<number | null>(null);
 
     const renderer = ({ days, hours, minutes, seconds, completed }: CountdownRenderProps) => {
         if (completed) {
@@ -21,6 +22,15 @@ export default function Home() {
             );
         }
     };
+
+    useEffect(() => {
+        setAni(null)
+        if (userState) {
+            setTimeout(() => {
+                setAni(userState)
+            }, 300)
+        }
+    }, [userState])
     
     return (
         <div className={`${inter.className} h-[100vh] w-full bg-[#EAEAEA] relative overflow-x-hidden`}>
@@ -53,8 +63,8 @@ export default function Home() {
                 </div>
 
                 <div className='h-full w-full flex flex-col z-10'>
-                    <div className='md:h-[30%] w-full bg-transparent px-6 md:px-20 py-10 md:py-0 flex justify-between items-center'>
-                        <div className='flex flex-col justify-center h-full'>
+                    <div className='w-full bg-transparent px-6 md:px-20 py-10 md:py-0 flex justify-between items-center'>
+                        <div className='flex flex-col justify-center h-full md:py-10 md:pb-20 py-6'>
                             <div className='text-[#717171] tracking-[2px] text-[12px]'>
                                 St. Francis Xavier presents
                             </div>
@@ -67,7 +77,7 @@ export default function Home() {
                             <Countdown date={targetDate} renderer={renderer} />
                         </div>
                     </div>
-                    <div className='md:h-[70%] w-full flex flex-col md:flex-row gap-4 p-4 transition-all duration-[500ms]'>
+                    <div className='h-full w-full flex flex-col md:flex-row gap-4 p-4 transition-all duration-[500ms]'>
                         <div onClick={() => setUserState(1)} className={`md:h-full bg-black transition-all duration-[500ms] relative group
                         ${userState === 1 ? 'md:w-[200%]' : 'w-full md:w-full'} h-[1000px]`}>
                             <Image
@@ -78,7 +88,8 @@ export default function Home() {
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${userState === 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10' : 'md:opacity-0 md:z-2'} 
+                            ${userState === 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>POKEMON</div>
                                     <div className="tracking-[0.5px] text-[14px] md:text-[16px]">
@@ -108,7 +119,8 @@ export default function Home() {
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${userState === 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 2 ? 'md:opacity-100 md:z-10' : 'md:opacity-0 md:z-2'}
+                            ${userState === 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>MARVEL</div>
                                     <div className="tracking-[0.5px]] text-[14px] md:text-[16px]">
@@ -138,7 +150,8 @@ export default function Home() {
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${userState === 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 3 ? 'md:opacity-100 md:z-10' : 'md:opacity-0 md:z-2'}
+                            ${userState === 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>COLONIALISM</div>
                                     <div className="tracking-[0.5px]] text-[14px] md:text-[16px]">
