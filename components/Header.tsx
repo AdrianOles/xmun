@@ -45,7 +45,7 @@ const Header = () => {
                 <div className='opacity-90 group-hover:text-white'>SIGN IN</div>
             </div>
 
-            <div className={`fixed top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all bg-opacity-50 backdrop-blur-[50px] ${router.pathname === '/' ? 'bg-black' : 'bg-white'}`}>
+            <div className={`fixed top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all bg-opacity-80 backdrop-blur-[10px] ${router.pathname === '/' ? 'bg-black' : 'bg-white'}`}>
                 <div className={`absolute ${nav.open ? 'opacity-100' : "opacity-0"} w-full h-full top-0 lg:hidden`}>
                 <div className={`flex flex-col gap-4 px-14 pt-32 ${router.pathname === '/' ? 'text-white' : 'text-black'} ${nav.open ? 'block' : "hidden"} uppercase tracking-[2px]`}>
                         <div onClick={() => {

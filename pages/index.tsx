@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={`${inter.className} h-[100vh] w-full bg-black relative overflow-hidden`}>
+    <div className={`${inter.className} h-full w-full bg-black relative overflow-x-hidden`}>
       <Image
         src="https://pbs.twimg.com/media/EoEvME_WMAIMzTa?format=jpg&name=large"
         fill
@@ -16,7 +16,7 @@ export default function Home() {
       />
       <div className='absolute bg-black w-full h-full bg-opacity-70 backdrop-blur-[4px]' />
       
-      <div className='flex flex-col h-full w-full z-40 justify-between items-between overflow-y-auto'>
+      <div className='flex flex-col w-full z-40 justify-between items-between h-full'>
           <Header />
 
         {/* TITLE */}

@@ -23,7 +23,7 @@ export default function Home() {
     };
     
     return (
-        <div className={`${inter.className} h-[100vh] w-full bg-[#EAEAEA] relative overflow-y-auto overflow-x-hidden`}>
+        <div className={`${inter.className} h-[100vh] w-full bg-[#EAEAEA] relative overflow-x-hidden`}>
             <div className='flex flex-col h-full w-full z-50 justify-between items-between'>
                 <Header />
                 
