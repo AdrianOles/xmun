@@ -21,7 +21,7 @@ const Header = () => {
     }, [nav.open])
 
     return ( 
-        <div className={`flex justify-between z-[100] pt-6 px-10 pl-4 md:pl-10 w-[100vw] relative items-center
+        <div className={`flex justify-between z-50 pt-6 px-10 pl-4 md:pl-10 w-[100vw] relative items-center
         ${router.pathname === '/' ? 'text-white' : 'text-black'} transition-all `} >
             <div className="w-[50px] lg:hidden" />
             <Hamburger />
@@ -48,19 +48,34 @@ const Header = () => {
             <div className={`fixed top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all bg-opacity-50 backdrop-blur-[50px] ${router.pathname === '/' ? 'bg-black' : 'bg-white'}`}>
                 <div className={`absolute ${nav.open ? 'opacity-100' : "opacity-0"} w-full h-full top-0 lg:hidden`}>
                 <div className={`flex flex-col gap-4 px-14 pt-32 ${router.pathname === '/' ? 'text-white' : 'text-black'} ${nav.open ? 'block' : "hidden"} uppercase tracking-[2px]`}>
-                    <div className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[200ms] ease-in-out hover:opacity-75`}>
+                        <div onClick={() => {
+                            nav.onClose()
+                            router.push("/")
+                    }} className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[200ms] ease-in-out hover:opacity-75`}>
                         HOME
                     </div>
-                    <div className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[300ms] ease-in-out hover:opacity-75`}>
+                        <div onClick={() => {
+                            nav.onClose()
+                            router.push("/invitation")
+                        }} className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[300ms] ease-in-out hover:opacity-75`}>
                         INVITATION
                     </div>
-                    <div className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[400ms] ease-in-out hover:opacity-75`}>
+                        <div onClick={() => {
+                            nav.onClose()
+                            router.push("/committees")
+                        }} className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[400ms] ease-in-out hover:opacity-75`}>
                         COMMITTEES
                     </div>
-                    <div className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[500ms] ease-in-out hover:opacity-75`}>
+                        <div onClick={() => {
+                            nav.onClose()
+                            router.push("/schedule")
+                        }} className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[500ms] ease-in-out hover:opacity-75`}>
                         SCHEDULE
                     </div>
-                    <div className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[600ms] ease-in-out hover:opacity-75`}>
+                        <div onClick={() => {
+                            nav.onClose()
+                            router.push("/resources")
+                        }} className={`cursor-pointer ${ani ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'} transition duration-[600ms] ease-in-out hover:opacity-75`}>
                         RESOURCES
                     </div>
                 </div>

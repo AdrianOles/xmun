@@ -16,14 +16,14 @@ export default function Home() {
       />
       <div className='absolute bg-black w-full h-full bg-opacity-70 backdrop-blur-[4px]' />
       
-      <div className='flex flex-col h-full w-full z-50 justify-between items-between overflow-y-auto'>
+      <div className='flex flex-col h-full w-full z-40 justify-between items-between overflow-y-auto'>
           <Header />
 
         {/* TITLE */}
-        <div className='w-fit flex flex-col gap-20 text-white z-50 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 py-20 mt-20'>
-          <div className='tracking-[5px] text-[50px] font-[400] flex flex-col md:flex-row justify-between items-start md:items-end gap-4'>
+        <div className='w-fit flex flex-col gap-20 text-white z-40 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 py-20 mt-20'>
+          <div className='tracking-[5px] text-[32px] md:text-[50px] font-[400] flex flex-col md:flex-row justify-between items-start md:items-end gap-4'>
             <div>XMUN <br /> CONFERENCE</div>
-            <div className='text-[20px] cursor-pointer relative flex items-center justify-center overflow-hidden transition hover:ring-[1px] ring-[#DED5FFBA]'>
+            <div className='md:text-[20px] text-[16px] cursor-pointer relative flex items-center justify-center overflow-hidden transition hover:ring-[1px] ring-[#DED5FFBA]'>
               <div className="z-50 px-3 py-2">REGISTER</div>
               <div className='absolute top-0 right-0 bg-[#0a0a0a02] backdrop-blur-[50px] z-[2] w-full h-full' />
               <div className='absolute top-0 right-0 bg-[#9780FF] rounded-full z-[1] w-[50px] h-[50px] animate-pulse' />

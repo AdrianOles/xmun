@@ -55,10 +55,10 @@ export default function Home() {
                 <div className='h-full w-full flex flex-col z-10'>
                     <div className='md:h-[30%] w-full bg-transparent px-6 md:px-20 py-10 md:py-0 flex justify-between items-center'>
                         <div className='flex flex-col justify-center h-full'>
-                            <div className='text-[#717171] tracking-[2px]'>
+                            <div className='text-[#717171] tracking-[2px] text-[12px]'>
                                 St. Francis Xavier presents
                             </div>
-                            <div className='text-[40px] tracking-[6px] font-[400]'>
+                            <div className='md:text-[40px] tracking-[6px] font-[400] text-[32px]'>
                                 XMUN COMMITTEES
                             </div>
                         </div>
@@ -79,9 +79,9 @@ export default function Home() {
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
                             <div className={` text-white absolute h-full w-full transition-all ${userState === 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
-                                <div className="flex flex-col h-full w-full p-10">
+                                <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>POKEMON</div>
-                                    <div className="tracking-[0.5px]">
+                                    <div className="tracking-[0.5px] text-[14px] md:text-[16px]">
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -109,9 +109,9 @@ export default function Home() {
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
                             <div className={` text-white absolute h-full w-full transition-all ${userState === 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
-                                <div className="flex flex-col h-full w-full p-10">
+                                <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>MARVEL</div>
-                                    <div className="tracking-[0.5px]">
+                                    <div className="tracking-[0.5px]] text-[14px] md:text-[16px]">
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -139,9 +139,9 @@ export default function Home() {
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
                             <div className={` text-white absolute h-full w-full transition-all ${userState === 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
-                                <div className="flex flex-col h-full w-full p-10">
+                                <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>COLONIALISM</div>
-                                    <div className="tracking-[0.5px]">
+                                    <div className="tracking-[0.5px]] text-[14px] md:text-[16px]">
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
