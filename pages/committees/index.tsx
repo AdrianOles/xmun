@@ -62,7 +62,7 @@ export default function Home() {
                     </svg>
                 </div>
 
-                <div className='h-full w-full flex flex-col z-10'>
+                <div className='h-full w-full flex flex-col z-10 gap-10'>
                     <div className='w-full bg-transparent px-6 md:px-20 py-10 md:py-0 flex justify-between items-center'>
                         <div className='flex flex-col justify-center h-full md:py-10 md:pb-20 py-6'>
                             <div className='text-[#717171] tracking-[2px] text-[12px]'>
@@ -79,7 +79,7 @@ export default function Home() {
                     </div>
                     <div className='h-full w-full flex flex-col md:flex-row gap-4 p-4 transition-all duration-[500ms]'>
                         <div onClick={() => setUserState(1)} className={`md:h-full bg-black transition-all duration-[500ms] relative group
-                        ${userState === 1 ? 'md:w-[200%]' : 'w-full md:w-full'} h-[1000px]`}>
+                        ${userState === 1 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
                             <Image
                                 fill 
                                 className='object-cover absolute'
@@ -110,7 +110,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div onClick={() => setUserState(2)} className={`h-full bg-black transition-all duration-[500ms] relative group
-                        ${userState === 2 ? 'md:w-[200%]' : 'w-full md:w-full'}`}>
+                        ${userState === 2 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
                             <Image
                                 fill 
                                 className='object-cover absolute'
@@ -141,7 +141,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div onClick={() => setUserState(3)} className={`h-full bg-black transition-all duration-[500ms] relative group
-                        ${userState === 3 ? 'md:w-[200%]' : 'w-full md:w-full'}`}>
+                        ${userState === 3 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
                             <Image
                                 fill 
                                 className='object-cover absolute'
