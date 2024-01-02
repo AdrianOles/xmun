@@ -77,8 +77,8 @@ export default function Home() {
                             <Countdown date={targetDate} renderer={renderer} />
                         </div>
                     </div>
-                    <div className='h-full w-full flex flex-col md:flex-row gap-4 p-4 transition-all duration-[500ms]'>
-                        <div onClick={() => setUserState(1)} className={`md:h-full bg-black transition-all duration-[500ms] relative group
+                    <div className='h-full w-full flex flex-col md:flex-row gap-4 p-4 transition-all duration-[400ms]'>
+                        <div onClick={() => setUserState(1)} className={`md:h-full bg-black transition-all duration-[400ms] relative group
                         ${userState === 1 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
                             <Image
                                 fill 
@@ -88,7 +88,7 @@ export default function Home() {
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10' : 'md:opacity-0 md:z-2'} 
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'} 
                             ${userState === 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>POKEMON</div>
@@ -119,7 +119,7 @@ export default function Home() {
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${ani === 2 ? 'md:opacity-100 md:z-10' : 'md:opacity-0 md:z-2'}
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 2 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
                             ${userState === 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>MARVEL</div>
@@ -150,7 +150,7 @@ export default function Home() {
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${ani === 3 ? 'md:opacity-100 md:z-10' : 'md:opacity-0 md:z-2'}
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 3 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
                             ${userState === 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[24px] mb-4'>COLONIALISM</div>
