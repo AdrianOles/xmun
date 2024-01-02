@@ -23,9 +23,9 @@ export default function Home() {
         <div className='w-fit flex flex-col gap-20 text-white z-40 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 py-20 mt-20'>
           <div className='tracking-[5px] text-[32px] md:text-[50px] font-[400] flex flex-col md:flex-row justify-between items-start md:items-end gap-4'>
             <div>XMUN <br /> CONFERENCE</div>
-            <div className='md:text-[20px] text-[16px] cursor-pointer relative flex items-center justify-center overflow-hidden transition hover:ring-[1px] ring-[#DED5FFBA]'>
+            <div className='md:text-[20px] text-[16px] cursor-pointer relative flex items-center justify-center overflow-hidden transition border border-[#DED5FFBA] hover:ring-2 ring-[#DED5FFBA]'>
               <div className="z-50 px-3 py-2">REGISTER</div>
-              <div className='absolute top-0 right-0 bg-[#0a0a0a02] backdrop-blur-[50px] z-[2] w-full h-full' />
+              <div className='absolute top-0 right-0 bg-[#0a0a0a01] backdrop-blur-[50px] z-[2] w-full h-full' />
               <div className='absolute top-0 right-0 bg-[#9780FF] rounded-full z-[1] w-[50px] h-[50px] animate-pulse' />
               <div className='absolute top-0 left-0 bg-[#00AAFF] rounded-full z-[1] w-[60px] h-[50px]  diff-animate-pulse' />
               <div className='absolute top-0 left-1/2 right-1/2 -translate-x-1/2 bg-white rounded-full z-[1] w-[20px] h-[30px] grow-animate-pulse' />

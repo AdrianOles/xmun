@@ -62,8 +62,8 @@ export default function Home() {
                     </svg>
                 </div>
 
-                <div className='h-full w-full flex flex-col z-10 gap-10'>
-                    <div className='w-full bg-transparent px-6 md:px-20 py-10 md:py-0 flex justify-between items-center'>
+                <div className='h-full w-full flex flex-col z-10 gap-0 gap-10'>
+                    <div className='w-full bg-transparent h-full px-6 md:px-20 py-10 md:py-0 flex justify-between items-center'>
                         <div className='flex flex-col justify-center h-full md:py-10 md:pb-20 py-6'>
                             <div className='text-[#717171] tracking-[2px] text-[12px]'>
                                 St. Francis Xavier presents
@@ -77,22 +77,22 @@ export default function Home() {
                             <Countdown date={targetDate} renderer={renderer} />
                         </div>
                     </div>
-                    <div className='h-full w-full flex flex-col md:flex-row gap-4 p-4 transition-all duration-[400ms]'>
-                        <div onClick={() => setUserState(1)} className={`md:h-full bg-black transition-all duration-[400ms] relative group
-                        ${userState === 1 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
+                    <div className='h-full w-full flex flex-col lg:flex-row gap-4 p-4 transition-all duration-[400ms]'>
+                        <div onClick={() => setUserState(1)} className={`h-full bg-black transition-all duration-[500ms] relative group
+                        ${userState === 1 ? 'lg:w-[200%]' : 'w-full md:w-full'} lg:min-h-[400px] lg:max-h-[400px] min-h-[300px]`}>
                             <Image
-                                fill 
+                                fill
                                 className='object-cover absolute'
                                 src="https://img.lemde.fr/2022/12/22/5/0/1730/865/1342/671/60/0/e968e4d_1671703423578-b5e.jpeg"
                                 alt="Pokemon"
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
-                            <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'} 
+                            <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
                             ${userState === 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
-                                    <div className='tracking-[5px] text-[24px] mb-4'>POKEMON</div>
-                                    <div className="tracking-[0.5px] text-[14px] md:text-[16px]">
+                                    <div className='tracking-[5px] text-[20px] mb-4'>POKEMON</div>
+                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${ani === 1 ? 'block' : 'hidden'}`}>
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -101,7 +101,7 @@ export default function Home() {
 
                             {/* Preview */}
                             <div className={`h-full w-full absolute cursor-pointer ${userState != 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
-                                <div className='text-white tracking-[5px] text-[24px] w-full h-full flex items-center justify-center'>
+                                <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
                                     POKEMON
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>
                                         Tap to view
@@ -110,7 +110,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div onClick={() => setUserState(2)} className={`h-full bg-black transition-all duration-[500ms] relative group
-                        ${userState === 2 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
+                        ${userState === 2 ? 'lg:w-[200%]' : 'w-full md:w-full'}  lg:min-h-[400px] lg:max-h-[400px] min-h-[350px]`}>
                             <Image
                                 fill 
                                 className='object-cover absolute'
@@ -122,8 +122,8 @@ export default function Home() {
                             <div className={` text-white absolute h-full w-full transition-all ${ani === 2 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
                             ${userState === 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
-                                    <div className='tracking-[5px] text-[24px] mb-4'>MARVEL</div>
-                                    <div className="tracking-[0.5px]] text-[14px] md:text-[16px]">
+                                    <div className='tracking-[5px] text-[20px] mb-4'>MARVEL</div>
+                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 2 ? 'block' : 'hidden'}`}>
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -132,7 +132,7 @@ export default function Home() {
 
                             {/* Preview */}
                             <div className={`h-full w-full absolute cursor-pointer ${userState != 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
-                                <div className='text-white tracking-[5px] text-[24px] w-full h-full flex items-center justify-center'>
+                                <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
                                     MARVEL
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>
                                         Tap to view
@@ -141,7 +141,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div onClick={() => setUserState(3)} className={`h-full bg-black transition-all duration-[500ms] relative group
-                        ${userState === 3 ? 'md:w-[200%]' : 'w-full md:w-full'} md:min-h-[400px]`}>
+                        ${userState === 3 ? 'lg:w-[200%]' : 'w-full md:w-full'}  lg:min-h-[400px] lg:max-h-[400px] min-h-[350px]`}>
                             <Image
                                 fill 
                                 className='object-cover absolute'
@@ -153,8 +153,8 @@ export default function Home() {
                             <div className={` text-white absolute h-full w-full transition-all ${ani === 3 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
                             ${userState === 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
-                                    <div className='tracking-[5px] text-[24px] mb-4'>COLONIALISM</div>
-                                    <div className="tracking-[0.5px]] text-[14px] md:text-[16px]">
+                                    <div className='tracking-[5px] text-[20px] mb-4'>COLONIALISM</div>
+                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 3 ? 'block' : 'hidden'}`}>
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -163,7 +163,7 @@ export default function Home() {
 
                             {/* Preview */}
                             <div className={`h-full w-full absolute cursor-pointer ${userState != 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
-                                <div className='text-white tracking-[5px] text-[24px] w-full h-full flex items-center justify-center'>
+                                <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
                                     COLONIALISM
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>
                                         Tap to view
