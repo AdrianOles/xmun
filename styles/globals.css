@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.75);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes grow-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes diff-pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s linear infinite;
+}
+
+.grow-animate-pulse {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.diff-animate-pulse {
+  animation: diff-pulse 5s ease-out infinite;
+}
+
+.committee-bg-vector {
+  background: linear-gradient(to right, #717171, #EAEAEA, #717171, #EAEAEA,#717171, #EAEAEA, #717171, #EAEAEA,
+    #717171, #EAEAEA,
+      #717171);
+}
+
+/* Rectangle 114 */
+.rectangle {
+    background: linear-gradient(180deg, #444444 0%, rgba(217, 217, 217, 0.25) 100%);
+}
+
+.rectangle-inverted {
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, #000000 100%);
+}
