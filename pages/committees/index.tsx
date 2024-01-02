@@ -28,7 +28,7 @@ export default function Home() {
         if (userState) {
             setTimeout(() => {
                 setAni(userState)
-            }, 300)
+            }, 350)
         }
     }, [userState])
     
