@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={`${inter.className} h-full w-full bg-black relative overflow-x-hidden`}>
+    <div className={`${inter.className} min-h-[100vh] w-full bg-black relative overflow-x-hidden`}>
       <Image
         src="https://pbs.twimg.com/media/EoEvME_WMAIMzTa?format=jpg&name=large"
         fill
-        className='object-cover '
+        className='object-cover'
         alt="St. Francix Xavier"
       />
       <div className='absolute bg-black w-full h-full bg-opacity-70 backdrop-blur-[4px]' />
@@ -20,7 +20,7 @@ export default function Home() {
           <Header />
 
         {/* TITLE */}
-        <div className='w-fit flex flex-col gap-20 text-white z-40 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 py-20 mt-20'>
+        <div className='w-fit flex flex-col gap-20 text-white z-40 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 pt-10'>
           <div className='tracking-[5px] text-[32px] md:text-[50px] font-[400] flex flex-col md:flex-row justify-between items-start md:items-end gap-4'>
             <div>XMUN <br /> CONFERENCE</div>
             <div className='md:text-[20px] text-[16px] cursor-pointer relative flex items-center justify-center overflow-hidden transition border border-[#DED5FFBA] hover:ring-2 ring-[#DED5FFBA]'>
@@ -63,13 +63,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* <div className='absolute top-1/2 bottom-1/2 -translate-y-[60%] right-20 w-[500px] h-[500px] bg-black z-50'>
-            <div className='w-full h-full flex '>
-            
-            </div>
-        </div> */}
-
       </div>
     </div> 
   )
