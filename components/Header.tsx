@@ -22,7 +22,7 @@ const Header = () => {
 
     return ( 
         <div className={`flex justify-between z-50 pt-6 px-10 pl-4 md:pl-10 w-[100vw] relative items-center
-        ${router.pathname === '/' && router.pathname != '/schedule'  ? 'text-white' : 'text-black'}
+        ${router.pathname === '/' && router.pathname != '/schedule' ? 'text-white' : 'text-black'}
         ${router.pathname === '/schedule' && 'text-white'} transition-all `} >
             <div className="w-[50px] lg:hidden" />
             <Hamburger />
@@ -43,8 +43,9 @@ const Header = () => {
                 <Link href="/schedule" className={`cursor-pointer  ${router.pathname === '/schedule' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>SCHEDULE</Link>
                 <Link href="/resources" className={`cursor-pointer  ${router.pathname === '/resources' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>RESOURCES</Link>
             </div>
-            <div className='p-2 border border-black tracking-[3px] font-[300] text-[14px] cursor-pointer hover:bg-black group transition'>
-                <div className='opacity-90 group-hover:text-white'>SIGN IN</div>
+            <div className={`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
+            ${router.pathname === '/' || router.pathname === '/schedule' ? 'border-white hover:bg-white hover:text-black' : 'border-black hover:bg-black hover:text-white'}`}>
+                <div className='opacity-90'>SIGN IN</div>
             </div>
 
             <div className={`fixed top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all backdrop-blur-[10px] ${router.pathname === '/'|| router.pathname === '/schedule' ? 'bg-black' : 'bg-white'}`}>

@@ -39,11 +39,11 @@ export default function Home() {
                 
                 <div className='absolute right-0 bottom-1/2'>
                     <svg width="250" height="250" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="500" cy="500" r="499" stroke="url(#paint0_linear_58_3)" stroke-opacity="0.2" stroke-width="2" />
+                        <circle cx="500" cy="500" r="499" stroke="url(#paint0_linear_58_3)" strokeOpacity="0.2" strokeWidth="2" />
                         <defs>
                             <linearGradient id="paint0_linear_58_3" x1="500" y1="0" x2="500" y2="1000" gradientUnits="userSpaceOnUse">
                                 <stop />
-                                <stop offset="1" stop-color="#717171" stop-opacity="0" />
+                                <stop offset="1" stopColor="#717171" stopOpacity="0" />
                             </linearGradient>
                         </defs>
                     </svg>
@@ -52,11 +52,11 @@ export default function Home() {
 
                 <div className='absolute left-0 top-0 rotate-[180deg]'>
                     <svg width="250" height="250" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="500" cy="500" r="499" stroke="url(#paint0_linear_58_3)" stroke-opacity="0.2" stroke-width="2" />
+                        <circle cx="500" cy="500" r="499" stroke="url(#paint0_linear_58_3)" strokeOpacity="0.2" strokeWidth="2" />
                         <defs>
                             <linearGradient id="paint0_linear_58_3" x1="500" y1="0" x2="500" y2="1000" gradientUnits="userSpaceOnUse">
                                 <stop />
-                                <stop offset="1" stop-color="#717171" stop-opacity="0" />
+                                <stop offset="1" stopColor="#717171" stopOpacity="0" />
                             </linearGradient>
                         </defs>
                     </svg>
