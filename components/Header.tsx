@@ -22,7 +22,7 @@ const Header = () => {
 
     return ( 
         <div className={`flex justify-between z-50 pt-6 px-10 pl-4 md:pl-10 w-[100vw] relative items-center
-        ${router.pathname === '/' && router.pathname != '/schedule' ? 'text-white' : 'text-black'}
+        ${router.pathname === '/' ? 'text-white' : 'text-black'}
         ${router.pathname === '/schedule' && 'text-white'} transition-all `} >
             <div className="w-[50px] lg:hidden" />
             <Hamburger />
