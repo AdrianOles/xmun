@@ -66,6 +66,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%]"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -88,6 +89,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%]"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -110,6 +112,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%]"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -132,6 +135,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%]"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -154,6 +158,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%]"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -176,6 +181,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%] sepia"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -197,6 +203,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%]"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -219,6 +226,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[200%] contrast-[150%] sepia"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -241,6 +249,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[150%] contrast-[150%] sepia"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
@@ -263,6 +272,7 @@ const Resources = () => {
                         fill
                         className="object-cover saturate-[200%] contrast-[200%] sepia"
                         alt="intro mun"
+                        quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
                     <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
