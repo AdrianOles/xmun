@@ -23,13 +23,14 @@ const Header = () => {
     return ( 
         <div className={`flex justify-between z-50 pt-6 px-10 pl-4 md:pl-10 w-[100vw] relative items-center
         ${router.pathname === '/' ? 'text-white' : 'text-black'}
+        ${router.pathname === '/resources' && 'text-white'}
         ${router.pathname === '/schedule' && 'text-white'} transition-all `} >
             <div className="w-[50px] lg:hidden" />
             <Hamburger />
             <div className="lg:block hidden">
                 <Image
                     alt='xmun logo'
-                    className={`brightness-0 ${router.pathname === '/' ? 'invert' : ''}
+                    className={`brightness-0 ${router.pathname === '/' || router.pathname === '/resources' ? 'invert' : ''}
                     ${router.pathname === '/schedule' && 'invert'} md:scale-100 scale-75`}
                     height={50}
                     width={50}
@@ -44,13 +45,13 @@ const Header = () => {
                 <Link href="/resources" className={`cursor-pointer  ${router.pathname === '/resources' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>RESOURCES</Link>
             </div>
             <div className={`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
-            ${router.pathname === '/' || router.pathname === '/schedule' ? 'border-white hover:bg-white hover:text-black' : 'border-black hover:bg-black hover:text-white'}`}>
+            ${router.pathname === '/' || router.pathname === 'resources' ||  router.pathname != '/schedule' ? 'border-white hover:bg-white hover:text-black' : 'border-black hover:bg-black hover:text-white'}`}>
                 <div className='opacity-90'>SIGN IN</div>
             </div>
 
-            <div className={`fixed top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all backdrop-blur-[10px] ${router.pathname === '/'|| router.pathname === '/schedule' ? 'bg-black' : 'bg-white'}`}>
+            <div className={`fixed z-[100] top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all backdrop-blur-[10px] ${router.pathname === '/' || router.pathname === '/resources' || router.pathname === '/schedule' ? 'bg-black' : 'bg-white'}`}>
                 <div className={`absolute ${nav.open ? 'opacity-100' : "opacity-0"} w-full h-full top-0 lg:hidden`}>
-                    <div className={`flex flex-col gap-4 px-14 pt-32 ${router.pathname === '/' || router.pathname === '/schedule' ? 'text-white' : 'text-black'} ${nav.open ? 'block' : "hidden"} uppercase tracking-[2px]`}>
+                    <div className={`flex flex-col gap-4 px-14 pt-32 ${router.pathname === '/' || router.pathname === '/resources' || router.pathname === '/schedule' ? 'text-white' : 'text-black'} ${nav.open ? 'block' : "hidden"} uppercase tracking-[2px]`}>
                     <div onClick={() => {
                             nav.onClose()
                             router.push("/")
