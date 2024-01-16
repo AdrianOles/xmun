@@ -46,7 +46,7 @@ const Header = () => {
                 <Link href="/resources" className={`cursor-pointer  ${router.pathname === '/resources' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>RESOURCES</Link>
             </div>
             <div className={`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
-            ${router.pathname === '/' || router.pathname === 'resources' ||  router.pathname != '/schedule' ? 'border-white hover:bg-white hover:text-black' : 'border-black hover:bg-black hover:text-white'}`}>
+            ${router.pathname === '/committees' && 'border-black'}`}>
                 <div className='opacity-90'>SIGN IN</div>
             </div>
 
