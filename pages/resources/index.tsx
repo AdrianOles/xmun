@@ -69,12 +69,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Introduction
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Intro
                         </div>
@@ -92,12 +92,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Points & motions
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Motions
                         </div>
@@ -115,12 +115,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Tips & Tricks
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Tips
                         </div>
@@ -138,12 +138,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Etiquette
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Etiquette
                         </div>
@@ -161,12 +161,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Position Paper
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full text-center">
                             Position Paper
                         </div>
@@ -184,12 +184,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Exemplar
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full text-center">
                             Exemplar
                         </div>
@@ -206,12 +206,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Resolution
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full text-center">
                             Resolution
                         </div>
@@ -229,12 +229,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Clauses
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full text-center">
                             Clauses
                         </div>
@@ -252,12 +252,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Handbook
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full text-center">
                             Handbook
                         </div>
@@ -275,12 +275,12 @@ const Resources = () => {
                         quality={10}
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-[10px] group-hover:bg-opacity-80 transition" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full">
                             Terms
                         </div>
                     </div>
-                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-50 text-white uppercase tracking-[2px]">
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full z-[10] text-white uppercase tracking-[2px]">
                         <div className="flex items-center justify-center w-full h-full text-center">
                             Terms
                         </div>
