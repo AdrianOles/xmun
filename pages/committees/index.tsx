@@ -8,7 +8,7 @@ import Header from '@/components/Header';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-    const targetDate = new Date('2024-03-7').getTime();
+    const targetDate = new Date('2024-03-14').getTime();
     const [userState, setUserState] = useState<number | null>(null);
     const [ani, setAni] = useState<number | null>(null);
 

@@ -19,7 +19,7 @@ const Invitation = () => {
                         XMUN SECRETARIAT
                     </div>
                     <div className='text-[#c0c0c0] tracking-[2px] text-[16px]'>
-                        March 7th, 2024
+                        A letter to welcome
                     </div>
                 </div>
             </div>

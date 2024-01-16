@@ -19,7 +19,7 @@ const Schedule = () => {
                         XMUN SCHEDULE
                     </div>
                     <div className='text-[#c0c0c0] tracking-[2px] text-[16px]'>
-                        March 7th, 2024
+                        March 14th, 2024
                     </div>
                 </div>
             </div>
