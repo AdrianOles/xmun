@@ -29,7 +29,7 @@ const Invitation = () => {
                 </div>
             </div>
 
-            <div className="w-full h-full md:px-20 xl:px-[248px] pt-20 pl-4">
+            <div className="w-full h-full md:px-20 xl:px-[248px] pt-20 pl-4 px-4">
                 <div className="text-[40px] font-semibold">
                     Dear Delegate,
                 </div>
@@ -44,7 +44,7 @@ const Invitation = () => {
                 </div>
             </div>
 
-            <div className="w-full h-full py-8 md:px-20 xl:px-60 flex flex-wrap gap-x-5 lg:gap-x-5 xl:gap-x-10 justify-center gap-y-10">
+            <div className="w-full h-full py-8 px-2 md:px-20 xl:px-60 flex flex-wrap gap-x-2 lg:gap-x-5 xl:gap-x-10 justify-start gap-y-10">
                 <div className="flex flex-col items-start jusitfy-center w-[225px] relative">
                     <div className="h-[250px] w-[225px] relative group overflow-hidden">
                         <Image
