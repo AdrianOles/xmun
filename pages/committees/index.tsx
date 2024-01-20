@@ -89,10 +89,10 @@ export default function Home() {
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
                             <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
-                            ${userState === 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            ${userState === 1 ? 'opacity-100 z-10' : 'md:opacity-0 opacity-100 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[20px] mb-4'>POKEMON</div>
-                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${ani === 1 ? 'block' : 'hidden'}`}>
+                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${ani === 1 ? 'block' : 'md:hidden'}`}>
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -100,7 +100,7 @@ export default function Home() {
                             </div>
 
                             {/* Preview */}
-                            <div className={`h-full w-full absolute cursor-pointer ${userState != 1 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            <div className={`h-full w-full absolute cursor-pointer ${userState != 1 ? 'md:opacity-100 opacity-0 z-10' : 'opacity-0 z-2'}`}>
                                 <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
                                     POKEMON
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>
@@ -120,10 +120,10 @@ export default function Home() {
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
                             <div className={` text-white absolute h-full w-full transition-all ${ani === 2 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
-                            ${userState === 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            ${userState === 2 ? 'opacity-100 z-10' : 'md:opacity-0 opacity-100 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[20px] mb-4'>MARVEL</div>
-                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 2 ? 'block' : 'hidden'}`}>
+                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 2 ? 'block' : 'md:hidden'}`}>
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -131,7 +131,7 @@ export default function Home() {
                             </div>
 
                             {/* Preview */}
-                            <div className={`h-full w-full absolute cursor-pointer ${userState != 2 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            <div className={`h-full w-full absolute cursor-pointer ${userState != 2 ? 'md:opacity-100 opacity-0 z-10' : 'opacity-0 z-2'}`}>
                                 <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
                                     MARVEL
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>
@@ -151,10 +151,10 @@ export default function Home() {
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
                             {/* When Clicked */}
                             <div className={` text-white absolute h-full w-full transition-all ${ani === 3 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
-                            ${userState === 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            ${userState === 3 ? 'opacity-100 z-10' : 'md:opacity-0 opacity-100 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[20px] mb-4'>COLONIALISM</div>
-                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 3 ? 'block' : 'hidden'}`}>
+                                    <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 3 ? 'block' : 'md:hidden'}`}>
                                         To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
                                     </div>
                                     <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
@@ -162,7 +162,7 @@ export default function Home() {
                             </div>
 
                             {/* Preview */}
-                            <div className={`h-full w-full absolute cursor-pointer ${userState != 3 ? 'opacity-100 z-10' : 'opacity-0 z-2'}`}>
+                            <div className={`h-full w-full absolute cursor-pointer ${userState != 3 ? 'md:opacity-100 opacity-0 z-10' : 'opacity-0 z-2'}`}>
                                 <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
                                     COLONIALISM
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>

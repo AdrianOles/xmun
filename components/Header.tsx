@@ -32,7 +32,7 @@ const Header = () => {
                 <Image
                     alt='xmun logo'
                     className={`brightness-0 ${router.pathname === '/' || router.pathname === '/resources' ? 'invert' : ''}
-                    ${router.pathname === '/schedule' || router.pathname === '/invitation' && 'invert'} md:scale-100 scale-75`}
+                    ${router.pathname === '/invitation' && 'invert'} ${router.pathname === '/schedule' && 'invert'} md:scale-100 scale-75`}
                     height={50}
                     width={50}
                     src={'/xmunlogo.png'}
