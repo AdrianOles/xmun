@@ -3,12 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Invitation = () => {
-    const [step, setStep] = useState(0);
-
-    const changeStep = () => {
-
-    }
-
     return (
         <div className="flex flex-col w-full h-full overflow-x-hidden z-50 ">
             <div className="flex flex-col w-full relative h-[600px]">
@@ -39,7 +33,7 @@ const Invitation = () => {
                 <div className="my-4">
                     The secretariat is excited to welcome you to our third XMUN conference! Our exec team has been working hard to bring you our yearly fictional conference. This year with 2 separate conferences, one for novice elementary school delegates, and a conference with two committees for our high school delegates. <br /> <br />
                     For our High school delegates, students get two different fictional committees to choose from. Our chosen committees are Pokemon and divergent. Each Committee has real issues to discover, issues delegates will work through together to create comprehensive solutions for. From this experience, delegates will develop stronger critical thinking skills, public speaking abilities and leadership qualities. <br /> <br />
-                    Our chairs are well prepared to bring delegates to a formal yet thrilling conference. As a secretariat, we are committed to fostering an inclusive and welcoming environment for all participants. We encourage delegates to approach the conference with an open mind and a willingness to engage in respectful and constructive dialogue with their peers. This is Saint Francis Xavier's third time hosting XMUN, each year growing in numbers we gladly await a successful conference.
+                    Our chairs are well prepared to bring delegates to a formal yet thrilling conference. As a secretariat, we are committed to fostering an inclusive and welcoming environment for all participants. We encourage delegates to approach the conference with an open mind and a willingness to engage in respectful and constructive dialogue with their peers. This is Saint Francis Xavier&apos;s third time hosting XMUN, each year growing in numbers we gladly await a successful conference.
                     Excited for a fruitful discussion, XMUN awaits you!
                 </div>
                 <div className="text-[32px] font-semibold pt-4">
