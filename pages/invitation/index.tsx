@@ -1,10 +1,13 @@
 import Header from "@/components/Header";
 import Image from "next/image";
 import { useState } from "react";
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 const Invitation = () => {
     return (
-        <div className="flex flex-col w-full h-full overflow-x-hidden z-50 ">
+        <div className={`flex flex-col w-full h-full overflow-x-hidden z-50 ${inter.className}`}>
             <div className="flex flex-col w-full relative h-[600px]">
                 <Image
                     fill
@@ -41,14 +44,31 @@ const Invitation = () => {
                 </div>
             </div>
 
-            <div className="w-full h-full py-8 md:px-20 xl:px-60 flex flex-wrap gap-x-10 justify-center gap-y-10">
+            <div className="w-full h-full py-8 md:px-20 xl:px-60 flex flex-wrap gap-x-5 lg:gap-x-5 xl:gap-x-10 justify-center gap-y-10">
+                <div className="flex flex-col items-start jusitfy-center w-[225px] relative">
+                    <div className="h-[250px] w-[225px] relative group overflow-hidden">
+                        <Image
+                            alt="student image"
+                            src={'/execs/rhea.JPG'}
+                            fill
+                            className="object-cover group-hover:scale-[125%] transition-all duration-500"
+                            style={{ objectPosition: '45% 0%' }}
+                        />
+                    </div>
+                    <div className="w-full text-left text-[18px] mt-2 px-1">
+                        Rhea Goel
+                    </div>
+                    <div className="text-opacity-50 px-1 text-[14px]">
+                        Co-Secretary General
+                    </div>
+                </div>
                 <div className="flex flex-col items-start w-[225px] relative">
                     <div className="h-[250px] w-[225px] relative group overflow-hidden">
                         <Image
                             alt="student image"
                             src={'/execs/salman.JPG'}
                             fill
-                            className="object-cover group-hover:scale-110 transition-all"
+                            className="object-cover group-hover:scale-[125%] transition-all duration-500"
                             style={{ objectPosition: '55% 0%' }}
                         />
                     </div>
@@ -63,26 +83,9 @@ const Invitation = () => {
                     <div className="h-[250px] w-[225px] relative group overflow-hidden">
                         <Image
                             alt="student image"
-                            src={'/execs/rhea.JPG'}
-                            fill
-                            className="object-cover group-hover:scale-110 transition-all"
-                            style={{ objectPosition: '45% 0%' }}
-                        />
-                    </div>
-                    <div className="w-full text-left text-[18px] mt-2 px-1">
-                        Rhea Goel
-                    </div>
-                    <div className="text-opacity-50 px-1 text-[14px]">
-                        Co-Secretary General
-                    </div>
-                </div>
-                <div className="flex flex-col items-start jusitfy-center w-[225px] relative">
-                    <div className="h-[250px] w-[225px] relative group overflow-hidden">
-                        <Image
-                            alt="student image"
                             src={'/execs/aisha.JPG'}
                             fill
-                            className="object-cover group-hover:scale-110 transition-all"
+                            className="object-cover group-hover:scale-[125%] transition-all duration-500"
                             style={{ objectPosition: '45% 0%' }}
                         />
                     </div>
@@ -99,7 +102,7 @@ const Invitation = () => {
                             alt="student image"
                             src={'/execs/ahwaz.JPG'}
                             fill
-                            className="object-cover group-hover:scale-110 transition-all"
+                            className="object-cover group-hover:scale-[125%] transition-all duration-500"
                             style={{ objectPosition: '60% 0%' }}
                         />
                     </div>
@@ -116,7 +119,7 @@ const Invitation = () => {
                             alt="student image"
                             src={'/execs/adrian.JPG'}
                             fill
-                            className="object-cover group-hover:scale-110 transition-all"
+                            className="object-cover group-hover:scale-[125%] transition-all duration-500"
                             style={{ objectPosition: '40% 0%' }}
                         />
                     </div>
@@ -133,7 +136,7 @@ const Invitation = () => {
                             alt="student image"
                             src={'/execs/salaar.JPG'}
                             fill
-                            className="object-cover group-hover:scale-110 transition-all"
+                            className="object-cover group-hover:scale-[125%] transition-all duration-500"
                             style={{ objectPosition: '35% 0%' }}
                         />
                     </div>
