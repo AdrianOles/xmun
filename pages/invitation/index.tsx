@@ -2,10 +2,13 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import { useState } from "react";
 import { Inter } from 'next/font/google'
+import { useSession } from "next-auth/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Invitation = () => {
+    const { data: session } = useSession();
+
     return (
         <div className={`flex flex-col w-full h-full overflow-x-hidden z-50 ${inter.className}`}>
             <div className="flex flex-col w-full relative h-[600px]">
@@ -31,7 +34,17 @@ const Invitation = () => {
 
             <div className="w-full h-full md:px-20 xl:px-[248px] pt-20 pl-4 px-4">
                 <div className="text-[40px] font-semibold">
-                    Dear Delegate,
+                    Dear {
+                        session ? (
+                            <>
+                                {session.user?.name?.split(' ')[0]}
+                            </>
+                        ): (
+                            <>
+                                Delegate 
+                            </>
+                        )
+                    },
                 </div>
                 <div className="my-4">
                     The secretariat is excited to welcome you to our third XMUN conference! Our exec team has been working hard to bring you our yearly fictional conference. This year with 2 separate conferences, one for novice elementary school delegates, and a conference with two committees for our high school delegates. <br /> <br />

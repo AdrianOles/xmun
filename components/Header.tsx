@@ -4,11 +4,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Hamburger from "./Hamburger";
 import { useEffect, useState, useRef } from 'react';
+import { signOut, useSession } from "next-auth/react";
 
 const Header = () => {
     const router = useRouter();
     const nav = useNav();
     const [ani, setAni] = useState(false);
+    const { data: session } = useSession();
+    console.log(session)
 
     useEffect(() => {
         if (nav.open) {
@@ -45,11 +48,19 @@ const Header = () => {
                 <Link href="/schedule" className={`cursor-pointer  ${router.pathname === '/schedule' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>SCHEDULE</Link>
                 <Link href="/resources" className={`cursor-pointer  ${router.pathname === '/resources' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>RESOURCES</Link>
             </div>
-            <div className={`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
-            ${router.pathname === '/committees' ? 'border-black hover:bg-black hover:text-white' : 'hover:bg-white hover:text-black'}
-            `}>
-                <div className='opacity-90'>SIGN IN</div>
-            </div>
+            {
+                session ? (
+                    <div onClick={() => signOut()} className={`p-2 tracking-[3px] font-[300] text-[14px] cursor-pointer group transition`}>
+                        <div className='opacity-90'>Sign Out</div>
+                    </div>
+                ): (
+                    <Link href={'/auth/signin'} className = {`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
+                        ${router.pathname === '/committees' ? 'border-black hover:bg-black hover:text-white' : 'hover:bg-white hover:text-black'}
+                        `}>
+                        <div className='opacity-90'>SIGN IN</div>
+                    </Link>
+                )
+            }
 
             <div className={`fixed z-[100] top-0 left-0 w-[100vw] ${nav.open ? 'h-[100vh]' : 'h-0'} transition-all backdrop-blur-[10px] ${router.pathname === '/' || router.pathname === '/resources' || router.pathname === '/schedule' ? 'bg-black' : 'bg-white'}`}>
                 <div className={`absolute ${nav.open ? 'opacity-100' : "opacity-0"} w-full h-full top-0 lg:hidden`}>
