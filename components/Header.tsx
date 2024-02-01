@@ -54,11 +54,11 @@ const Header = () => {
                         <div className='opacity-90'>Sign Out</div>
                     </div>
                 ): (
-                    <Link href={'/auth/signin'} className = {`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
+                    <div className = {`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
                         ${router.pathname === '/committees' ? 'border-black hover:bg-black hover:text-white' : 'hover:bg-white hover:text-black'}
                         `}>
                         <div className='opacity-90'>SIGN IN</div>
-                    </Link>
+                    </div>
                 )
             }
 

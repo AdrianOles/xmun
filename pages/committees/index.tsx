@@ -93,9 +93,10 @@ export default function Home() {
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[20px] mb-4'>POKEMON</div>
                                     <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${ani === 1 ? 'block' : 'md:hidden'}`}>
-                                        To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
+                                        Welcome to the groundbreaking intersection of genetics! Join us at this unique conference where we delve into the fascinating realm of Pokemon and CRISPR-Cas9, exploring the unprecedented possibilities of genetic engineering in the captivating world of Pokemon training and battles.
                                     </div>
-                                    <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
+                                    <Link href={"https://drive.google.com/file/d/1tQQAEVFTwsDs-K-mqvfsaOQjyO_fu9m6/view"} target='__blank'
+                                        className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</Link>
                                 </div>
                             </div>
 
@@ -124,9 +125,10 @@ export default function Home() {
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[20px] mb-4'>MARVEL</div>
                                     <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 2 ? 'block' : 'md:hidden'}`}>
-                                        To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
+                                        Step into the Marvel Universe as we unravel the complex web of superhero governance at this conference on Marvel and the Sokovia Accords. Delve into the ethical and political dilemmas surrounding enhanced individuals as we examine the impact of the Sokovia Accords on the dynamic world of Marvel superheroes and their quest for justice.
                                     </div>
-                                    <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
+                                    <Link href={"https://drive.google.com/file/d/1flCJtxWvjW75WpTOn_YxLo9x0kW35jUw/view"} target='__blank'
+                                        className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</Link>
                                 </div>
                             </div>
 
@@ -155,9 +157,10 @@ export default function Home() {
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
                                     <div className='tracking-[5px] text-[20px] mb-4'>COLONIALISM</div>
                                     <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 3 ? 'block' : 'md:hidden'}`}>
-                                        To those living now, the world has always been like this; it was always divided up into five factions: the selfless Abnegation, the peaceful Amity, the honest Candor, the brave Dauntless, the knowledgeable Erudite, and the dreaded Factionless...
+                                        Embark on a thought-provoking journey through history and global impact at our conference on Colonialism. Join us in exploring the multifaceted dimensions of colonial experiences, discussing the legacies, challenges, and critical perspectives that shape our understanding of this complex historical phenomenon.
                                     </div>
-                                    <div className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</div>
+                                    <Link href={"https://drive.google.com/file/d/10ADZinNydDFkzf94rwteGrJ8vLfH4_WI/view?usp=sharing"} target='__blank'
+                                        className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</Link>
                                 </div>
                             </div>
 

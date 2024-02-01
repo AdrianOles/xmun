@@ -44,7 +44,7 @@ export default function Home() {
                   session ? (
                     <Link href={'/register'} className='absolute w-full h-full z-50' />
                   ): (
-                    <Link href={'/auth/signin'} className='absolute w-full h-full z-50' />
+                    <div className='absolute w-full h-full z-50' />
                   )
                 }
               </div>
