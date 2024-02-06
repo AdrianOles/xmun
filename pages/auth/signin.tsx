@@ -1,4 +1,4 @@
-import { getRedirectResult, onAuthStateChanged, signInWithRedirect } from "firebase/auth";
+import { getRedirectResult, onAuthStateChanged, signInWithRedirect, signOut } from "firebase/auth";
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import {auth, provider} from '@/firebase'
@@ -10,6 +10,16 @@ export default function SignIn() {
     const [loading, setLoading] = useState<boolean>(true);
     const authUser = useUser();
     
+    const signOutUser = async () => {
+        try {
+            await signOut(auth);
+            authUser.onRemove();
+            console.log("User signed out");
+        } catch (error) {
+            console.error("Error signing out:", error);
+        }
+    };
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -31,6 +41,7 @@ export default function SignIn() {
 
     const signIn = () => {
         setLoading(true);
+        signOutUser()
         signInWithRedirect(auth, provider);
         setLoading(false);
     }
