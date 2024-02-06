@@ -16,7 +16,6 @@ export default function SignIn() {
                 // User is signed in
                 // You can redirect to a different page or perform other actions here
                 authUser.onUpdate(user.displayName, user.email, user.photoURL);
-                router.replace('/');
             } else {
                 // User is signed out
                 setLoading(false);
@@ -69,10 +68,12 @@ export default function SignIn() {
                 <div onClick={() => signIn()} className='md:text-[20px] text-[16px] text-white lg:w-[80%] w-full cursor-pointer relative flex items-center justify-center overflow-hidden transition mt-4 rounded-[8px] bg-black hover:bg-opacity-[80%]'>
                     <div className="z-50 px-3 py-2">
                         {
-                            loading ? (
+                            loading && !authUser ? (
                                 <span>Loading...</span>
-                            ) : (
+                            ) : !authUser ?(
                                 <span>Sign In</span>
+                            ) : (
+                                <span onClick={() => router.push('/')}>Continue</span> 
                             )
                         }
                     </div>
