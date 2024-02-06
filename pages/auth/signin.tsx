@@ -65,15 +65,15 @@ export default function SignIn() {
                     <div className="text-[20px] lg:text-[26px] font-bold">Welcome Delegate,</div>
                     <div className="lg:text-base text-[14px]">Please sign in to continue your registration.</div>
                 </div>
-                <div onClick={() => signIn()} className='md:text-[20px] text-[16px] text-white lg:w-[80%] w-full cursor-pointer relative flex items-center justify-center overflow-hidden transition mt-4 rounded-[8px] bg-black hover:bg-opacity-[80%]'>
-                    <div className="z-50 px-3 py-2">
+                <div className='md:text-[20px] text-[16px] text-white lg:w-[80%] w-full cursor-pointer relative flex items-center justify-center overflow-hidden transition mt-4 rounded-[8px] bg-black hover:bg-opacity-[80%]'>
+                    <div className="">
                         {
                             loading && !authUser ? (
-                                <span>Loading...</span>
+                                <span className="z-50 px-3 py-2">Loading...</span>
                             ) : !authUser ?(
-                                <span>Sign In</span>
+                                <span onClick={() => signIn()} className="z-50 px-3 py-2">Sign In</span>
                             ) : (
-                                <span onClick={() => router.push('/')}>Continue</span> 
+                                <span className="z-50 px-3 py-2" onClick={() => router.push('/')}>Continue</span> 
                             )
                         }
                     </div>
