@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Header from './Header';
+import AddDelegateModal from "@/components/AddDelegateModal";
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -2,80 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(0.75);
-    opacity: 0.75;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black;
 }
 
-@keyframes grow-pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    @apply w-2.5 lg:w-2.5
 }
 
-@keyframes diff-pulse {
-  0% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
+*::-webkit-scrollbar-track {
+    background: transparent;
 }
 
-.animate-pulse {
-  animation: pulse 2s linear infinite;
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 14px;
+    border: 1px solid hsla(0, 0%, 100%, 0.25);
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
 }
 
-.grow-animate-pulse {
-  animation: pulse 3s ease-in-out infinite;
+*::-webkit-scrollbar-thumb:hover {
+    background-color: black;
 }
 
-.diff-animate-pulse {
-  animation: diff-pulse 5s ease-out infinite;
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #454545 transparent;
 }
 
-.committee-bg-vector {
-  background: linear-gradient(to right, #717171, #EAEAEA, #717171, #EAEAEA,#717171, #EAEAEA, #717171, #EAEAEA,
-    #717171, #EAEAEA,
-      #717171);
+body:has(dialog[open]) {
+    overflow: hidden;
 }
 
-/* Rectangle 114 */
-.rectangle {
-    background: linear-gradient(180deg, #444444 0%, rgba(217, 217, 217, 0.25) 100%);
-}
-
-.rectangle-inverted {
-  background: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, #000000 100%);
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    border: black;
 }

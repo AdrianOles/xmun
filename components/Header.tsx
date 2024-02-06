@@ -4,14 +4,51 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Hamburger from "./Hamburger";
 import { useEffect, useState, useRef } from 'react';
-import { signOut, useSession } from "next-auth/react";
+import useUser from "@/hooks/useUser";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "@/firebase";
 
 const Header = () => {
     const router = useRouter();
     const nav = useNav();
     const [ani, setAni] = useState(false);
-    const { data: session } = useSession();
-    console.log(session)
+    const authUser = useUser();
+    const [clientUser, setClientUser] = useState<any>(authUser);
+
+    const signOutUser = async () => {
+        try {
+            await signOut(auth);
+            authUser.onRemove();
+            console.log("User signed out");
+        } catch (error) {
+            console.error("Error signing out:", error);
+        }
+    };
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in
+                // You can redirect to a different page or perform other actions here
+                authUser.onUpdate(user.displayName, user.email, user.photoURL);
+            } else {
+                // User is signed out
+            }
+        });
+
+        // Cleanup the listener when the component is unmounted
+        return () => {
+            unsubscribe()
+        };
+    }, []);
+
+    useEffect(() => {
+        if (authUser.auth) {
+            setClientUser(authUser);
+        } else {
+            setClientUser(authUser);
+        }
+    }, [authUser])
 
     useEffect(() => {
         if (nav.open) {
@@ -49,12 +86,31 @@ const Header = () => {
                 <Link href="/resources" className={`cursor-pointer  ${router.pathname === '/resources' ? 'opacity-100 font-[500]' : 'hover:opacity-100 opacity-80'}`}>RESOURCES</Link>
             </div>
             {
-                session ? (
-                    <div onClick={() => signOut()} className={`p-2 tracking-[3px] font-[300] text-[14px] cursor-pointer group transition`}>
-                        <div className='opacity-90'>Sign Out</div>
+                clientUser.auth && authUser.picture ? (
+                    <div className="flex items-center justify-center gap-4">
+                        <div className="uppercase text-[14px] opacity-90">
+                            {
+                                clientUser.email === 'olesnieadrian@gmail.com' ? (
+                                    <Link href="/dashboard" className="cursor-pointer hover:underline">
+                                        Dashboard
+                                    </Link>
+                                ): (
+                                    <div onClick={() => signOutUser()} className="cursor-pointer hover:underline">
+                                           Sign Out 
+                                    </div>
+                                )
+                            }
+                        </div>
+                        <div onClick={() => signOutUser()} className={`cursor-pointer h-[30px] w-[30px] relative rounded-full overflow-hidden`}>
+                            <Image
+                                src={authUser.picture}
+                                fill
+                                alt="Profile picture"
+                            />
+                        </div>
                     </div>
                 ): (
-                    <div className = {`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
+                    <div onClick={() => router.push("/auth/signin")} className = {`p-2 border tracking-[3px] font-[300] text-[14px] cursor-pointer group transition
                         ${router.pathname === '/committees' ? 'border-black hover:bg-black hover:text-white' : 'hover:bg-white hover:text-black'}
                         `}>
                         <div className='opacity-90'>SIGN IN</div>

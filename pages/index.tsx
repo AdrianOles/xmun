@@ -3,11 +3,12 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import { useSession } from 'next-auth/react';
+import useUser from '@/hooks/useUser';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const { data: session } = useSession();
+  const user = useUser();
 
   return (
     <div className={`${inter.className} min-h-[100vh] w-full bg-black relative overflow-x-hidden`}>
@@ -26,11 +27,11 @@ export default function Home() {
         <div className='w-fit flex flex-col gap-20 text-white z-40 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 pt-10'>
           <div className='tracking-[5px] text-[32px] md:text-[50px] font-[400] flex flex-col md:flex-row justify-between items-start md:items-end gap-4'>
             <div>XMUN <br /> CONFERENCE</div>
-            <div className='flex flex-col justify-end items-end'>
+            <div className='flex flex-col justify-end lg:items-end'>
               {
-                session && (
+                user.auth && (
                   <div className='text-white tracking-[2px] text-[16px] max-w-[200px] truncate mb-4 opacity-80'>
-                    Welcome, {session.user?.name?.split(' ')[0]}!
+                    Welcome, {user?.name?.split(' ')[0]}!
                   </div>
                 )
               }
@@ -41,10 +42,10 @@ export default function Home() {
                 <div className='absolute top-0 left-0 bg-[#00AAFF] rounded-full z-[1] w-[60px] h-[50px]  diff-animate-pulse' />
                 <div className='absolute top-0 left-1/2 right-1/2 -translate-x-1/2 bg-white rounded-full z-[1] w-[20px] h-[30px] grow-animate-pulse' />
                 {
-                  session ? (
+                  user.auth ? (
                     <Link href={'/register'} className='absolute w-full h-full z-50' />
                   ): (
-                    <div className='absolute w-full h-full z-50' />
+                    <Link href={'/auth/signin'} className='absolute w-full h-full z-50' />
                   )
                 }
               </div>

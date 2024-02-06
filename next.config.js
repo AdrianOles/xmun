@@ -7,7 +7,8 @@ const nextConfig = {
       "img.lemde.fr",
       "images.theconversation.com",
       "prd-rteditorial.s3.us-west-2.amazonaws.com",
-      "isp.hcdsb.org"
+      "isp.hcdsb.org",
+      "lh3.googleusercontent.com"
     ]
   }
 }
