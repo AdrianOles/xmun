@@ -16,7 +16,7 @@ export default function SignIn() {
                 // User is signed in
                 // You can redirect to a different page or perform other actions here
                 authUser.onUpdate(user.displayName, user.email, user.photoURL);
-                router.push('/');
+                router.replace('/');
             } else {
                 // User is signed out
                 setLoading(false);
@@ -28,25 +28,6 @@ export default function SignIn() {
             unsubscribe()
         };
     }, []);
-
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // User is signed in
-                // You can redirect to a different page or perform other actions here
-                authUser.onUpdate(user.displayName, user.email, user.photoURL);
-                router.push('/');
-            } else {
-                // User is signed out
-                setLoading(false);
-            }
-        });
-
-        // Cleanup the listener when the component is unmounted
-        return () => {
-            unsubscribe()
-        };
-    }, [authUser, loading, router])
 
     const signIn = () => {
         setLoading(true);
