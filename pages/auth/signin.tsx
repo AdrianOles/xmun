@@ -25,6 +25,7 @@ export default function SignIn() {
             if (user) {
                 // User is signed in
                 // You can redirect to a different page or perform other actions here
+                console.log(user);
                 authUser.onUpdate(user.displayName, user.email, user.photoURL);
                 setLoading(false);
             } else {
