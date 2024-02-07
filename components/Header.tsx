@@ -90,18 +90,14 @@ const Header = () => {
                     <div className="flex items-center justify-center gap-4">
                         <div className="uppercase text-[14px] opacity-90">
                             {
-                                clientUser.email === 'olesnieadrian@gmail.com' ? (
+                                clientUser.email === 'olesnieadrian@gmail.com' && (
                                     <Link href="/dashboard" className="cursor-pointer hover:underline">
                                         Dashboard
                                     </Link>
-                                ): (
-                                    <div onClick={() => signOutUser()} className="cursor-pointer hover:underline">
-                                           Sign Out 
-                                    </div>
                                 )
                             }
                         </div>
-                        <div onClick={() => signOutUser()} className={`cursor-pointer h-[30px] w-[30px] relative rounded-full overflow-hidden`}>
+                        <div className={`cursor-pointer h-[30px] w-[30px] relative rounded-full overflow-hidden`}>
                             <Image
                                 src={authUser.picture}
                                 fill
