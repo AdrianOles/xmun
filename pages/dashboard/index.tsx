@@ -146,15 +146,15 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="h-full w-full lg:p-20 pt-0 lg:block hidden">
+                    <div className="h-full w-full lg:p-20 lg:pt-0 pt-0 lg:block hidden">
                         <div className="text-[24px] font-semibold pb-10">Delegations</div>
 
                         <div className='flex-col gap-2 h-full border-t-black border-t-[3px] lg:w-full xl:w-[75%]'>
                             {
-                                delegates && !loading && !isLoading && !isErrorQuery ? (
+                                data && !isErrorQuery ? (
                                     <>
                                         {
-                                            delegates.map((delegate, index) => (
+                                            data.map((delegate, index) => (
                                                 <div key={index} className="flex flex-col gap-4 border-b-[3px] border-b-black px-4 py-3 pb-8">
                                                     <div key={index} className='w-full flex justify-between items-center gap-4 pb-2'>
                                                         <div className="flex gap-2 items-center">
