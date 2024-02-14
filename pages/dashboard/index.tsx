@@ -46,9 +46,13 @@ export default function Home() {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                // User is signed in
-                // You can redirect to a different page or perform other actions here
-                authUser.onUpdate(user.displayName, user.email, user.photoURL);
+                if (user.email === 'olesnieadrian@gmail.com' || user.email === 'campanellim@stfxavier.ca') {
+                    // User is signed in
+                    // You can redirect to a different page or perform other actions here
+                    authUser.onUpdate(user.displayName, user.email, user.photoURL);
+                } else {
+                    router.push('/')
+                }
             } else {
                 // User is signed out
                 router.push('/auth/signin')
@@ -62,18 +66,22 @@ export default function Home() {
     }, []);
 
     const populateData = async () => {
-        const querySnapshot = await getDocs(collection(db, "delegates"));
-        const delegateInfo: DelegateApp[] = [];
+        if (user.email === 'olesnieadrian@gmail.com' || user.email === 'campanellim@stfxavier.ca') {
+            const querySnapshot = await getDocs(collection(db, "delegates"));
+            const delegateInfo: DelegateApp[] = [];
 
-        querySnapshot.forEach((delegate) => {
-            // Assuming each document in Firestore represents a single delegate
-            const delegateData = delegate.data() as DelegateApp;
+            querySnapshot.forEach((delegate) => {
+                // Assuming each document in Firestore represents a single delegate
+                const delegateData = delegate.data() as DelegateApp;
 
-            delegateInfo.push(delegateData)
-        });
+                delegateInfo.push(delegateData)
+            });
 
-        setLoading(false);
-        return delegateInfo
+            setLoading(false);
+            return delegateInfo
+        } else {
+            return null
+        }
     }
 
 

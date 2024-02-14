@@ -196,7 +196,7 @@ const Register = () => {
             <div className="font-bold lg:text-[36px] text-[24px] uppercase tracking-[6px] mt-4 leading-none text-center">
                 registration
             </div>
-            <div className="border-b border-black mt-1 pb-2 mb-10 text-center">Deadline: March 10th</div>
+            <div className="border-b border-black mt-1 pb-2 mb-10 text-center">Deadline: March 18th</div>
 
             {
                 duplicateError ? (

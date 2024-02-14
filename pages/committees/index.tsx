@@ -8,7 +8,7 @@ import Header from '@/components/Header';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-    const targetDate = new Date('2024-03-14').getTime();
+    const targetDate = new Date('2024-03-22').getTime();
     const [userState, setUserState] = useState<number | null>(null);
     const [ani, setAni] = useState<number | null>(null);
 
@@ -126,6 +126,8 @@ export default function Home() {
                                     <div className='tracking-[5px] text-[20px] mb-4'>MARVEL</div>
                                     <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 2 ? 'block' : 'md:hidden'}`}>
                                         Step into the Marvel Universe as we unravel the complex web of superhero governance at this conference on Marvel and the Sokovia Accords. Delve into the ethical and political dilemmas surrounding enhanced individuals as we examine the impact of the Sokovia Accords on the dynamic world of Marvel superheroes and their quest for justice.
+                                    
+                                        - POwer dynamics (abuse of power)
                                     </div>
                                     <Link href={"https://drive.google.com/file/d/1flCJtxWvjW75WpTOn_YxLo9x0kW35jUw/view"} target='__blank'
                                         className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</Link>

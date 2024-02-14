@@ -57,7 +57,7 @@ export default function Home() {
                 WHEN
               </div>
               <div className='flex flex-col tracking-[3px] font-[300] text-[20px]'>
-                <div className='whitespace-nowrap'>MARCH 14TH</div>
+                <div className='whitespace-nowrap'>MARCH 22ND</div>
                 <div className='whitespace-nowrap'>8:30 AM</div>
               </div>
             </div>
