@@ -66,7 +66,7 @@ export default function Home() {
     }, []);
 
     const populateData = async () => {
-        if (user.email === 'olesnieadrian@gmail.com' || user.email === 'campanellim@stfxavier.ca') {
+        if (authUser?.email === 'olesnieadrian@gmail.com' || authUser?.email === 'campanellim@stfxavier.ca') {
             const querySnapshot = await getDocs(collection(db, "delegates"));
             const delegateInfo: DelegateApp[] = [];
 
@@ -219,7 +219,7 @@ export default function Home() {
                                 )
                             }
                             {
-                                isSuccess && data.length === 0 && (
+                                isSuccess && data?.length === 0 && (
                                     <div className='w-full h-full flex flex-col items-center justify-center text-black font-semibold mt-10 gap-4'>
                                         <div className="text-[24px]">No Registrations</div>
                                         <div onClick={() => router.reload()} className="text-blue-500 hover:underline cursor-pointer">Refresh?</div>
