@@ -2,13 +2,21 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Header from '@/components/Header'
-import { useSession } from 'next-auth/react';
 import useUser from '@/hooks/useUser';
+import { signIn, useSession } from "next-auth/react";
+import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const user = useUser();
+  const { data: session } = useSession();
+
+  useEffect(() => {
+    if (session?.user) {
+      user.onUpdate(session.user.name, session.user.email, session.user.image)
+    }
+  }, [session])
 
   return (
     <div className={`${inter.className} min-h-[100vh] w-full bg-black relative overflow-x-hidden`}>

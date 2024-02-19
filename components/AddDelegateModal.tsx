@@ -154,7 +154,7 @@ const AddDelegateModal = () => {
             focus:border-white focus:border-opacity-[50%] outline-none text-white text-opacity-[70%] text-base font-light focus:text-white cursor-pointer ${modalError && !one && 'border-red-400'}`}>
                                 <option value="" disabled selected>Select committee</option>
                                 <option value="Colonialism">Colonialism</option>
-                                <option value="Pokemon">Pokemon</option>
+                                <option value="Divergent">Divergent</option>
                                 <option value="Marvel">Marvel</option>
                             </select>
                         </div>
@@ -171,7 +171,7 @@ const AddDelegateModal = () => {
             focus:border-white focus:border-opacity-[50%] outline-none text-white text-opacity-[70%] text-base font-light focus:text-white cursor-pointer ${modalError && !two && 'border-red-400'}`}>
                                 <option value="" disabled selected>Select committee</option>
                                 <option value="Colonialism">Colonialism</option>
-                                <option value="Pokemon">Pokemon</option>
+                                <option value="Divergent">Divergent</option>
                                 <option value="Marvel">Marvel</option>
                             </select>
                         </div>
@@ -188,7 +188,7 @@ const AddDelegateModal = () => {
             focus:border-white focus:border-opacity-[50%] outline-none text-white text-opacity-[70%] text-base font-light focus:text-white cursor-pointer ${modalError && !three && 'border-red-400'}`}>
                                 <option value="" disabled selected>Select committee</option>
                                 <option value="Colonialism">Colonialism</option>
-                                <option value="Pokemon">Pokemon</option>
+                                <option value="Divergent">Divergent</option>
                                 <option value="Marvel">Marvel</option>
                             </select>
                         </div>

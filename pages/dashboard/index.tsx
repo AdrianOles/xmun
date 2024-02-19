@@ -12,7 +12,7 @@ import { auth, db, provider } from '@/firebase'
 import { useQuery } from '@tanstack/react-query';
 import { ClipLoader } from 'react-spinners'
 import { MdErrorOutline } from "react-icons/md";
-
+import { signIn, useSession } from "next-auth/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,33 +41,21 @@ export default function Home() {
     const authUser = useUser();
     const [delegates, setDelegates] = useState<DelegateApp[] | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
-    const [fetchError, setFetchError] = useState<boolean>(false);
+    const { data: session } = useSession();
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                if (user.email === 'olesnieadrian@gmail.com' || user.email === 'campanellim@stfxavier.ca') {
-                    // User is signed in
-                    // You can redirect to a different page or perform other actions here
-                    authUser.onUpdate(user.displayName, user.email, user.photoURL);
-                } else {
-                    router.push('/')
-                }
-            } else {
-                // User is signed out
-                router.push('/auth/signin')
+        if (session?.user) {
+            authUser.onUpdate(session.user.name, session.user.email, session.user.image)
+            if (session?.user.email != 'olesnieadrian@gmail.com' && session?.user.email != 'campanellim@stfxavier.ca') {
+                router.push("/")
             }
-        });
-
-        // Cleanup the listener when the component is unmounted
-        return () => {
-            unsubscribe()
-        };
-    }, []);
+        }
+    }, [session])
 
     const populateData = async () => {
-        if (authUser?.email === 'olesnieadrian@gmail.com' || authUser?.email === 'campanellim@stfxavier.ca') {
+        if (session?.user?.email === 'olesnieadrian@gmail.com' || session?.user?.email === 'campanellim@stfxavier.ca') {
             const querySnapshot = await getDocs(collection(db, "delegates"));
+            console.log("query:", querySnapshot)
             const delegateInfo: DelegateApp[] = [];
 
             querySnapshot.forEach((delegate) => {
@@ -80,6 +68,8 @@ export default function Home() {
             setLoading(false);
             return delegateInfo
         } else {
+            console.log("email:", session?.user?.email)
+            console.log('uh oh')
             return null
         }
     }
@@ -95,23 +85,23 @@ export default function Home() {
     }, [userState])
 
     const {
-        data,
+        data: allDelegates,
         isLoading,
         isSuccess,
         isError: isErrorQuery,
     } = useQuery({
         queryKey: [`delegates`],
         queryFn: async () => {
+            console.log("running")
             const tempData = await populateData();
+            console.log("Tempdata: ", tempData)
 
             setDelegates(tempData);
             return tempData
         },
         staleTime: 60 * 60 * 1000, // 20 minutes in milliseconds
+        enabled: session?.user ? true: false
     });
-
-    console.log("loading", isLoading);
-    console.log("isErrorQuery", isErrorQuery);
 
     return (
         <div className={`${inter.className} min-h-[100vh] w-full bg-[#EAEAEA] relative overflow-x-hidden h-full`}>
@@ -159,10 +149,10 @@ export default function Home() {
 
                         <div className='flex-col gap-2 h-full border-t-black border-t-[3px] lg:w-full xl:w-[75%]'>
                             {
-                                data && !isErrorQuery ? (
+                                allDelegates != null && allDelegates?.length > 0 && isSuccess && !isErrorQuery ? (
                                     <>
                                         {
-                                            data.map((delegate, index) => (
+                                            allDelegates.map((delegate, index) => (
                                                 <div key={index} className="flex flex-col gap-4 border-b-[3px] border-b-black px-4 py-3 pb-8">
                                                     <div key={index} className='w-full flex justify-between items-center gap-4 pb-2'>
                                                         <div className="flex gap-2 items-center">
@@ -219,7 +209,7 @@ export default function Home() {
                                 )
                             }
                             {
-                                isSuccess && data?.length === 0 && (
+                                isSuccess && (allDelegates?.length === 0 || allDelegates === null) && (
                                     <div className='w-full h-full flex flex-col items-center justify-center text-black font-semibold mt-10 gap-4'>
                                         <div className="text-[24px]">No Registrations</div>
                                         <div onClick={() => router.reload()} className="text-blue-500 hover:underline cursor-pointer">Refresh?</div>

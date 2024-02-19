@@ -47,10 +47,42 @@ const Invitation = () => {
                     },
                 </div>
                 <div className="my-4">
-                    The secretariat is excited to welcome you to our fourth XMUN conference! Our exec team has been working hard to bring you our yearly fictional conference. This year with 3 separate conferences, two for novice elementary school delegates, and a conference on colonialism for our high school delegates. <br /> <br />
-                    For our High school delegates, students get to navigate the deep-rooted history of colonialism and the lingering effects it has on our world. Within your committee, delegates will work through grave issues and conflicts together to create comprehensive solutions. From this experience, delegates will develop stronger critical thinking skills, public speaking abilities and leadership qualities.<br /> <br />
-                    Our chairs are well prepared to bring delegates to a formal yet thrilling conference. As a secretariat, we are committed to fostering an inclusive and welcoming environment for all participants. We encourage delegates to approach the conference with an open mind and a willingness to engage in respectful and constructive dialogue with their peers. This is Saint Francis Xavier&apos;s fourth time hosting XMUN, each year growing in numbers we gladly await a successful conference.
-                    Excited for a fruitful discussion, XMUN awaits you!
+                    The secretariat is excited to welcome you to our fourth XMUN conference! Our exec team has been working hard to bring you our yearly conference. This year with 3 separate committees, two for novice/beginner delegates, and a committee on colonialism for more experienced intermediate delegates.
+                </div>
+                <div className="my-2 font-semibold">
+                    Committees:
+                </div>
+                <div className="pl-10">
+                    <ul className="list-disc">
+                        <li>
+                            <i>Pokemon committee:</i> Revolves around the topics of genetic modification and animal abuse with the use of CRISPR-Cas9.
+                            <ul className="list-disc pl-10"><li>Topic 1: Bioethics (Genetic modification, forced evolution)</li></ul>
+                        </li>
+                    </ul>
+                    <ul className="list-disc">
+                        <li>
+                            <i>Divergent committee:</i> Based on the Divergent universe, tackles the issues of different factions and the power struggles between them.
+                            <ul className="list-disc pl-10"><li>Topic 1: Ensuring protection of Divergents and Factionless</li><li>Topic 2: Possible remake of systemized government</li></ul>
+                        </li>
+                    </ul>
+                    <ul className="list-disc">
+                        <li>
+                            <i>Colonialism committee:</i> Students get to navigate the deep-rooted, controversial history of colonialism and the lingering effects it has on our world.
+                            <ul className="list-disc pl-10"><li>Topic 1: Legacy of Colonialism (Human rights violations, ethnic rivalries, Economic instability, benefits of colonialism) </li></ul>
+                        </li>
+                    </ul>
+                </div>
+                <div className="my-4">
+                    Within your committee, delegates will work through grave issues and conflicts together to create comprehensive solutions. From this experience, delegates will develop stronger critical thinking skills, public speaking abilities and leadership qualities.
+                </div>
+                <div className="my-4">
+                    Our chairs are well prepared to bring delegates to a formal yet thrilling conference. As a secretariat, we are committed to fostering an inclusive and welcoming environment for all participants. We encourage delegates to approach the conference with an open mind and a willingness to engage in respectful and constructive dialogue with their peers. This is Saint Francis Xavier&apos;s fourth time hosting XMUN, each year growing in numbers we gladly await a successful conference. Excited for a fruitful discussion, XMUN IV awaits you!
+                </div>
+                <div className="my-2 mt-8 font-semibold">
+                    Why XMUN?
+                </div>
+                <div className="my-4">
+                    St. Francis Xavier&apos;s Model UN team is dedicated to bringing Fun MUN&apos;s to the forefront of our conferences. Fun MUN&apos;s are committees that focus around a fictitious and unimaginable world. There are obvious limitations in our world with finite problems, however, doing Fun MUN&apos;s gives light to inconceivable circumstances, makes delegates think outside of the box, and shows how the principles of Model UN can be applied to even the most eccentric and impossible situations. We are happy that we can share the Model UN experience with young, up and coming delegates from the elementary schools as well as the experienced and mature delegates from our adjacent high schools. We are highly anticipating this amazing opportunity in the coming future.
                 </div>
                 <div className="text-[32px] font-semibold pt-4">
                     Sincerely, 

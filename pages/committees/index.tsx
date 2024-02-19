@@ -83,7 +83,7 @@ export default function Home() {
                             <Image
                                 fill
                                 className='object-cover absolute'
-                                src="https://img.lemde.fr/2022/12/22/5/0/1730/865/1342/671/60/0/e968e4d_1671703423578-b5e.jpeg"
+                                src="https://deadline.com/wp-content/uploads/2023/10/divergent-allegiant.jpg"
                                 alt="Pokemon"
                             />
                             <div className='w-full h-full bg-black bg-opacity-80 backdrop-blur-[10px] z-1 absolute' />
@@ -91,11 +91,11 @@ export default function Home() {
                             <div className={` text-white absolute h-full w-full transition-all ${ani === 1 ? 'md:opacity-100 md:z-10 duration-[400ms]' : 'md:opacity-0 md:z-2 duration-100'}
                             ${userState === 1 ? 'opacity-100 z-10' : 'md:opacity-0 opacity-100 z-2'}`}>
                                 <div className="flex flex-col h-full w-full p-4 md:p-10">
-                                    <div className='tracking-[5px] text-[20px] mb-4'>POKEMON</div>
+                                    <div className='tracking-[5px] text-[20px] mb-4'>DIVERGENT</div>
                                     <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${ani === 1 ? 'block' : 'md:hidden'}`}>
                                         Welcome to the groundbreaking intersection of genetics! Join us at this unique conference where we delve into the fascinating realm of Pokemon and CRISPR-Cas9, exploring the unprecedented possibilities of genetic engineering in the captivating world of Pokemon training and battles.
                                     </div>
-                                    <Link href={"https://drive.google.com/file/d/1tQQAEVFTwsDs-K-mqvfsaOQjyO_fu9m6/view"} target='__blank'
+                                    <Link href={"https://drive.google.com/file/d/1DOtgZ8LY9WLOVHLtgv4U8wyfx9KvEkqO/view"} target='__blank'
                                         className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</Link>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ export default function Home() {
                             {/* Preview */}
                             <div className={`h-full w-full absolute cursor-pointer ${userState != 1 ? 'md:opacity-100 opacity-0 z-10' : 'opacity-0 z-2'}`}>
                                 <div className='text-white tracking-[5px] text-[20px] w-full h-full flex items-center justify-center'>
-                                    POKEMON
+                                    DIVERGENT
                                     <div className='absolute bottom-0 right-0 p-5 tracking-[2px] text-[14px] group-hover:block hidden'>
                                         Tap to view
                                     </div>

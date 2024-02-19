@@ -5,8 +5,7 @@ import { useRouter } from "next/router";
 import Hamburger from "./Hamburger";
 import { useEffect, useState, useRef } from 'react';
 import useUser from "@/hooks/useUser";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "@/firebase";
+import { signOut } from "next-auth/react"
 
 const Header = () => {
     const router = useRouter();
@@ -17,36 +16,17 @@ const Header = () => {
 
     const signOutUser = async () => {
         try {
-            await signOut(auth);
             authUser.onRemove();
-            console.log("User signed out");
+            signOut()
         } catch (error) {
             console.error("Error signing out:", error);
         }
     };
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // User is signed in
-                // You can redirect to a different page or perform other actions here
-                authUser.onUpdate(user.displayName, user.email, user.photoURL);
-            } else {
-                // User is signed out
-            }
-        });
-
-        // Cleanup the listener when the component is unmounted
-        return () => {
-            unsubscribe()
-        };
-    }, []);
-
-    useEffect(() => {
         if (authUser.auth) {
             setClientUser(authUser);
         } else {
-            setClientUser(authUser);
         }
     }, [authUser])
 
@@ -90,14 +70,14 @@ const Header = () => {
                     <div className="flex items-center justify-center gap-4">
                         <div className="uppercase text-[14px] opacity-90">
                             {
-                                clientUser.email === 'olesnieadrian@gmail.com' || clientUser.email === 'campanellim@stfxavier.ca' && (
+                               (clientUser.email === 'olesnieadrian@gmail.com' || clientUser.email === 'campanellim@stfxavier.ca') && (
                                     <Link href="/dashboard" className="cursor-pointer hover:underline">
                                         Dashboard
                                     </Link>
                                 )
                             }
                         </div>
-                        <div className={`cursor-pointer h-[30px] w-[30px] relative rounded-full overflow-hidden`}>
+                        <div onClick={() => signOutUser()} className={`cursor-pointer h-[30px] w-[30px] relative rounded-full overflow-hidden`}>
                             <Image
                                 src={authUser.picture}
                                 fill

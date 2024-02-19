@@ -65,29 +65,9 @@ const Register = () => {
         }
     }, [delegateModal, delegates]);
 
-    const authUser = useUser();
-
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // User is signed in
-                // You can redirect to a different page or perform other actions here
-                authUser.onUpdate(user.displayName, user.email, user.photoURL);
-            } else {
-                // User is signed out
-                router.push('/auth/signin')
-            }
-        });
-
-        // Cleanup the listener when the component is unmounted
-        return () => {
-            unsubscribe()
-        };
-    }, []);
-
     const checkDuplicates = async () => {
-        if (authUser.email) {
-            const docRef = doc(db, "delegates", authUser.email);
+        if (user.email) {
+            const docRef = doc(db, "delegates", user.email);
 
             try {
                 const docSnap = await getDoc(docRef);
@@ -107,8 +87,8 @@ const Register = () => {
         const isRegistered = await checkDuplicates();
         if (!isRegistered) {
             try {
-                if (authUser.email) {
-                    const docRef = await setDoc(doc(db, collectionName, authUser.email), data);
+                if (user.email) {
+                    const docRef = await setDoc(doc(db, collectionName, user.email), data);
                     console.log('Document written with ID: ', docRef);
                     setSuccessful(true);
                 }
@@ -147,12 +127,12 @@ const Register = () => {
 
     const submitRegistration = () => {
         console.log("before")
-        if (authUser.name && authUser.email && authUser.picture && school != null && contact != null && confirmed != null && diet != null && delegates != null) {
+        if (user.name && user.email && user.picture && school != null && contact != null && confirmed != null && diet != null && delegates != null) {
             console.log("after")
             const data = {
-                name: authUser.name,
-                email: authUser.email,
-                picture: authUser.picture,
+                name: user.name,
+                email: user.email,
+                picture: user.picture,
                 school: school,
                 contact: contact,
                 confirmed: confirmed,
@@ -202,7 +182,7 @@ const Register = () => {
                 duplicateError ? (
                     <div className="flex items-center justify-center text-[20px] text-center flex-col z-50">
                         <div className="text-[32px] font-semibold">
-                            Hey {authUser?.name?.split(' ')[0]},
+                            Hey {user?.name?.split(' ')[0]},
                         </div>
                         <div className="text-[20px]">
                             Thank you, but we have already receieved your registration.

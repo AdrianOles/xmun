@@ -4,58 +4,25 @@ import { useRouter } from 'next/router';
 import {auth, provider} from '@/firebase'
 import { useEffect, useState } from "react";
 import useUser from "@/hooks/useUser";
+import { signIn, useSession } from "next-auth/react";
 
 export default function SignIn() {
+    const { data: session } = useSession();
     const router = useRouter();
-    const [loading, setLoading] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(false);
     const authUser = useUser();
-    
-    const signOutUser = async () => {
-        try {
-            await signOut(auth);
-            authUser.onRemove();
-            console.log("User signed out");
-        } catch (error) {
-            console.error("Error signing out:", error);
-        }
-    };
-
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // User is signed in
-                // You can redirect to a different page or perform other actions here
-                console.log(user);
-                authUser.onUpdate(user.displayName, user.email, user.photoURL);
-                setLoading(false);
-            } else {
-                // User is signed out
-                setLoading(false);
-            }
-        });
-
-        // Cleanup the listener when the component is unmounted
-        return () => {
-            unsubscribe()
-        };
-    }, []);
-
-    const signIn = () => {
-        setLoading(true);
-        signOutUser()
-        signInWithRedirect(auth, provider);
-        setLoading(false);
-    }
 
     const handleButton = () => {
-        if (!loading && !authUser.auth) {
-            signIn();
-        } else if (loading) {
-            return null;
-        } else if (authUser.auth) {
-            console.log("hi")
-            router.replace('/')
+        setLoading(true);
+        if (!session) {
+            signIn('google', { callbackUrl: 'http://localhost:3000/' })
+        } else {
+            if (session.user) {
+                authUser.onUpdate(session.user.name, session.user.email, session.user.image)
+            }
+            router.push('/');
         }
+        setLoading(false);
     }
 
     return (
@@ -92,12 +59,10 @@ export default function SignIn() {
                 <div onClick={() => handleButton()} className='md:text-[20px] text-[16px] text-white lg:w-[80%] w-full cursor-pointer relative flex items-center justify-center overflow-hidden transition mt-4 rounded-[8px] bg-black hover:bg-opacity-[80%]'>
                     <div className="z-50 px-3 py-2">
                         {
-                            loading && !authUser ? (
+                            loading ? (
                                 <span>Loading...</span>
-                            ) : !loading && !authUser.auth ? (
+                            ) : !session && (
                                 <span>Sign In</span>
-                            ) : (
-                                <span>Continue</span>  
                             )
                         }
                     </div>

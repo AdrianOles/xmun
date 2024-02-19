@@ -2,10 +2,10 @@ import { create } from 'zustand';
 
 interface useUserStore {
     auth: boolean;
-    name: string | null;
-    email: string | null;
-    picture: string | null;
-    onUpdate: (name: string | null, email: string | null, picture: string | null) => void;
+    name: string | null | undefined;
+    email: string | null | undefined;
+    picture: string | null | undefined;
+    onUpdate: (name: string | null | undefined, email: string | null | undefined, picture: string | null | undefined) => void;
     onRemove: () => void;
 }
 
