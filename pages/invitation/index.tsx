@@ -53,19 +53,19 @@ const Invitation = () => {
                     Committees:
                 </div>
                 <div className="pl-10">
-                    <ul className="list-disc">
+                    <ul className="list-disc mb-2">
                         <li>
                             <i>Pokemon committee:</i> Revolves around the topics of genetic modification and animal abuse with the use of CRISPR-Cas9.
                             <ul className="list-disc pl-10"><li>Topic 1: Bioethics (Genetic modification, forced evolution)</li></ul>
                         </li>
                     </ul>
-                    <ul className="list-disc">
+                    <ul className="list-disc mb-2">
                         <li>
                             <i>Divergent committee:</i> Based on the Divergent universe, tackles the issues of different factions and the power struggles between them.
                             <ul className="list-disc pl-10"><li>Topic 1: Ensuring protection of Divergents and Factionless</li><li>Topic 2: Possible remake of systemized government</li></ul>
                         </li>
                     </ul>
-                    <ul className="list-disc">
+                    <ul className="list-disc mb-2">
                         <li>
                             <i>Colonialism committee:</i> Students get to navigate the deep-rooted, controversial history of colonialism and the lingering effects it has on our world.
                             <ul className="list-disc pl-10"><li>Topic 1: Legacy of Colonialism (Human rights violations, ethnic rivalries, Economic instability, benefits of colonialism) </li></ul>
