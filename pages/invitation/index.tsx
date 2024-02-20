@@ -55,8 +55,8 @@ const Invitation = () => {
                 <div className="pl-10">
                     <ul className="list-disc mb-2">
                         <li>
-                            <i>Pokemon committee:</i> Revolves around the topics of genetic modification and animal abuse with the use of CRISPR-Cas9.
-                            <ul className="list-disc pl-10"><li>Topic 1: Bioethics (Genetic modification, forced evolution)</li></ul>
+                            <i>Marvel committee:</i> Revolves around the Sokovia Accords and accountability for the damage caused by superheroes. 
+                            <ul className="list-disc pl-10"><li>Topic 1: Accountability of Superheros </li></ul>
                         </li>
                     </ul>
                     <ul className="list-disc mb-2">

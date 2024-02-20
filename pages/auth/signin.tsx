@@ -77,6 +77,10 @@ export default function SignIn() {
                     <div className='absolute top-0 left-1/2 right-1/2 -translate-x-1/2 bg-white rounded-full z-[1] w-[20px] h-[30px] grow-animate-pulse' />
                     <div className='absolute w-full h-full z-50' />
                 </div>
+
+                <div className="text-[12px] text-left mt-2 lg:w-[80%]">
+                    Note, you must use native browsers (Safari, Google Chrome, etc.) The Instagram browser is not safe.
+                </div>
             </div>
         </div>
     );
