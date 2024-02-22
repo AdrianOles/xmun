@@ -53,7 +53,7 @@ export default function Home() {
     }, [session])
 
     const populateData = async () => {
-        if (session?.user?.email === 'olesnieadrian@gmail.com' || session?.user?.email === 'campanellim@stfxavier.ca') {
+        if (session?.user?.email === 'olesnieadrian@gmail.com' || session?.user?.email === 'campanellim@stfxavier.ca' || session?.user?.email === 'rhea.goel.768@stfxavier.ca ') {
             const querySnapshot = await getDocs(collection(db, "delegates"));
             console.log("query:", querySnapshot)
             const delegateInfo: DelegateApp[] = [];
