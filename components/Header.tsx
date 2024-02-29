@@ -70,7 +70,7 @@ const Header = () => {
                     <div className="flex items-center justify-center gap-4">
                         <div className="uppercase text-[14px] opacity-90">
                             {
-                                (clientUser.email === 'olesnieadrian@gmail.com' || clientUser.email === 'campanellim@stfxavier.ca' || clientUser.email === 'rhea.goel.768@stfxavier.ca ') && (
+                                (clientUser.email === 'olesnieadrian@gmail.com' || clientUser.email === 'campanellim@stfxavier.ca' || clientUser.email === 'rhea.goel.768@stfxavier.ca') && (
                                     <Link href="/dashboard" className="cursor-pointer hover:underline">
                                         Dashboard
                                     </Link>

@@ -46,14 +46,14 @@ export default function Home() {
     useEffect(() => {
         if (session?.user) {
             authUser.onUpdate(session.user.name, session.user.email, session.user.image)
-            if (session?.user.email != 'olesnieadrian@gmail.com' && session?.user.email != 'campanellim@stfxavier.ca') {
+            if (session?.user.email != 'olesnieadrian@gmail.com' && session?.user.email != 'campanellim@stfxavier.ca' && session?.user?.email === 'rhea.goel.768@stfxavier.ca') {
                 router.push("/")
             }
         }
     }, [session])
 
     const populateData = async () => {
-        if (session?.user?.email === 'olesnieadrian@gmail.com' || session?.user?.email === 'campanellim@stfxavier.ca' || session?.user?.email === 'rhea.goel.768@stfxavier.ca ') {
+        if (session?.user?.email === 'olesnieadrian@gmail.com' || session?.user?.email === 'campanellim@stfxavier.ca' || session?.user?.email === 'rhea.goel.768@stfxavier.ca') {
             const querySnapshot = await getDocs(collection(db, "delegates"));
             console.log("query:", querySnapshot)
             const delegateInfo: DelegateApp[] = [];
