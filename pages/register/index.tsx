@@ -235,7 +235,7 @@ const Register = () => {
                             <div className="font-medium mb-2">Confirmation</div>
                             <ol className="list-decimal pl-8 mb-2">
                                 <li className="mb-2 pl-2">I understand that there is a cost is $35.00 CAD per delegate to register</li>
-                                <li className="mb-2 pl-2">March 10th, 2024 is the final deadline</li>
+                                    <li className="mb-2 pl-2">March 10th, 2024 is the final deadline</li>
                                 <li className="mb-2 pl-2">Payment is made via <a href="https://hcdsb.schoolcashonline.com/Fee/Details/73337/6/False/True" target="__blank" className="hover:underline text-blue-500 font-semibold">SchoolCashOnline</a></li>
                             </ol>
                             <div className="flex gap-2 items-center justify-start pl-3 pt-2">
