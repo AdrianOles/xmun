@@ -15,7 +15,7 @@ export default function SignIn() {
     const handleButton = () => {
         setLoading(true);
         if (!session) {
-            signIn('google', { callbackUrl: 'http://localhost:3000/' })
+            signIn('google', { callbackUrl: 'https://xmun.vercel.app/' })
         } else {
             if (session.user) {
                 authUser.onUpdate(session.user.name, session.user.email, session.user.image)
