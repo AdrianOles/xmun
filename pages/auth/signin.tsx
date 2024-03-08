@@ -1,6 +1,6 @@
 import { getRedirectResult, onAuthStateChanged, signInWithRedirect, signOut } from "firebase/auth";
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 import {auth, provider} from '@/firebase'
 import { useEffect, useState } from "react";
 import useUser from "@/hooks/useUser";

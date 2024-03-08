@@ -144,7 +144,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="h-full w-full lg:p-20 lg:pt-0 pt-0 lg:block hidden">
+                    <div className="h-full w-full lg:p-20 lg:pt-0 pt-0 p-4">
                         <div className="text-[24px] font-semibold pb-10">Delegations</div>
 
                         <div className='flex-col gap-2 h-full border-t-black border-t-[3px] lg:w-full xl:w-[75%]'>
@@ -156,38 +156,38 @@ export default function Home() {
                                                 <div key={index} className="flex flex-col gap-4 border-b-[3px] border-b-black px-4 py-3 pb-8">
                                                     <div key={index} className='w-full flex justify-between items-center gap-4 pb-2'>
                                                         <div className="flex gap-2 items-center">
-                                                            <div className='h-[40px] w-[40px] relative rounded-full overflow-hidden'>
+                                                            <div className='min-h-[40px] min-w-[40px] relative rounded-full overflow-hidden aspect-square'>
                                                                 <Image
                                                                     src={delegate.picture}
                                                                     alt=""
                                                                     fill
                                                                 />
                                                             </div>
-                                                            <div className="">Contact: <span className="font-medium">{delegate.contact}</span></div>
+                                                            <div className="">Contact: <span className="font-medium whitespace-nowrap">{delegate.contact}</span></div>
                                                             <div className="h-[20px] w-[1px] bg-black mx-4" />
-                                                            <div className="">Email: {delegate.email}</div>
+                                                            <div className="hidden lg:block">Email: {delegate.email}</div>
                                                         </div>
                                                         <div onClick={() => deleteDelegate.onOpen(delegate.email)} className="px-3 py-1.5 border border-red-500 rounded-[8px] cursor-pointer text-red-500 hover:bg-red-500 hover:text-white transition">
                                                             Delete
                                                         </div>
                                                     </div>
-                                                    <div className="flex flex-col gap-4 w-full">
+                                                    <div className="flex flex-col gap-4 w-full lg:w-fit overflow-x-auto lg:overflow-x-hidden">
                                                         <div className="font-medium">Participants:</div>
                                                         <div className="flex justify-evenly w-full no-wrap gap-2 border-b border-black pb-1">
-                                                            <div className="min-w-[150px]">Name</div>
-                                                            <div className="min-w-[150px]">Experience</div>
-                                                            <div className="min-w-[150px]">Grade</div>
+                                                            <div className="min-w-[200px] w-[200px]">Name</div>
+                                                            <div className="min-w-[150px] lg:block hidden">Experience</div>
+                                                            <div className="min-w-[150px] lg:block hidden">Grade</div>
                                                             <div className="w-full">Choices</div>
                                                         </div>
                                                         {
                                                             delegate.delegates.map((delegate, index) => (
-                                                                <div key={index} className="border flex w-full justify-evenly text-left gap-2">
-                                                                    <div className="min-w-[150px]">{delegate.name}</div>
-                                                                    <div className="min-w-[150px]">{delegate.experience}</div>
-                                                                    <div className="min-w-[150px]">{delegate.grade}</div>
-                                                                    <div className="w-full">1. {delegate.one}</div>
-                                                                    <div className="w-full">2. {delegate.two}</div>
-                                                                    <div className="w-full">3. {delegate.three}</div>
+                                                                <div key={index} className="border flex justify-start text-left gap-2">
+                                                                    <div className="min-w-[200px] w-[200px]">{delegate.name}</div>
+                                                                    <div className="min-w-[150px] lg:block hidden">{delegate.experience}</div>
+                                                                    <div className="min-w-[150px] lg:block hidden">{delegate.grade}</div>
+                                                                    <div className="min-w-[150px] w-[150px] whitespace-nowrap">1. {delegate.one}</div>
+                                                                    <div className="min-w-[150px] w-[150px] whitespace-nowrap">2. {delegate.two}</div>
+                                                                    <div className="min-w-[150px] w-[150px] whitespace-nowrap">3. {delegate.three}</div>
                                                                 </div>
                                                             ))
                                                         }
@@ -217,10 +217,6 @@ export default function Home() {
                                 )
                             }
                         </div>
-                    </div>
-
-                    <div className="lg:hidden block px-4">
-                        Please access on large device.
                     </div>
                 </div>
             </div>
