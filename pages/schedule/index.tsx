@@ -31,10 +31,10 @@ const Schedule = () => {
                             8:30-8:45
                         </div>
                         <div className="min-h-[100px] w-full rounded-[10px] flex items-center justify-end text-right whitespace-nowrap">
-                            8:45-9:30
+                            8:45-9:45
                         </div>
                         <div className="min-h-[100px] w-full rounded-[10px] flex items-center justify-end text-right whitespace-nowrap">
-                            9:40-11:20
+                            10:00-11:20
                         </div>
                         <div className="min-h-[100px] w-full rounded-[10px] flex items-center justify-end text-right whitespace-nowrap">
                             11:30-12:20

@@ -68,7 +68,7 @@ const Invitation = () => {
                     <ul className="list-disc mb-2">
                         <li>
                             <i>Colonialism committee:</i> Students get to navigate the deep-rooted, controversial history of colonialism and the lingering effects it has on our world.
-                            <ul className="list-disc pl-10"><li>Topic 1: Legacy of Colonialism (Human rights violations, ethnic rivalries, Economic instability, benefits of colonialism) </li></ul>
+                            <ul className="list-disc pl-10"><li>Topic 1: Legacy of Colonialism (Human rights violations, ethnic rivalries, Economic instability) </li></ul>
                         </li>
                     </ul>
                 </div>
