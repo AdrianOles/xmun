@@ -4,13 +4,15 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import useUser from '@/hooks/useUser';
 import { signIn, useSession } from "next-auth/react";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { IoMdClose } from "react-icons/io";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const user = useUser();
   const { data: session } = useSession();
+  const [closeBanner, setCloseBanner] = useState<boolean>(false);
 
   useEffect(() => {
     if (session?.user) {
@@ -29,7 +31,17 @@ export default function Home() {
       <div className='absolute bg-black w-full h-full bg-opacity-70 backdrop-blur-[4px]' />
       
       <div className='flex flex-col w-full z-40 justify-between items-between h-full'>
-          <Header />
+        {
+          !closeBanner && (
+            <div className='bg-black backdrop-blur-[50px] bg-opacity-50 left-0 w-full z-[100] p-4 text-white'>
+              <div className='flex items-center justify-between'>
+                <div>Your committee and roles have been released! Please check your email.</div>
+                <IoMdClose size={30} className='cursor-pointer' onClick={() => {setCloseBanner(true)}} />
+              </div>
+            </div>
+          )
+        }
+        <Header />
 
         {/* TITLE */}
         <div className='w-fit flex flex-col gap-20 text-white z-40 h-full justify-end xl:p-44 lg:p-32 md:p-20 p-6 pt-10'>
@@ -44,14 +56,14 @@ export default function Home() {
                 )
               }
               <div className='md:text-[20px] text-[16px] w-fit cursor-pointer relative flex items-center justify-center overflow-hidden transition border border-[#DED5FFBA] hover:ring-2 ring-[#DED5FFBA]'>
-                <div className="z-50 px-3 py-2">REGISTER</div>
+                <div className="z-50 px-3 py-2">SPEAKER</div>
                 <div className='absolute top-0 right-0 bg-[#0a0a0a01] backdrop-blur-[50px] z-[2] w-full h-full' />
                 <div className='absolute top-0 right-0 bg-[#9780FF] rounded-full z-[1] w-[50px] h-[50px] animate-pulse' />
                 <div className='absolute top-0 left-0 bg-[#00AAFF] rounded-full z-[1] w-[60px] h-[50px]  diff-animate-pulse' />
                 <div className='absolute top-0 left-1/2 right-1/2 -translate-x-1/2 bg-white rounded-full z-[1] w-[20px] h-[30px] grow-animate-pulse' />
                 {
                   user.auth ? (
-                    <Link href={'/register'} className='absolute w-full h-full z-50' />
+                    <Link href={'/guestSpeaker'} className='absolute w-full h-full z-50' />
                   ): (
                     <Link href={'/auth/signin'} className='absolute w-full h-full z-50' />
                   )

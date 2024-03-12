@@ -159,7 +159,7 @@ export default function Home() {
                                     <div className={`tracking-[0.5px] text-[14px] md:text-[16px] ${userState === 3 ? 'block' : 'md:hidden'}`}>
                                         Embark on a thought-provoking journey through history and global impact at our conference on Colonialism. Join us in exploring the multifaceted dimensions of colonial experiences, discussing the legacies, challenges, and critical perspectives that shape our understanding of this complex historical phenomenon.
                                     </div>
-                                    <Link href={"https://drive.google.com/file/d/10ADZinNydDFkzf94rwteGrJ8vLfH4_WI/view?usp=sharing"} target='__blank'
+                                    <Link href={"https://drive.google.com/file/d/1N3TssM0OJ3_Kc3s1_xeNOYeD55uvZM0E/view?usp=sharing"} target='__blank'
                                         className="mt-auto px-3 py-1 border border-white w-fit uppercase tracking-[5px] cursor-pointer hover:bg-white hover:text-black">GUIDE</Link>
                                 </div>
                             </div>

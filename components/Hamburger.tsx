@@ -18,7 +18,7 @@ const Hamburger = () => {
     return (
         <div className="absolute cursor-pointer w-[50px] h-[50px] z-50 lg:hidden" onClick={() => handleClick()}>
             <div className="w-full h-full flex items-center justify-center">
-                <div className={`${router.pathname === '/' || router.pathname === '/schedule' || router.pathname === '/resources' ? 'hidden' : 'block'}
+                <div className={`${router.pathname === '/' || router.pathname === '/schedule' || router.pathname === '/resources' ? 'hidden' : 'block'} ${router.pathname === '/guestSpeaker' && 'hidden'}
                 ${router.pathname === '/schedule' && 'hidden'} 
                 ${router.pathname === '/invitation' && 'hidden'} 
                 group z-50 relative w-5 h-3 flex-col justify-between items-center flex`}>

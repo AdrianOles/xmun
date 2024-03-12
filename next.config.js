@@ -9,7 +9,8 @@ const nextConfig = {
       "prd-rteditorial.s3.us-west-2.amazonaws.com",
       "isp.hcdsb.org",
       "lh3.googleusercontent.com",
-      "deadline.com"
+      "deadline.com",
+      "upload.wikimedia.org"
     ]
   }
 }

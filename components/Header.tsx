@@ -45,6 +45,7 @@ const Header = () => {
         ${router.pathname === '/' ? 'text-white' : 'text-black'}
         ${router.pathname === '/resources' && 'text-white'}
         ${router.pathname === '/invitation' && 'text-white'}
+        ${router.pathname === '/guestSpeaker' && 'text-white'}
         ${router.pathname === '/schedule' && 'text-white'} transition-all `} >
             <div className="w-[50px] lg:hidden" />
             <Hamburger />
@@ -52,7 +53,7 @@ const Header = () => {
                 <Image
                     alt='xmun logo'
                     className={`brightness-0 ${router.pathname === '/' || router.pathname === '/resources' ? 'invert' : ''}
-                    ${router.pathname === '/invitation' && 'invert'} ${router.pathname === '/schedule' && 'invert'} md:scale-100 scale-75`}
+                    ${router.pathname === '/invitation' && 'invert'} ${router.pathname === '/schedule' && 'invert'} ${router.pathname === '/guestSpeaker' && 'invert'} md:scale-100 scale-75`}
                     height={50}
                     width={50}
                     src={'/xmunlogo.png'}
@@ -101,7 +102,7 @@ const Header = () => {
                     ${router.pathname === '/invitation' && 'text-black'} 
                     ${router.pathname === '/committees' && 'text-black'} 
                     ${router.pathname === '/' && 'text-white'} 
-                    ${router.pathname === '/' && 'text-white'} 
+                    ${router.pathname === '/guestSpeaker' && 'text-black'} 
                     ${nav.open ? 'block' : "hidden"} uppercase tracking-[2px]`}>
                     <div onClick={() => {
                             nav.onClose()
